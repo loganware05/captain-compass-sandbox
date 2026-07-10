@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
+import ContactForm from './components/ContactForm'
 import './App.css'
 
 function App() {
@@ -28,6 +29,16 @@ function App() {
         >
           Count is {count}
         </button>
+      </section>
+
+      <div className="ticks"></div>
+
+      <section id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
+        <p className="contact-section__intro">
+          Send a message with your name, email, and what you need help with.
+        </p>
+        <ContactForm />
       </section>
 
       <div className="ticks"></div>
