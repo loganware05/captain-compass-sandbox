@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Captain's Compass
+.agent/evidence/private/
+.agent/runs/
+.env
+.env.*
+!.env.example
