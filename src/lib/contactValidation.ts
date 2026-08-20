@@ -4,6 +4,9 @@ export type ContactFormValues = Record<ContactField, string>
 
 export type ContactFormErrors = Partial<Record<ContactField, string>>
 
+/** Maximum length for the contact message field. */
+export const MESSAGE_MAX_LENGTH = 500
+
 /** Practical email check — not RFC 5322 complete. */
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
@@ -28,6 +31,13 @@ export function validateEmailFormat(value: string): string | undefined {
   return undefined
 }
 
+export function validateMessageLength(value: string): string | undefined {
+  if (value.length > MESSAGE_MAX_LENGTH) {
+    return `Message must be ${MESSAGE_MAX_LENGTH} characters or fewer.`
+  }
+  return undefined
+}
+
 export function validateContactForm(
   values: ContactFormValues,
 ): ContactFormErrors {
@@ -48,9 +58,14 @@ export function validateContactForm(
     }
   }
 
-  const messageError = validateRequired(values.message, 'Message')
-  if (messageError) {
-    errors.message = messageError
+  const messageRequired = validateRequired(values.message, 'Message')
+  if (messageRequired) {
+    errors.message = messageRequired
+  } else {
+    const messageLength = validateMessageLength(values.message)
+    if (messageLength) {
+      errors.message = messageLength
+    }
   }
 
   return errors

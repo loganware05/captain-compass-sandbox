@@ -1,6 +1,7 @@
-import { cleanup, render, screen } from '@testing-library/react'
+import { cleanup, fireEvent, render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { afterEach, describe, expect, it } from 'vitest'
+import { MESSAGE_MAX_LENGTH } from '../lib/contactValidation'
 import ContactForm from './ContactForm'
 
 afterEach(() => {
@@ -98,5 +99,58 @@ describe('ContactForm', () => {
 
     expect(screen.getByLabelText('Name')).toHaveValue('')
     expect(screen.getByRole('button', { name: 'Send message' })).toBeTruthy()
+  })
+
+  it('shows a character counter associated with the message field', async () => {
+    const user = userEvent.setup()
+    render(<ContactForm />)
+
+    const message = screen.getByLabelText('Message')
+    const help = screen.getByText(`Maximum ${MESSAGE_MAX_LENGTH} characters.`)
+    expect(message).toHaveAttribute('maxLength', String(MESSAGE_MAX_LENGTH))
+    expect(message.getAttribute('aria-describedby') ?? '').toContain(help.id)
+    expect(screen.getByText(`0 / ${MESSAGE_MAX_LENGTH}`)).toBeTruthy()
+
+    await user.type(message, 'Hello')
+    expect(screen.getByText(`5 / ${MESSAGE_MAX_LENGTH}`)).toBeTruthy()
+  })
+
+  it('announces the character limit only when reached', async () => {
+    render(<ContactForm />)
+
+    const message = screen.getByLabelText('Message')
+    fireEvent.change(message, {
+      target: { value: 'a'.repeat(MESSAGE_MAX_LENGTH) },
+    })
+
+    expect(
+      screen.getByText(
+        `Message character limit reached (${MESSAGE_MAX_LENGTH}).`,
+      ),
+    ).toHaveAttribute('role', 'status')
+  })
+
+  it('shows a max-length error when a too-long message is submitted', async () => {
+    const user = userEvent.setup()
+    render(<ContactForm />)
+
+    await user.type(screen.getByLabelText('Name'), 'Ada Lovelace')
+    await user.type(screen.getByLabelText('Email'), 'ada@example.com')
+
+    const message = screen.getByLabelText('Message')
+    // Bypass HTML maxLength so validation path can be exercised.
+    fireEvent.change(message, {
+      target: { value: 'a'.repeat(MESSAGE_MAX_LENGTH + 1) },
+    })
+    await user.click(screen.getByRole('button', { name: 'Send message' }))
+
+    const messageError = screen.getByText(
+      `Message must be ${MESSAGE_MAX_LENGTH} characters or fewer.`,
+    )
+    expect(messageError).toHaveAttribute('role', 'alert')
+    expect(message).toHaveAttribute('aria-invalid', 'true')
+    expect(message.getAttribute('aria-describedby') ?? '').toContain(
+      messageError.id,
+    )
   })
 })
