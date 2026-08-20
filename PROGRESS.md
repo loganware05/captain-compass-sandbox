@@ -2,10 +2,10 @@
 
 ## Current status
 
-Contact message character counter implemented on
-`feature/local-contact-message-counter` per approved plan
-`sandbox-behavioral-plan-feature-2026-08-20`. Validation green (21/21 tests);
-awaiting `/validate-change` / PR when Captain requests.
+Contact message character counter merged-ready on
+`feature/local-contact-message-counter` —
+PR: https://github.com/loganware05/captain-compass-sandbox/pull/15
+(base: `chore/13-refresh-compass-1.5.0`). Validation green (21/21).
 
 ## Completed
 
