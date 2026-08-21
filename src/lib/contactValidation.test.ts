@@ -1,11 +1,9 @@
 import { describe, expect, it } from 'vitest'
 import {
-  MESSAGE_MAX_LENGTH,
   firstErrorField,
   hasContactFormErrors,
   validateContactForm,
   validateEmailFormat,
-  validateMessageLength,
   validateRequired,
 } from './contactValidation'
 
@@ -44,19 +42,6 @@ describe('validateEmailFormat', () => {
   })
 })
 
-describe('validateMessageLength', () => {
-  it('returns undefined within the limit', () => {
-    expect(validateMessageLength('')).toBeUndefined()
-    expect(validateMessageLength('a'.repeat(MESSAGE_MAX_LENGTH))).toBeUndefined()
-  })
-
-  it('returns an error when over the limit', () => {
-    expect(validateMessageLength('a'.repeat(MESSAGE_MAX_LENGTH + 1))).toBe(
-      `Message must be ${MESSAGE_MAX_LENGTH} characters or fewer.`,
-    )
-  })
-})
-
 describe('validateContactForm', () => {
   it('returns errors for all empty fields', () => {
     expect(
@@ -77,18 +62,6 @@ describe('validateContactForm', () => {
       }),
     ).toEqual({
       email: 'Enter a valid email address.',
-    })
-  })
-
-  it('returns a message length error when over the max', () => {
-    expect(
-      validateContactForm({
-        name: 'Ada',
-        email: 'ada@example.com',
-        message: 'a'.repeat(MESSAGE_MAX_LENGTH + 1),
-      }),
-    ).toEqual({
-      message: `Message must be ${MESSAGE_MAX_LENGTH} characters or fewer.`,
     })
   })
 

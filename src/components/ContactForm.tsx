@@ -6,7 +6,6 @@ import {
   type RefObject,
 } from 'react'
 import {
-  MESSAGE_MAX_LENGTH,
   firstErrorField,
   hasContactFormErrors,
   validateContactForm,
@@ -22,11 +21,6 @@ const EMPTY_VALUES: ContactFormValues = {
   message: '',
 }
 
-function describedByIds(...ids: Array<string | undefined>): string | undefined {
-  const joined = ids.filter(Boolean).join(' ')
-  return joined.length > 0 ? joined : undefined
-}
-
 function ContactForm() {
   const formId = useId()
   const nameId = `${formId}-name`
@@ -35,9 +29,6 @@ function ContactForm() {
   const nameErrorId = `${formId}-name-error`
   const emailErrorId = `${formId}-email-error`
   const messageErrorId = `${formId}-message-error`
-  const messageHelpId = `${formId}-message-help`
-  const messageCounterId = `${formId}-message-counter`
-  const messageLimitAnnounceId = `${formId}-message-limit-announce`
   const successHeadingId = `${formId}-success`
 
   const nameRef = useRef<HTMLInputElement>(null)
@@ -48,9 +39,6 @@ function ContactForm() {
   const [values, setValues] = useState<ContactFormValues>(EMPTY_VALUES)
   const [errors, setErrors] = useState<ContactFormErrors>({})
   const [submitted, setSubmitted] = useState(false)
-
-  const messageLength = values.message.length
-  const atMessageLimit = messageLength >= MESSAGE_MAX_LENGTH
 
   const fieldRefs: Record<
     ContactField,
@@ -178,49 +166,18 @@ function ContactForm() {
       </div>
 
       <div className="contact-form__field">
-        <div className="contact-form__label-row">
-          <label htmlFor={messageId}>Message</label>
-          <p
-            id={messageCounterId}
-            className={
-              atMessageLimit
-                ? 'contact-form__counter contact-form__counter--limit'
-                : 'contact-form__counter'
-            }
-            aria-hidden="true"
-          >
-            {messageLength} / {MESSAGE_MAX_LENGTH}
-          </p>
-        </div>
-        <p id={messageHelpId} className="contact-form__help">
-          Maximum {MESSAGE_MAX_LENGTH} characters.
-        </p>
+        <label htmlFor={messageId}>Message</label>
         <textarea
           ref={messageRef}
           id={messageId}
           name="message"
           rows={5}
-          maxLength={MESSAGE_MAX_LENGTH}
           value={values.message}
           onChange={(event) => updateField('message', event.target.value)}
           aria-invalid={errors.message ? true : undefined}
-          aria-describedby={describedByIds(
-            messageHelpId,
-            errors.message ? errorIds.message : undefined,
-          )}
+          aria-describedby={errors.message ? errorIds.message : undefined}
           required
         />
-        {/* Announce only at the limit — avoids live-region spam on every keystroke. */}
-        <p
-          id={messageLimitAnnounceId}
-          className="contact-form__sr-only"
-          role="status"
-          aria-live="polite"
-        >
-          {atMessageLimit
-            ? `Message character limit reached (${MESSAGE_MAX_LENGTH}).`
-            : ''}
-        </p>
         {errors.message ? (
           <p
             id={errorIds.message}
