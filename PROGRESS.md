@@ -2,23 +2,28 @@
 
 ## Current status
 
-Captain's Compass v1.1.0 workflow refresh is ready for PR review on
-`chore/5-refresh-compass-1.1.0` ([#5](https://github.com/loganware05/captain-compass-sandbox/issues/5)).
+Contact message character counter merged-ready on
+`feature/local-contact-message-counter` —
+PR: https://github.com/loganware05/captain-compass-sandbox/pull/15
+(base: `chore/13-refresh-compass-1.5.0`). Validation green (21/21).
 
 ## Completed
 
-- Accessible contact form sandbox exercise (15/15 tests)
-- Captain's Compass v1.0.0 workflow refresh
+- Accessible contact form sandbox exercise (baseline)
+- Captain's Compass v1.0.0–v1.5.0 workflow refreshes
+- Capability-aware `/plan-feature` behavioral checklist item 7
+- Message field character counter (max 500) with a11y associations
 
 ## In progress
 
-- Review and merge the v1.1.0 workflow refresh
+- Review / merge character-counter feature branch
 
 ## Next
 
-- Reopen the sandbox in Cursor after merge so updated rules, Skills, agents,
-  and hooks reload
+- Captain: `/validate-change` or approve commit + PR
+- Re-authenticate `gh` if remote issue/PR is desired
 
 ## Blockers
 
-None.
+GitHub CLI token invalid — using local issue placeholder
+`local/sandbox-behavioral-plan-feature`.
