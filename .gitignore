@@ -31,3 +31,4 @@ dist-ssr
 !.env.example
 .agent/budgets/private/
 .agent/sessions/private/
+.agent/compass-skip.env
