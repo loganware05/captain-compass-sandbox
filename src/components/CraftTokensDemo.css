@@ -1,0 +1,205 @@
+.craft-tokens {
+  --craft-ink: #12263a;
+  --craft-paper: #f3efe6;
+  --craft-sea: #1f6f8b;
+  --craft-sand: #c4a35a;
+  --craft-signal: #d97745;
+  --craft-mist: rgba(18, 38, 58, 0.08);
+  --craft-display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
+    serif;
+  --craft-body: "Source Sans 3", "Segoe UI", sans-serif;
+
+  position: relative;
+  isolation: isolate;
+  margin: 0;
+  padding: 3.5rem 1.25rem 4rem;
+  color: var(--craft-ink);
+  background:
+    radial-gradient(120% 80% at 10% 0%, rgba(31, 111, 139, 0.18), transparent 55%),
+    linear-gradient(165deg, #efe8d8 0%, var(--craft-paper) 45%, #e7f0f3 100%);
+  overflow: hidden;
+}
+
+.craft-tokens__atmosphere {
+  position: absolute;
+  inset: -20% -10% auto;
+  height: 70%;
+  background:
+    radial-gradient(circle at 80% 20%, rgba(196, 163, 90, 0.28), transparent 42%),
+    radial-gradient(circle at 20% 60%, rgba(217, 119, 69, 0.16), transparent 40%);
+  pointer-events: none;
+  z-index: 0;
+  animation: craft-drift 14s ease-in-out infinite alternate;
+}
+
+.craft-tokens__content {
+  position: relative;
+  z-index: 1;
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.craft-tokens__eyebrow {
+  margin: 0 0 0.5rem;
+  font: 600 0.8rem/1.2 var(--craft-body);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--craft-sea);
+}
+
+.craft-tokens h2 {
+  margin: 0 0 0.75rem;
+  font: 600 2.35rem/1.1 var(--craft-display);
+  letter-spacing: -0.02em;
+  color: var(--craft-ink);
+  animation: craft-rise 0.7s ease-out both;
+}
+
+.craft-tokens__lede {
+  margin: 0 0 1.75rem;
+  max-width: 36rem;
+  font: 400 1.05rem/1.5 var(--craft-body);
+  color: rgba(18, 38, 58, 0.82);
+  animation: craft-rise 0.7s ease-out 0.08s both;
+}
+
+.craft-tokens__stage {
+  display: grid;
+  gap: 1rem;
+  justify-items: start;
+  margin-bottom: 1.75rem;
+  padding: 1.25rem 1.35rem;
+  border: 1px solid rgba(18, 38, 58, 0.12);
+  background: color-mix(in srgb, var(--craft-active) 12%, white);
+  box-shadow: 0 18px 40px var(--craft-mist);
+  transition: background 0.35s ease, border-color 0.35s ease;
+  animation: craft-rise 0.7s ease-out 0.16s both;
+}
+
+.craft-tokens__stage-label {
+  margin: 0;
+  font: 500 0.95rem/1.4 var(--craft-body);
+}
+
+.craft-tokens__stage-label code,
+.craft-tokens__swatch code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.85em;
+}
+
+.craft-tokens__cta {
+  appearance: none;
+  border: 0;
+  border-radius: 0.2rem;
+  padding: 0.7rem 1.1rem;
+  font: 600 0.95rem/1.2 var(--craft-body);
+  color: #fff;
+  background: var(--craft-active);
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.craft-tokens__cta:hover,
+.craft-tokens__cta:focus-visible {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+}
+
+.craft-tokens__cta:focus-visible,
+.craft-tokens__swatch:focus-visible {
+  outline: 3px solid var(--craft-ink);
+  outline-offset: 3px;
+}
+
+.craft-tokens__swatches {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.65rem;
+  animation: craft-rise 0.7s ease-out 0.24s both;
+}
+
+.craft-tokens__swatch {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid rgba(18, 38, 58, 0.14);
+  background: rgba(255, 255, 255, 0.55);
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+
+.craft-tokens__swatch:hover {
+  transform: translateX(2px);
+  border-color: rgba(18, 38, 58, 0.28);
+}
+
+.craft-tokens__swatch.is-selected {
+  border-color: var(--craft-sea);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: inset 3px 0 0 var(--craft-sea);
+}
+
+.craft-tokens__chip {
+  width: 2rem;
+  height: 2rem;
+  flex: 0 0 auto;
+  border: 1px solid rgba(18, 38, 58, 0.2);
+}
+
+.craft-tokens__swatch-text {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.craft-tokens__swatch-label {
+  font: 600 0.95rem/1.2 var(--craft-body);
+}
+
+@keyframes craft-rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes craft-drift {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(-2%, 3%, 0) scale(1.04);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .craft-tokens__atmosphere,
+  .craft-tokens h2,
+  .craft-tokens__lede,
+  .craft-tokens__stage,
+  .craft-tokens__swatches,
+  .craft-tokens__cta,
+  .craft-tokens__swatch {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .craft-tokens {
+    padding: 2.5rem 1rem 3rem;
+  }
+
+  .craft-tokens h2 {
+    font-size: 1.85rem;
+  }
+}
