@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import ContactForm from './components/ContactForm'
+import CraftTokensDemo from './components/CraftTokensDemo'
 import './App.css'
 
 function App() {
@@ -30,6 +31,10 @@ function App() {
           Count is {count}
         </button>
       </section>
+
+      <div className="ticks"></div>
+
+      <CraftTokensDemo />
 
       <div className="ticks"></div>
 
