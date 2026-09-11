@@ -1,0 +1,15 @@
+{
+  "run_id": "NS-SKILL-001",
+  "kind": "northstar-followup-closeout",
+  "followup": "m25-agent-router-wakeability",
+  "linear_issue": "OVA-19",
+  "origin_experience": "OVA-17",
+  "control_pr": 134,
+  "control_merge_commit": "69e949413adb87d608dcce62beaeacc17ee63bda",
+  "sandbox_pr": 48,
+  "sandbox_merge_commit": "7404066a7db43752c2e71a0748d568d9cdc615ca",
+  "closed_at": "2026-09-11T18:38:00Z",
+  "lifecycle_stage": "AVAILABLE_SKILL",
+  "approved_for_execution": false,
+  "markdown_path": ".agent/learning-runs/NS-SKILL-001/16-m25-wakeability-closeout.md"
+}
