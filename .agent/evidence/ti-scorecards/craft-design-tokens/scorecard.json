@@ -1,0 +1,31 @@
+{
+  "approved_for_execution": false,
+  "auto_install": false,
+  "candidate_id": "craft-design-tokens",
+  "clone_or_exec": false,
+  "evidence_paths": [
+    ".agent/evidence/ti-scorecards/craft-design-tokens/security-review.md",
+    ".agent/evidence/ti-scorecards/craft-design-tokens/dependency-supply-chain.md"
+  ],
+  "full_name": "example-org/craft-design-tokens",
+  "gates": {
+    "dependency-supply-chain": "pass",
+    "security-review": "pass",
+    "starred_provenance": "pass"
+  },
+  "kind": "ti-usefulness-scorecard",
+  "linear_issues": ["OVA-9", "OVA-10"],
+  "notes": "Metadata-only scorecard for NS-SKILL-001 retrospective-validation. Does not clone or execute the starred repo. Pass for draft proposal staging only. Skill drafts may proceed after these evidence artifacts exist; live install remains Captain-gated. NOT captain-approved for skill install.",
+  "required_evidence_kinds": [
+    "security-review",
+    "dependency-supply-chain"
+  ],
+  "run_id": "NS-SKILL-001",
+  "schema_version": "m23-v1",
+  "scored_at": "2026-09-11T05:25:58Z",
+  "star_category": "design-system",
+  "starred_provenance": true,
+  "usefulness_labels": [
+    "design-system"
+  ]
+}

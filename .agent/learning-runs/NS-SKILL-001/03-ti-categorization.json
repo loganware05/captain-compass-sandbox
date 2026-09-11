@@ -1,0 +1,45 @@
+{
+  "kind": "ti-categorization-reconstruction",
+  "run_id": "NS-SKILL-001",
+  "linear_issue": "OVA-8",
+  "reconstructed_at": "2026-09-11T05:25:58Z",
+  "mode": "retrospective-validation",
+  "objective": "design system craft tokens ui primitives",
+  "category_filter": "design-system",
+  "source": "ti-cache",
+  "starred_provenance_required": true,
+  "approved_for_execution": false,
+  "auto_install": false,
+  "clone_or_exec": false,
+  "default_categories": [
+    "frontend-ui",
+    "design-system",
+    "backend-library",
+    "devtool",
+    "ml-data",
+    "other"
+  ],
+  "selected_candidates": [
+    {
+      "rank": 1,
+      "full_name": "example-org/craft-design-tokens",
+      "candidate_id": "github-stars-example-org-craft-design-tokens",
+      "star_category": "design-system",
+      "category_rationale": "Fixture Star labeled design-system; matches objective for craft/design tokens and UI primitives. Used as metadata-only discovery signal for M23 sandbox craft-tokens experiment.",
+      "discovery_signal": "github-stars:example-org/craft-design-tokens|category:design-system",
+      "starred_provenance": true,
+      "approved_for_execution": false,
+      "clone_or_exec": false,
+      "html_url": "https://github.com/example-org/craft-design-tokens",
+      "notes": "Metadata only — never cloned. Inspiration for in-repo CSS craft tokens in captain-compass-sandbox."
+    }
+  ],
+  "rejected_or_out_of_scope": [
+    {
+      "note": "Non-design-system fixture Stars (frontend-ui, backend-library, ml-data) were not selected for this run's category filter."
+    }
+  ],
+  "control_revision_cited": "7ecd84a8a51323e715b29e71f608e0fdab6780d5",
+  "product_revision_cited": "adff1e457402f787126fe17a75d44b02d8d51bcb",
+  "notes": "Retrospective reconstruction of TI categorization for NS-SKILL-001. Does not claim live Stars API results. Does not set Captain Skill approval."
+}
