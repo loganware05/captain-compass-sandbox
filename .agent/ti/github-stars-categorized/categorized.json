@@ -1,0 +1,114 @@
+{
+  "categorized_at": "2026-09-11T19:21:52Z",
+  "model": {
+    "categories": [
+      "frontend-ui",
+      "design-system",
+      "backend-library",
+      "ml-data"
+    ],
+    "kind": "naive-bayes-manual-labels-v1",
+    "trained_at": "2026-09-11T19:21:52Z",
+    "trained_from": 5
+  },
+  "record_count": 4,
+  "records": [
+    {
+      "description": "Accessible React form patterns with ARIA live regions",
+      "from_github_stars": true,
+      "full_name": "example-org/accessible-react-forms",
+      "html_url": "https://github.com/example-org/accessible-react-forms",
+      "id": 101,
+      "provenance": {
+        "source": "fixtures:github-stars-recorded",
+        "starred": true,
+        "starred_provenance": true
+      },
+      "star_category": "frontend-ui",
+      "star_category_confidence": 0.0308,
+      "star_category_model": "naive-bayes-manual-labels-v1",
+      "stargazers_count": 128,
+      "starred": true,
+      "starred_provenance": true,
+      "ti_source": "fixtures:github-stars-recorded",
+      "topics": [
+        "react",
+        "accessibility",
+        "forms"
+      ]
+    },
+    {
+      "description": "PDF generation utilities for Node.js services",
+      "from_github_stars": true,
+      "full_name": "example-org/pdf-kit-node",
+      "html_url": "https://github.com/example-org/pdf-kit-node",
+      "id": 202,
+      "provenance": {
+        "source": "fixtures:github-stars-recorded",
+        "starred": true,
+        "starred_provenance": true
+      },
+      "star_category": "backend-library",
+      "star_category_confidence": 0.032,
+      "star_category_model": "naive-bayes-manual-labels-v1",
+      "stargazers_count": 89,
+      "starred": true,
+      "starred_provenance": true,
+      "ti_source": "fixtures:github-stars-recorded",
+      "topics": [
+        "nodejs",
+        "pdf",
+        "utilities"
+      ]
+    },
+    {
+      "description": "Quantum circuit simulation library",
+      "from_github_stars": true,
+      "full_name": "example-org/unrelated-quantum",
+      "html_url": "https://github.com/example-org/unrelated-quantum",
+      "id": 303,
+      "provenance": {
+        "source": "fixtures:github-stars-recorded",
+        "starred": true,
+        "starred_provenance": true
+      },
+      "star_category": "ml-data",
+      "star_category_confidence": 0.0317,
+      "star_category_model": "naive-bayes-manual-labels-v1",
+      "stargazers_count": 42,
+      "starred": true,
+      "starred_provenance": true,
+      "ti_source": "fixtures:github-stars-recorded",
+      "topics": [
+        "quantum",
+        "simulation"
+      ]
+    },
+    {
+      "description": "Craft design tokens and UI primitives for consistent product surfaces",
+      "from_github_stars": true,
+      "full_name": "example-org/craft-design-tokens",
+      "html_url": "https://github.com/example-org/craft-design-tokens",
+      "id": 404,
+      "provenance": {
+        "source": "fixtures:github-stars-recorded",
+        "starred": true,
+        "starred_provenance": true
+      },
+      "star_category": "design-system",
+      "star_category_confidence": 0.0298,
+      "star_category_model": "naive-bayes-manual-labels-v1",
+      "stargazers_count": 256,
+      "starred": true,
+      "starred_provenance": true,
+      "ti_source": "fixtures:github-stars-recorded",
+      "topics": [
+        "design-system",
+        "tokens",
+        "css",
+        "frontend"
+      ]
+    }
+  ],
+  "source": "fixtures:github-stars-recorded"
+}

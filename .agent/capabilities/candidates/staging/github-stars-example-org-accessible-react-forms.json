@@ -1,0 +1,34 @@
+{
+  "approved_for_execution": false,
+  "capabilities_provided": [
+    "example",
+    "org",
+    "accessible",
+    "react",
+    "forms"
+  ],
+  "discovery_signal": "github-stars:live:example-org/accessible-react-forms|category:frontend-ui",
+  "evidence_paths": [
+    "/agent/repos/captain-compass-sandbox/.agent/evidence/candidate-sandbox-test/github-stars-example-org-accessible-react-forms/sandbox-test.json",
+    "/agent/repos/captain-compass-sandbox/.agent/evidence/candidate-sandbox-test/github-stars-example-org-accessible-react-forms/summary.md"
+  ],
+  "id": "github-stars-example-org-accessible-react-forms",
+  "kind": "candidate",
+  "lifecycle_stage": "SANDBOX_TESTED",
+  "notes": "[frontend-ui] Live GitHub starred repo \u2014 NOT APPROVED FOR EXECUTION",
+  "provenance": {
+    "skill_slug": "from-stars-example-org-accessible-react-forms",
+    "star_category": "frontend-ui",
+    "star_category_confidence": 0.0308,
+    "starred": true,
+    "starred_provenance": true
+  },
+  "source": {
+    "path": "example-org/accessible-react-forms",
+    "provenance_url": "https://github.com/example-org/accessible-react-forms",
+    "type": "external-candidate"
+  },
+  "starred": true,
+  "starred_provenance": true,
+  "version": "0.1.0"
+}

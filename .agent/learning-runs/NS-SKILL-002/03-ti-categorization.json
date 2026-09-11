@@ -1,0 +1,14 @@
+{
+  "run_id": "NS-SKILL-002",
+  "objective": "accessible react forms",
+  "category_filter": "frontend-ui",
+  "source": "fixtures:github-stars-recorded",
+  "selected": {
+    "full_name": "example-org/accessible-react-forms",
+    "star_category": "frontend-ui",
+    "candidate_id": "github-stars-example-org-accessible-react-forms",
+    "mode": "improve-existing",
+    "target_skill_slug": "react-engineering"
+  },
+  "approved_for_execution": false
+}

@@ -1,0 +1,27 @@
+{
+  "approved_for_execution": false,
+  "auto_apply": false,
+  "candidate_id": "github-stars-example-org-accessible-react-forms",
+  "captain_approval_required": true,
+  "discovery_signal": "github-stars:live:example-org/accessible-react-forms|category:frontend-ui",
+  "evidence_paths": [
+    "/agent/repos/captain-compass-sandbox/.agent/evidence/candidate-sandbox-test/github-stars-example-org-accessible-react-forms/sandbox-test.json",
+    "/agent/repos/captain-compass-sandbox/.agent/evidence/candidate-sandbox-test/github-stars-example-org-accessible-react-forms/summary.md",
+    "/agent/repos/captain-compass-sandbox/.agent/evidence/ti-scorecards/github-stars-example-org-accessible-react-forms/security-review.md",
+    "/agent/repos/captain-compass-sandbox/.agent/evidence/ti-scorecards/github-stars-example-org-accessible-react-forms/dependency-supply-chain.md"
+  ],
+  "kind": "skill-improvement-proposal",
+  "notes": "Proposal only \u2014 Captain-reviewed PR required to edit .cursor/skills/react-engineering/; never auto-apply",
+  "proposed_at": "2026-09-11T19:21:52Z",
+  "similarity": 1.0,
+  "star_category": "frontend-ui",
+  "suggested_changes": [
+    {
+      "action": "append-lesson",
+      "rationale": "Categorized Stars candidate github-stars-example-org-accessible-react-forms is similar (score=1.0) to existing Skill `react-engineering`. Review notes and fold applicable steps; do not clone the starred repo.",
+      "section": "Procedure",
+      "source_notes": "[frontend-ui] Live GitHub starred repo \u2014 NOT APPROVED FOR EXECUTION"
+    }
+  ],
+  "target_skill_slug": "react-engineering"
+}

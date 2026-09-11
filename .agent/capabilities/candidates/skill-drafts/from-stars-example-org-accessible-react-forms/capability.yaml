@@ -1,0 +1,21 @@
+id: from-stars-example-org-accessible-react-forms
+version: "0.1.0"
+kind: skill
+source:
+  type: compass-skill
+  path: .cursor/skills/from-stars-example-org-accessible-react-forms/SKILL.md
+lifecycle_stage: SANDBOX_TESTED
+capabilities_provided:
+  - example
+  - org
+  - accessible
+  - react
+  - forms
+security_sensitivity: medium
+provenance:
+  inferred: false
+  from_candidate: "github-stars-example-org-accessible-react-forms"
+  discovery_signal: "github-stars:live:example-org/accessible-react-forms|category:frontend-ui"
+  captain_approval_required: true
+  starred_provenance_required: true
+notes: Draft from skill-learning-loop — requires Captain-approved PR
