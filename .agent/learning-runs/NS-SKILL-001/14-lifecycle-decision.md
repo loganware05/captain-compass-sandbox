@@ -38,3 +38,7 @@
 OVA-18 closes Run 001’s M7 learn gate. No further lifecycle mutation in this run
 unless Captain opens a new objective (additional Experience toward prove, Skill
 content improve, router improve, or upstream PR).
+
+## Merge
+
+Captain merged PR #46 (`3928e7beecb0678a2e110102ae2a1d3d10f6cd18`) on 2026-09-11. See `15-merge-closeout.md`.
