@@ -1,0 +1,34 @@
+id: craft-tokens-design-system
+version: "0.1.0"
+kind: skill
+source:
+  type: compass-skill
+  path: .cursor/skills/craft-tokens-design-system/SKILL.md
+provenance:
+  authored_by: northstar-learning-loop
+  inferred: false
+  confidence: 0.7
+  from_candidate: github-stars-example-org-craft-design-tokens
+  run_id: NS-SKILL-001
+  captain_decision: .agent/learning-runs/NS-SKILL-001/08-captain-decision.md
+  starred_provenance: true
+lifecycle_stage: AVAILABLE_SKILL
+categories: [design-system, frontend, ui]
+tags:
+  - design-tokens
+  - css-variables
+  - accessibility
+  - sandbox-first
+capabilities_provided:
+  - in-repo-craft-design-tokens
+  - design-system-token-demo
+  - stars-design-system-procedure
+compatible_stacks:
+  - react
+  - web
+security_sensitivity: medium
+agent_affinity:
+  - implementation-agent
+  - accessibility-reviewer
+maturity: available
+confidence: 0.7

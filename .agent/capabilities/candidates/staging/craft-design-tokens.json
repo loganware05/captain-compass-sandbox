@@ -1,0 +1,36 @@
+{
+  "approved_for_execution": false,
+  "capabilities_provided": [
+    "in-repo-craft-design-tokens",
+    "design-system-token-demo",
+    "stars-design-system-procedure"
+  ],
+  "discovery_signal": "github-stars:example-org/craft-design-tokens|category:design-system",
+  "evidence_paths": [
+    ".agent/evidence/ti-scorecards/craft-design-tokens/security-review.md",
+    ".agent/evidence/ti-scorecards/craft-design-tokens/dependency-supply-chain.md",
+    ".agent/evidence/m23-craft-tokens/VALIDATION.md",
+    ".agent/learning-runs/NS-SKILL-001/08-captain-decision.md"
+  ],
+  "full_name": "example-org/craft-design-tokens",
+  "id": "github-stars-example-org-craft-design-tokens",
+  "kind": "candidate",
+  "lifecycle_stage": "SANDBOX_TESTED",
+  "notes": "NS-SKILL-001 retrospective candidate. Captain approved sandbox Skill install 2026-09-11. NOT approved for executing the starred repo.",
+  "provenance": {
+    "run_id": "NS-SKILL-001",
+    "skill_slug": "craft-tokens-design-system",
+    "star_category": "design-system",
+    "starred": true,
+    "starred_provenance": true
+  },
+  "source": {
+    "path": "github.com/example-org/craft-design-tokens",
+    "provenance_url": "https://github.com/example-org/craft-design-tokens",
+    "starred": true,
+    "type": "external-candidate"
+  },
+  "starred": true,
+  "starred_provenance": true,
+  "version": "0.1.0"
+}

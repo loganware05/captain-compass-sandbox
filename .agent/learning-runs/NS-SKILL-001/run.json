@@ -4,6 +4,9 @@
     "OVA-10": ".agent/evidence/ti-scorecards/craft-design-tokens/dependency-supply-chain.md",
     "OVA-11": ".agent/capabilities/candidates/skill-drafts/craft-tokens-design-system/",
     "OVA-12": ".agent/learning-runs/NS-SKILL-001/07-sandbox-reconciliation.md",
+    "OVA-13": ".agent/learning-runs/NS-SKILL-001/08-captain-decision.md",
+    "OVA-14": ".agent/learning-runs/NS-SKILL-001/09-promote-sandbox-available.md",
+    "OVA-15": ".agent/learning-runs/NS-SKILL-001/10-install-sandbox-skill.md",
     "OVA-6": ".agent/learning-runs/NS-SKILL-001/01-provenance.md",
     "OVA-7": ".agent/learning-runs/NS-SKILL-001/02-trusted-stars.md",
     "OVA-8": ".agent/learning-runs/NS-SKILL-001/03-ti-categorization.json",
@@ -16,7 +19,9 @@
   "candidate_install_authority": "captain-only",
   "captain": "Logan Ware",
   "captain_approval_required_for_live_skills": true,
-  "captain_approved_for_skill_install": false,
+  "captain_approved_for_skill_install": true,
+  "captain_decision_at": "2026-09-11T05:37:00Z",
+  "captain_decision_path": ".agent/learning-runs/NS-SKILL-001/08-captain-decision.md",
   "captain_gate": "human-only",
   "category_filter": "design-system",
   "control_repo": "loganware05/captains-compass-cursor",
@@ -29,25 +34,32 @@
   "external_repo_clone_allowed": false,
   "external_repo_execution_allowed": false,
   "historical_pr": "https://github.com/loganware05/captain-compass-sandbox/pull/44",
+  "installed_skill_path": ".cursor/skills/craft-tokens-design-system/",
+  "installed_skill_slug": "craft-tokens-design-system",
   "kind": "skill-learning-run",
   "ledger": {
     "authoritative_approval": false,
     "control_revision": "9ac322abcd5090c0ea261343a41465abe2138e6a",
     "delegated_agent": "bc-05d4594d-fac7-4378-b595-c20e3c006044",
-    "last_synced_at": "2026-09-11T05:31:59Z",
-    "milestone": "M3 \u2014 Draft & Test",
-    "notes": "Linear records state only. Captain approval must exist in GitHub/repository evidence; Linear must not originate CAPTAIN_APPROVED. This run is explicitly NOT captain-approved for skill install.",
+    "last_synced_at": "2026-09-11T05:42:26Z",
+    "milestone": "M5 \u2014 Promote",
+    "notes": "Captain approval recorded in repository evidence (.agent/learning-runs/NS-SKILL-001/08-captain-decision.md). Linear records/links only; does not originate approval. Skill installed sandbox-only; approved_for_execution remains false.",
     "parent_issue_id": "OVA-5",
     "product_revision": "92b5d8d72ab4562d21b8d49425ae94e04442702c",
     "project_id": "c62f65bf-a376-4716-b958-0d874730a391",
     "project_name": "NorthStar Skills Learning Loop",
-    "provider": "linear"
+    "provider": "linear",
+    "repo_captain_approval_path": ".agent/learning-runs/NS-SKILL-001/08-captain-decision.md"
   },
   "lifecycle_scope": {
-    "not_advanced": [
-      "OVA-13",
+    "advanced": [
       "OVA-14",
-      "OVA-15",
+      "OVA-15"
+    ],
+    "captain_approved": [
+      "OVA-13"
+    ],
+    "not_advanced": [
       "OVA-16",
       "OVA-17",
       "OVA-18"
@@ -61,13 +73,13 @@
       "OVA-11",
       "OVA-12"
     ],
-    "stop_before": "OVA-13"
+    "stop_before": "OVA-16"
   },
   "mode": "retrospective-validation",
   "northstar_run_type": "skill_learning",
   "northstar_version": "1.28.0",
-  "not_captain_approved_for_skill_install": true,
-  "notes": "Retrospective-validation reconstruction of M23 craft-tokens work for NS-SKILL-001 (OVA-6..OVA-12 only). Staging + scorecard + Skill draft artifacts only. NOT Captain-approved for Skill install. approved_for_execution remains false. Do not advance OVA-13+.",
+  "not_captain_approved_for_skill_install": false,
+  "notes": "NS-SKILL-001: Captain approved OVA-13 on 2026-09-11. Skill craft-tokens-design-system promoted AVAILABLE_SKILL and installed in sandbox via PR. approved_for_execution remains false. Stop before OVA-16 agent dispatch.",
   "objective": "design system craft tokens ui primitives",
   "promotion_policy": "sandbox-first",
   "ran_at": "2026-09-11T05:25:58Z",

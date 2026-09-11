@@ -4,7 +4,7 @@ kind: skill
 source:
   type: compass-skill
   path: .cursor/skills/craft-tokens-design-system/SKILL.md
-lifecycle_stage: SANDBOX_TESTED
+lifecycle_stage: AVAILABLE_SKILL
 capabilities_provided:
   - in-repo-craft-design-tokens
   - design-system-token-demo
@@ -26,5 +26,6 @@ evidence_paths:
   - .agent/evidence/ti-scorecards/craft-design-tokens/dependency-supply-chain.md
   - .agent/evidence/ti-scorecards/craft-design-tokens/scorecard.json
 approved_for_execution: false
+captain_approved_for_skill_install: true
 auto_install: false
 notes: Draft from NS-SKILL-001 retrospective-validation — requires Captain-approved PR; MUST NOT auto-install
