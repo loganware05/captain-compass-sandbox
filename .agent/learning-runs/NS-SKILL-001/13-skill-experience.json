@@ -1,0 +1,41 @@
+{
+  "run_id": "NS-SKILL-001",
+  "linear_issue": "OVA-17",
+  "linear_parent": "OVA-5",
+  "kind": "northstar-skill-experience",
+  "recorded_at": "2026-09-11T06:10:00Z",
+  "skill": "craft-tokens-design-system",
+  "skill_path": ".cursor/skills/craft-tokens-design-system/",
+  "outcome": "success",
+  "objective_met": true,
+  "selected_agent_id": "bc-05d4594d-fac7-4378-b595-c20e3c006044",
+  "selected_agent_score": 0.9325,
+  "executing_agent_id": "bc-0b8ec108-10ec-4204-a4e4-8bedbf0405fd",
+  "execution_mode": "first_mate_proxy_due_to_selected_agent_unavailable",
+  "execution_branch": "cursor/ova-ns-skill-001-exec-craft-tokens-05fd",
+  "dispatch_authorized": true,
+  "approved_for_execution": false,
+  "star_clone_exec": false,
+  "dependencies_added": false,
+  "verification": {
+    "command": "npm test -- src/components/CraftTokensDemo.test.tsx",
+    "passed": true,
+    "tests": 4
+  },
+  "changes": [
+    "src/components/CraftTokensDemo.tsx",
+    "src/components/CraftTokensDemo.css",
+    "src/components/CraftTokensDemo.test.tsx"
+  ],
+  "skill_materially_helped": true,
+  "selection_correct_for_scoring": true,
+  "selection_wakeable_at_dispatch": false,
+  "failed_assumptions": [
+    "Selected historical agent pin would be wakeable via MCP after Captain dispatch approval"
+  ],
+  "reusable_improvements": [
+    "Re-check live cloud-agent wakeability before treating availability=1.0 as dispatch-ready"
+  ],
+  "ova18_recommendation": "retain",
+  "markdown_path": ".agent/learning-runs/NS-SKILL-001/13-skill-experience.md"
+}

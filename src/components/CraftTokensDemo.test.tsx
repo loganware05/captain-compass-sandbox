@@ -32,6 +32,32 @@ describe('CraftTokensDemo', () => {
     ).toBeTruthy()
   })
 
+  it('shows a live CSS usage example for the active token', async () => {
+    const user = userEvent.setup()
+    render(<CraftTokensDemo />)
+
+    expect(
+      screen.getByText(/Token usage — apply/, { exact: false }),
+    ).toHaveTextContent('--craft-sea')
+    expect(screen.getByText(/color: var\(--craft-sea\);/)).toBeTruthy()
+    expect(screen.getByTestId('craft-token-usage-preview')).toHaveTextContent(
+      'Sea surface',
+    )
+
+    await user.click(
+      screen.getByRole('button', {
+        name: 'Select Signal token --craft-signal',
+      }),
+    )
+    expect(
+      screen.getByText(/Token usage — apply/, { exact: false }),
+    ).toHaveTextContent('--craft-signal')
+    expect(screen.getByText(/border-color: var\(--craft-signal\);/)).toBeTruthy()
+    expect(screen.getByTestId('craft-token-usage-preview')).toHaveTextContent(
+      'Signal surface',
+    )
+  })
+
   it('keeps token controls as buttons (not decorative cards)', () => {
     render(<CraftTokensDemo />)
     const buttons = screen.getAllByRole('button')

@@ -40,17 +40,20 @@
   "captain_approval_evidence": ".agent/learning-runs/NS-SKILL-001/08-captain-decision.md",
   "captain_approval_required": true,
   "captain_approval_verified": true,
-  "dispatch_authorized": false,
-  "dispatch_status": "scored_awaiting_captain_dispatch_authorization",
+  "dispatch_authorization_path": ".agent/learning-runs/NS-SKILL-001/12-dispatch-authorization.md",
+  "dispatch_authorized": true,
+  "dispatch_authorized_at": "2026-09-11T06:04:26Z",
+  "dispatch_status": "executed_via_first_mate_proxy",
   "eligible_agent_ids": [
     "bc-05d4594d-fac7-4378-b595-c20e3c006044"
   ],
+  "executing_agent_id": "bc-0b8ec108-10ec-4204-a4e4-8bedbf0405fd",
   "ineligible_agent_ids": [
     "bc-registry-stub-control-only-0001",
     "bc-registry-stub-inactive-0002"
   ],
   "linear_issue": "OVA-16",
-  "notes": "OVA-16 scoring complete. Dispatch intentionally withheld until Captain authorizes launching the selected Cursor agent with the prepared packet.",
+  "notes": "OVA-16 scoring + Captain dispatch authorization complete. Selected agent bc-05d4594d-\u2026 not wakeable via MCP; First Mate bc-0b8ec108-\u2026 executed objective with dual attribution. Experience in 13-skill-experience.*",
   "objective": {
     "approved_for_execution_ti": false,
     "base_branch": "cursor/ova-ns-skill-001-artifacts-05fd",
@@ -85,5 +88,6 @@
     "historical_success": 0.15,
     "repository_familiarity": 0.15,
     "skill_match": 0.3
-  }
+  },
+  "experience_path": ".agent/learning-runs/NS-SKILL-001/13-skill-experience.md"
 }

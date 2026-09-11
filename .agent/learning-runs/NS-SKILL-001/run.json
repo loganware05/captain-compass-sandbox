@@ -12,7 +12,9 @@
     "OVA-7": ".agent/learning-runs/NS-SKILL-001/02-trusted-stars.md",
     "OVA-8": ".agent/learning-runs/NS-SKILL-001/03-ti-categorization.json",
     "OVA-9": ".agent/evidence/ti-scorecards/craft-design-tokens/security-review.md",
-    "OVA-9_OVA-10_scorecard": ".agent/evidence/ti-scorecards/craft-design-tokens/scorecard.json"
+    "OVA-9_OVA-10_scorecard": ".agent/evidence/ti-scorecards/craft-design-tokens/scorecard.json",
+    "OVA-16_dispatch_auth": ".agent/learning-runs/NS-SKILL-001/12-dispatch-authorization.md",
+    "OVA-17": ".agent/learning-runs/NS-SKILL-001/13-skill-experience.md"
   },
   "auto_install": false,
   "auto_install_allowed": false,
@@ -42,9 +44,9 @@
     "authoritative_approval": false,
     "control_revision": "9ac322abcd5090c0ea261343a41465abe2138e6a",
     "delegated_agent": "bc-05d4594d-fac7-4378-b595-c20e3c006044",
-    "last_synced_at": "2026-09-11T05:51:32Z",
-    "milestone": "M6 \u2014 Execute",
-    "notes": "OVA-16 router scoring complete; dispatch_authorized=false. Linear records only. Captain may authorize dispatch of selected agent.",
+    "last_synced_at": "2026-09-11T06:10:00Z",
+    "milestone": "M7 \u2014 Learn",
+    "notes": "OVA-16 dispatched and executed via First Mate proxy; OVA-17 Experience recorded. Linear records only. Stop before OVA-18 retain/improve/prove/retire (Captain).",
     "parent_issue_id": "OVA-5",
     "product_revision": "92b5d8d72ab4562d21b8d49425ae94e04442702c",
     "project_id": "c62f65bf-a376-4716-b958-0d874730a391",
@@ -56,16 +58,16 @@
     "advanced": [
       "OVA-14",
       "OVA-15",
-      "OVA-16"
+      "OVA-16",
+      "OVA-17"
     ],
     "captain_approved": [
       "OVA-13"
     ],
     "not_advanced": [
-      "OVA-17",
       "OVA-18"
     ],
-    "ova16_status": "scored_awaiting_dispatch_authorization",
+    "ova16_status": "dispatched_executed_via_first_mate_proxy",
     "reconstructed": [
       "OVA-6",
       "OVA-7",
@@ -75,13 +77,13 @@
       "OVA-11",
       "OVA-12"
     ],
-    "stop_before": "OVA-17"
+    "stop_before": "OVA-18"
   },
   "mode": "retrospective-validation",
   "northstar_run_type": "skill_learning",
   "northstar_version": "1.28.0",
   "not_captain_approved_for_skill_install": false,
-  "notes": "NS-SKILL-001: Captain approved OVA-13 on 2026-09-11. Skill craft-tokens-design-system promoted AVAILABLE_SKILL and installed in sandbox via PR. approved_for_execution remains false. Stop before OVA-16 agent dispatch.",
+  "notes": "NS-SKILL-001: Captain approved OVA-13 and dispatch. Skill executed on CraftTokensDemo. approved_for_execution remains false. Stop before OVA-18.",
   "objective": "design system craft tokens ui primitives",
   "promotion_policy": "sandbox-first",
   "ran_at": "2026-09-11T05:25:58Z",
@@ -100,11 +102,15 @@
   ],
   "routing": {
     "decision_path": ".agent/learning-runs/NS-SKILL-001/11-agent-routing.json",
-    "dispatch_authorized": false,
+    "dispatch_authorized": true,
     "dispatch_packet_path": ".agent/learning-runs/NS-SKILL-001/11-dispatch-packet.json",
+    "dispatch_authorization_path": ".agent/learning-runs/NS-SKILL-001/12-dispatch-authorization.md",
     "router_version": "northstar.agent_router.v1",
     "scored_at": "2026-09-11T05:51:32Z",
-    "selected_agent_id": "bc-05d4594d-fac7-4378-b595-c20e3c006044"
+    "selected_agent_id": "bc-05d4594d-fac7-4378-b595-c20e3c006044",
+    "executing_agent_id": "bc-0b8ec108-10ec-4204-a4e4-8bedbf0405fd",
+    "execution_mode": "first_mate_proxy_due_to_selected_agent_unavailable",
+    "experience_path": ".agent/learning-runs/NS-SKILL-001/13-skill-experience.md"
   },
   "run_id": "NS-SKILL-001",
   "similarity_threshold": 0.28,

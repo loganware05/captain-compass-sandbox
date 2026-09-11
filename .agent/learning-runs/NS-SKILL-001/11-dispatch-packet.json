@@ -1,4 +1,5 @@
 {
+  "authorized_by": "Logan Ware",
   "base_branch": "cursor/ova-ns-skill-001-artifacts-05fd",
   "captain_approval_evidence": ".agent/learning-runs/NS-SKILL-001/08-captain-decision.md",
   "constraints": [
@@ -9,7 +10,11 @@
     "Keep changes bounded to CraftTokensDemo + tests/docs evidence",
     "Return Experience evidence to NS-SKILL-001 / OVA-17"
   ],
-  "dispatch_authorized": false,
+  "dispatch_authorization_path": ".agent/learning-runs/NS-SKILL-001/12-dispatch-authorization.md",
+  "dispatch_authorized": true,
+  "dispatch_authorized_at": "2026-09-11T06:04:26Z",
+  "executing_agent_id": "bc-0b8ec108-10ec-4204-a4e4-8bedbf0405fd",
+  "execution_branch": "cursor/ova-ns-skill-001-exec-craft-tokens-05fd",
   "kind": "northstar-dispatch-packet",
   "linear_issue": "OVA-16",
   "linear_parent": "OVA-5",
@@ -21,5 +26,13 @@
   "run_id": "NS-SKILL-001",
   "selected_agent_id": "bc-05d4594d-fac7-4378-b595-c20e3c006044",
   "skill_path": ".cursor/skills/craft-tokens-design-system/",
-  "target_branch": "cursor/ova-ns-skill-001-exec-craft-tokens-05fd"
+  "target_branch": "cursor/ova-ns-skill-001-exec-craft-tokens-05fd",
+  "status": "EXECUTED",
+  "executed_at": "2026-09-11T06:10:00Z",
+  "experience_path": ".agent/learning-runs/NS-SKILL-001/13-skill-experience.md",
+  "verification": {
+    "command": "npm test -- src/components/CraftTokensDemo.test.tsx",
+    "passed": true,
+    "tests": 4
+  }
 }
