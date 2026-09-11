@@ -17,7 +17,8 @@
     "OVA-17": ".agent/learning-runs/NS-SKILL-001/13-skill-experience.md",
     "OVA-18": ".agent/learning-runs/NS-SKILL-001/14-lifecycle-decision.md",
     "OVA-18_merge_closeout": ".agent/learning-runs/NS-SKILL-001/15-merge-closeout.md",
-    "merge_closeout": ".agent/learning-runs/NS-SKILL-001/15-merge-closeout.md"
+    "merge_closeout": ".agent/learning-runs/NS-SKILL-001/15-merge-closeout.md",
+    "OVA-19": ".agent/learning-runs/NS-SKILL-001/16-m25-wakeability-closeout.md"
   },
   "auto_install": false,
   "auto_install_allowed": false,
@@ -47,9 +48,9 @@
     "authoritative_approval": false,
     "control_revision": "9ac322abcd5090c0ea261343a41465abe2138e6a",
     "delegated_agent": "bc-05d4594d-fac7-4378-b595-c20e3c006044",
-    "last_synced_at": "2026-09-11T15:50:00Z",
+    "last_synced_at": "2026-09-11T18:38:00Z",
     "milestone": "M7 \u2014 Learn (closed)",
-    "notes": "OVA-18 retain + PR #46 merged to main @ 3928e7b. Run 001 closed. Linear records only.",
+    "notes": "OVA-18 retain + PR #46 merged; M25 wakeability follow-up merged (control #134, sandbox #48). Linear records only.",
     "parent_issue_id": "OVA-5",
     "product_revision": "92b5d8d72ab4562d21b8d49425ae94e04442702c",
     "project_id": "c62f65bf-a376-4716-b958-0d874730a391",
@@ -137,5 +138,12 @@
     "merged_at": "2026-09-11T15:49:44Z",
     "merge_commit": "3928e7beecb0678a2e110102ae2a1d3d10f6cd18",
     "path": ".agent/learning-runs/NS-SKILL-001/15-merge-closeout.md"
+  },
+  "m25_wakeability_followup": {
+    "status": "merged",
+    "linear": "OVA-19",
+    "control_pr": 134,
+    "sandbox_pr": 48,
+    "path": ".agent/learning-runs/NS-SKILL-001/16-m25-wakeability-closeout.md"
   }
 }
