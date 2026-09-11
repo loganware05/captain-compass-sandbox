@@ -1,0 +1,13 @@
+{
+  "authoritative_approval": false,
+  "control_revision": "9ac322abcd5090c0ea261343a41465abe2138e6a",
+  "delegated_agent": "bc-05d4594d-fac7-4378-b595-c20e3c006044",
+  "last_synced_at": "2026-09-11T05:31:59Z",
+  "milestone": "M3 \u2014 Draft & Test",
+  "notes": "Linear records state only. Captain approval must exist in GitHub/repository evidence; Linear must not originate CAPTAIN_APPROVED. This run is explicitly NOT captain-approved for skill install.",
+  "parent_issue_id": "OVA-5",
+  "product_revision": "92b5d8d72ab4562d21b8d49425ae94e04442702c",
+  "project_id": "c62f65bf-a376-4716-b958-0d874730a391",
+  "project_name": "NorthStar Skills Learning Loop",
+  "provider": "linear"
+}
