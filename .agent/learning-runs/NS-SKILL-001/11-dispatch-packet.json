@@ -1,0 +1,25 @@
+{
+  "base_branch": "cursor/ova-ns-skill-001-artifacts-05fd",
+  "captain_approval_evidence": ".agent/learning-runs/NS-SKILL-001/08-captain-decision.md",
+  "constraints": [
+    "Use craft-tokens-design-system Skill procedure",
+    "Do not clone or execute starred repositories",
+    "Do not set approved_for_execution=true",
+    "Do not install Skills into control repo",
+    "Keep changes bounded to CraftTokensDemo + tests/docs evidence",
+    "Return Experience evidence to NS-SKILL-001 / OVA-17"
+  ],
+  "dispatch_authorized": false,
+  "kind": "northstar-dispatch-packet",
+  "linear_issue": "OVA-16",
+  "linear_parent": "OVA-5",
+  "objective": "Using installed Skill craft-tokens-design-system, propose a bounded improvement to src/components/CraftTokensDemo (documentation comment or token usage example) without adding dependencies, without cloning Stars, and with tests still green.",
+  "repository": "loganware05/captain-compass-sandbox",
+  "required_skill": "craft-tokens-design-system",
+  "router_version": "northstar.agent_router.v1",
+  "routing_decision_path": ".agent/learning-runs/NS-SKILL-001/11-agent-routing.json",
+  "run_id": "NS-SKILL-001",
+  "selected_agent_id": "bc-05d4594d-fac7-4378-b595-c20e3c006044",
+  "skill_path": ".cursor/skills/craft-tokens-design-system/",
+  "target_branch": "cursor/ova-ns-skill-001-exec-craft-tokens-05fd"
+}
