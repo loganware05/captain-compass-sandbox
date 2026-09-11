@@ -16,6 +16,8 @@
   "install_target": ".cursor/skills/craft-tokens-design-system/",
   "kind": "available-skill-proposal",
   "lifecycle_stage": "AVAILABLE_SKILL",
-  "notes": "Proposal only \u2014 copy into .cursor/skills/ via Captain-reviewed PR; never auto-install",
-  "skill_slug": "craft-tokens-design-system"
+  "notes": "Captain retained sandbox AVAILABLE_SKILL (OVA-18). Still proposal/install evidence only for control upstream \u2014 never auto-install.",
+  "skill_slug": "craft-tokens-design-system",
+  "lifecycle_decision": "retain",
+  "lifecycle_decision_path": ".agent/learning-runs/NS-SKILL-001/14-lifecycle-decision.md"
 }

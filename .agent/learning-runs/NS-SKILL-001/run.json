@@ -14,7 +14,8 @@
     "OVA-9": ".agent/evidence/ti-scorecards/craft-design-tokens/security-review.md",
     "OVA-9_OVA-10_scorecard": ".agent/evidence/ti-scorecards/craft-design-tokens/scorecard.json",
     "OVA-16_dispatch_auth": ".agent/learning-runs/NS-SKILL-001/12-dispatch-authorization.md",
-    "OVA-17": ".agent/learning-runs/NS-SKILL-001/13-skill-experience.md"
+    "OVA-17": ".agent/learning-runs/NS-SKILL-001/13-skill-experience.md",
+    "OVA-18": ".agent/learning-runs/NS-SKILL-001/14-lifecycle-decision.md"
   },
   "auto_install": false,
   "auto_install_allowed": false,
@@ -44,9 +45,9 @@
     "authoritative_approval": false,
     "control_revision": "9ac322abcd5090c0ea261343a41465abe2138e6a",
     "delegated_agent": "bc-05d4594d-fac7-4378-b595-c20e3c006044",
-    "last_synced_at": "2026-09-11T06:10:00Z",
-    "milestone": "M7 \u2014 Learn",
-    "notes": "OVA-16 dispatched and executed via First Mate proxy; OVA-17 Experience recorded. Linear records only. Stop before OVA-18 retain/improve/prove/retire (Captain).",
+    "last_synced_at": "2026-09-11T15:43:00Z",
+    "milestone": "M7 \u2014 Learn (closed)",
+    "notes": "OVA-18 Captain retain: craft-tokens-design-system remains sandbox AVAILABLE_SKILL. Run 001 closed. No upstream/prove/retire. Linear records only.",
     "parent_issue_id": "OVA-5",
     "product_revision": "92b5d8d72ab4562d21b8d49425ae94e04442702c",
     "project_id": "c62f65bf-a376-4716-b958-0d874730a391",
@@ -59,14 +60,14 @@
       "OVA-14",
       "OVA-15",
       "OVA-16",
-      "OVA-17"
-    ],
-    "captain_approved": [
-      "OVA-13"
-    ],
-    "not_advanced": [
+      "OVA-17",
       "OVA-18"
     ],
+    "captain_approved": [
+      "OVA-13",
+      "OVA-18"
+    ],
+    "not_advanced": [],
     "ova16_status": "dispatched_executed_via_first_mate_proxy",
     "reconstructed": [
       "OVA-6",
@@ -77,13 +78,15 @@
       "OVA-11",
       "OVA-12"
     ],
-    "stop_before": "OVA-18"
+    "stop_before": null,
+    "ova18_status": "retain",
+    "run_status": "closed_retained"
   },
   "mode": "retrospective-validation",
   "northstar_run_type": "skill_learning",
   "northstar_version": "1.28.0",
   "not_captain_approved_for_skill_install": false,
-  "notes": "NS-SKILL-001: Captain approved OVA-13 and dispatch. Skill executed on CraftTokensDemo. approved_for_execution remains false. Stop before OVA-18.",
+  "notes": "NS-SKILL-001 closed: Captain retained sandbox Skill. approved_for_execution remains false. No control-repo upstream in this run.",
   "objective": "design system craft tokens ui primitives",
   "promotion_policy": "sandbox-first",
   "ran_at": "2026-09-11T05:25:58Z",
@@ -116,5 +119,14 @@
   "similarity_threshold": 0.28,
   "source": "ti-cache",
   "starred_provenance_required": true,
-  "top_n": 1
+  "top_n": 1,
+  "lifecycle_decision": {
+    "decision": "retain",
+    "path": ".agent/learning-runs/NS-SKILL-001/14-lifecycle-decision.md",
+    "decided_at": "2026-09-11T15:43:00Z",
+    "lifecycle_stage": "AVAILABLE_SKILL",
+    "upstream_control_repo": false,
+    "prove": false,
+    "retire": false
+  }
 }

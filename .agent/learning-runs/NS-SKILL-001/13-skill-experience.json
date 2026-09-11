@@ -37,5 +37,8 @@
     "Re-check live cloud-agent wakeability before treating availability=1.0 as dispatch-ready"
   ],
   "ova18_recommendation": "retain",
-  "markdown_path": ".agent/learning-runs/NS-SKILL-001/13-skill-experience.md"
+  "markdown_path": ".agent/learning-runs/NS-SKILL-001/13-skill-experience.md",
+  "ova18_decision": "retain",
+  "ova18_decision_path": ".agent/learning-runs/NS-SKILL-001/14-lifecycle-decision.md",
+  "ova18_decided_at": "2026-09-11T15:43:00Z"
 }

@@ -13,12 +13,19 @@ provenance:
   captain_decision: .agent/learning-runs/NS-SKILL-001/08-captain-decision.md
   starred_provenance: true
 lifecycle_stage: AVAILABLE_SKILL
+lifecycle_decision:
+  run_id: NS-SKILL-001
+  decision: retain
+  decided_at: "2026-09-11T15:43:00Z"
+  artifact: .agent/learning-runs/NS-SKILL-001/14-lifecycle-decision.md
+  linear_issue: OVA-18
 categories: [design-system, frontend, ui]
 tags:
   - design-tokens
   - css-variables
   - accessibility
   - sandbox-first
+  - retained
 capabilities_provided:
   - in-repo-craft-design-tokens
   - design-system-token-demo
@@ -31,4 +38,4 @@ agent_affinity:
   - implementation-agent
   - accessibility-reviewer
 maturity: available
-confidence: 0.7
+confidence: 0.75

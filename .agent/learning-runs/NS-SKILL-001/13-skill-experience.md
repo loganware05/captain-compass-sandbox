@@ -68,8 +68,9 @@ passes should discount or re-check live agent wakeability before marking
 - Code: `src/components/CraftTokensDemo.{tsx,css,test.tsx}`
 - Skill: `.cursor/skills/craft-tokens-design-system/SKILL.md`
 
-## Recommendation for OVA-18 (awaiting Captain)
+## Recommendation for OVA-18
 
-Default lean: **Retain** Skill in sandbox AVAILABLE_SKILL; optionally **Improve**
-router availability checks. Do **not** retire. Do **not** promote to control
-repo without a separate Captain-reviewed upstream PR.
+**Captain decision (2026-09-11):** **Retain** sandbox AVAILABLE_SKILL.
+See `.agent/learning-runs/NS-SKILL-001/14-lifecycle-decision.md`.
+Router wakeability improve remains a deferred follow-up. No prove / retire /
+control-repo upstream in this run.
