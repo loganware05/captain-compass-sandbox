@@ -1,16 +1,27 @@
 {
   "schema_version": "northstar.agent_registry.v1",
-  "updated_at": "2026-09-11T05:49:00Z",
-  "notes": "Register Cursor agents with categories, repo allowlists, and status before routing. Stubs below are intentionally ineligible to prove hard filters (not dispatch targets).",
+  "updated_at": "2026-09-11T18:30:00Z",
+  "notes": "Register Cursor agents with categories, repo allowlists, and status before routing. Stubs below are intentionally ineligible to prove hard filters (not dispatch targets). Wakeability fields required for northstar.agent_router.v1 (M25).",
   "agents": [
     {
       "id": "bc-05d4594d-fac7-4378-b595-c20e3c006044",
       "display_name": "NorthStar sandbox integration generalist",
       "status": "active",
       "role": "integration-generalist",
-      "categories": ["frontend-ui", "design-system", "backend-library", "devtool", "ml-data", "other"],
-      "repository_allowlist": ["loganware05/captain-compass-sandbox"],
-      "skills_installed_scope": ["sandbox"],
+      "categories": [
+        "frontend-ui",
+        "design-system",
+        "backend-library",
+        "devtool",
+        "ml-data",
+        "other"
+      ],
+      "repository_allowlist": [
+        "loganware05/captain-compass-sandbox"
+      ],
+      "skills_installed_scope": [
+        "sandbox"
+      ],
       "autonomy_budget_ok": true,
       "availability": 1.0,
       "repository_familiarity": {
@@ -21,16 +32,25 @@
         "frontend-ui": 0.75
       },
       "historical_runs": 1,
-      "notes": "M21 pin / initial known Cursor Cloud Agent candidate for sandbox Skills Learning Loop"
+      "notes": "M21 pin / initial known Cursor Cloud Agent candidate for sandbox Skills Learning Loop | M25: marked expired after OVA-17 wake failure; declared availability retained for audit but effective availability gates dispatch.",
+      "wakeability_status": "expired",
+      "cloud_status": "expired"
     },
     {
       "id": "bc-registry-stub-control-only-0001",
       "display_name": "Control-only stub (ineligible)",
       "status": "active",
       "role": "control-plane-specialist",
-      "categories": ["devtool", "other"],
-      "repository_allowlist": ["loganware05/captains-compass-cursor"],
-      "skills_installed_scope": ["control"],
+      "categories": [
+        "devtool",
+        "other"
+      ],
+      "repository_allowlist": [
+        "loganware05/captains-compass-cursor"
+      ],
+      "skills_installed_scope": [
+        "control"
+      ],
       "autonomy_budget_ok": true,
       "availability": 1.0,
       "repository_familiarity": {
@@ -40,16 +60,24 @@
         "devtool": 0.8
       },
       "historical_runs": 0,
-      "notes": "Fails repo allowlist for sandbox execution objectives"
+      "notes": "Fails repo allowlist for sandbox execution objectives",
+      "wakeability_status": "unknown"
     },
     {
       "id": "bc-registry-stub-inactive-0002",
       "display_name": "Inactive stub (ineligible)",
       "status": "inactive",
       "role": "frontend-specialist",
-      "categories": ["frontend-ui", "design-system"],
-      "repository_allowlist": ["loganware05/captain-compass-sandbox"],
-      "skills_installed_scope": ["sandbox"],
+      "categories": [
+        "frontend-ui",
+        "design-system"
+      ],
+      "repository_allowlist": [
+        "loganware05/captain-compass-sandbox"
+      ],
+      "skills_installed_scope": [
+        "sandbox"
+      ],
       "autonomy_budget_ok": true,
       "availability": 0.0,
       "repository_familiarity": {
@@ -59,7 +87,8 @@
         "design-system": 0.6
       },
       "historical_runs": 0,
-      "notes": "Fails active/availability hard filter"
+      "notes": "Fails active/availability hard filter",
+      "wakeability_status": "expired"
     }
   ]
 }
