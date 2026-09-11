@@ -10,17 +10,23 @@ const TOKEN_SWATCHES = [
 ] as const
 
 /**
- * Bounded M23 UI experiment: in-repo craft design tokens demo.
- * Inspired by starred design-system / frontend-ui discovery signals —
- * not a vendor install and not a third-party clone.
+ * Bounded craft design-tokens demo (Skill: craft-tokens-design-system).
+ * Run: NS-SKILL-001 / OVA-16 dispatch. In-repo CSS variables only —
+ * inspired by starred design-system signals; never clone or install Stars.
  */
 function CraftTokensDemo() {
   const headingId = useId()
+  const usageId = useId()
   const [active, setActive] = useState<(typeof TOKEN_SWATCHES)[number]['name']>(
     '--craft-sea',
   )
   const activeSwatch =
     TOKEN_SWATCHES.find((token) => token.name === active) ?? TOKEN_SWATCHES[2]
+  const usageSnippet = [
+    `color: var(${activeSwatch.name});`,
+    `border-color: var(${activeSwatch.name});`,
+    `background: color-mix(in srgb, var(${activeSwatch.name}) 14%, white);`,
+  ].join('\n')
 
   return (
     <section
@@ -30,7 +36,7 @@ function CraftTokensDemo() {
     >
       <div className="craft-tokens__atmosphere" aria-hidden="true" />
       <div className="craft-tokens__content">
-        <p className="craft-tokens__eyebrow">NorthStar sandbox · M23</p>
+        <p className="craft-tokens__eyebrow">NorthStar sandbox · craft tokens</p>
         <h2 id={headingId}>Craft tokens</h2>
         <p className="craft-tokens__lede">
           A bounded design-system experiment using in-repo CSS variables —
@@ -48,6 +54,28 @@ function CraftTokensDemo() {
             Preview {activeSwatch.label}
           </button>
         </div>
+
+        <figure
+          className="craft-tokens__usage"
+          style={{ ['--craft-active' as string]: `var(${activeSwatch.name})` }}
+          aria-labelledby={usageId}
+        >
+          <figcaption id={usageId} className="craft-tokens__usage-caption">
+            Token usage — apply <code>{activeSwatch.name}</code> in CSS
+          </figcaption>
+          <div className="craft-tokens__usage-body">
+            <pre className="craft-tokens__usage-code">
+              <code>{usageSnippet}</code>
+            </pre>
+            <div
+              className="craft-tokens__usage-preview"
+              data-testid="craft-token-usage-preview"
+              aria-hidden="true"
+            >
+              <span>{activeSwatch.label} surface</span>
+            </div>
+          </div>
+        </figure>
 
         <ul className="craft-tokens__swatches" role="list">
           {TOKEN_SWATCHES.map((token) => {

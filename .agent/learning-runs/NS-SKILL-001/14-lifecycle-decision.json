@@ -1,0 +1,22 @@
+{
+  "run_id": "NS-SKILL-001",
+  "linear_issue": "OVA-18",
+  "linear_parent": "OVA-5",
+  "kind": "northstar-skill-lifecycle-decision",
+  "decided_at": "2026-09-11T15:43:00Z",
+  "captain": "Logan Ware",
+  "captain_utterance": "Retain the sandbox skill and proceed",
+  "skill": "craft-tokens-design-system",
+  "skill_path": ".cursor/skills/craft-tokens-design-system/",
+  "decision": "retain",
+  "lifecycle_stage": "AVAILABLE_SKILL",
+  "improve_skill": false,
+  "improve_router_deferred": true,
+  "prove": false,
+  "retire": false,
+  "upstream_control_repo": false,
+  "approved_for_execution": false,
+  "experience_path": ".agent/learning-runs/NS-SKILL-001/13-skill-experience.md",
+  "markdown_path": ".agent/learning-runs/NS-SKILL-001/14-lifecycle-decision.md",
+  "run_status": "closed_retained"
+}
