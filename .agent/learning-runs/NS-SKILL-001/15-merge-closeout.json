@@ -1,0 +1,17 @@
+{
+  "run_id": "NS-SKILL-001",
+  "kind": "northstar-skill-merge-closeout",
+  "linear_parent": "OVA-5",
+  "lifecycle_decision": "retain",
+  "pr_number": 46,
+  "pr_url": "https://github.com/loganware05/captain-compass-sandbox/pull/46",
+  "pr_state": "MERGED",
+  "merged_at": "2026-09-11T15:49:44Z",
+  "merge_commit": "3928e7beecb0678a2e110102ae2a1d3d10f6cd18",
+  "base_branch": "main",
+  "head_branch": "cursor/ova-ns-skill-001-exec-craft-tokens-05fd",
+  "skill": "craft-tokens-design-system",
+  "lifecycle_stage": "AVAILABLE_SKILL",
+  "approved_for_execution": false,
+  "markdown_path": ".agent/learning-runs/NS-SKILL-001/15-merge-closeout.md"
+}
