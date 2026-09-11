@@ -1,0 +1,31 @@
+id: craft-tokens-design-system
+version: "0.1.0"
+kind: skill
+source:
+  type: compass-skill
+  path: .cursor/skills/craft-tokens-design-system/SKILL.md
+lifecycle_stage: AVAILABLE_SKILL
+capabilities_provided:
+  - in-repo-craft-design-tokens
+  - design-system-token-demo
+  - stars-design-system-procedure
+categories:
+  - design-system
+  - frontend-ui
+security_sensitivity: medium
+provenance:
+  inferred: false
+  from_candidate: "craft-design-tokens"
+  discovery_signal: "github-stars:example-org/craft-design-tokens|category:design-system"
+  captain_approval_required: true
+  starred_provenance_required: true
+  run_id: NS-SKILL-001
+  linear_issue: OVA-11
+evidence_paths:
+  - .agent/evidence/ti-scorecards/craft-design-tokens/security-review.md
+  - .agent/evidence/ti-scorecards/craft-design-tokens/dependency-supply-chain.md
+  - .agent/evidence/ti-scorecards/craft-design-tokens/scorecard.json
+approved_for_execution: false
+captain_approved_for_skill_install: true
+auto_install: false
+notes: Draft from NS-SKILL-001 retrospective-validation — requires Captain-approved PR; MUST NOT auto-install

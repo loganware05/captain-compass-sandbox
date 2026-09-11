@@ -1,0 +1,65 @@
+{
+  "schema_version": "northstar.agent_registry.v1",
+  "updated_at": "2026-09-11T05:49:00Z",
+  "notes": "Register Cursor agents with categories, repo allowlists, and status before routing. Stubs below are intentionally ineligible to prove hard filters (not dispatch targets).",
+  "agents": [
+    {
+      "id": "bc-05d4594d-fac7-4378-b595-c20e3c006044",
+      "display_name": "NorthStar sandbox integration generalist",
+      "status": "active",
+      "role": "integration-generalist",
+      "categories": ["frontend-ui", "design-system", "backend-library", "devtool", "ml-data", "other"],
+      "repository_allowlist": ["loganware05/captain-compass-sandbox"],
+      "skills_installed_scope": ["sandbox"],
+      "autonomy_budget_ok": true,
+      "availability": 1.0,
+      "repository_familiarity": {
+        "loganware05/captain-compass-sandbox": 0.85
+      },
+      "category_success": {
+        "design-system": 0.7,
+        "frontend-ui": 0.75
+      },
+      "historical_runs": 1,
+      "notes": "M21 pin / initial known Cursor Cloud Agent candidate for sandbox Skills Learning Loop"
+    },
+    {
+      "id": "bc-registry-stub-control-only-0001",
+      "display_name": "Control-only stub (ineligible)",
+      "status": "active",
+      "role": "control-plane-specialist",
+      "categories": ["devtool", "other"],
+      "repository_allowlist": ["loganware05/captains-compass-cursor"],
+      "skills_installed_scope": ["control"],
+      "autonomy_budget_ok": true,
+      "availability": 1.0,
+      "repository_familiarity": {
+        "loganware05/captains-compass-cursor": 0.9
+      },
+      "category_success": {
+        "devtool": 0.8
+      },
+      "historical_runs": 0,
+      "notes": "Fails repo allowlist for sandbox execution objectives"
+    },
+    {
+      "id": "bc-registry-stub-inactive-0002",
+      "display_name": "Inactive stub (ineligible)",
+      "status": "inactive",
+      "role": "frontend-specialist",
+      "categories": ["frontend-ui", "design-system"],
+      "repository_allowlist": ["loganware05/captain-compass-sandbox"],
+      "skills_installed_scope": ["sandbox"],
+      "autonomy_budget_ok": true,
+      "availability": 0.0,
+      "repository_familiarity": {
+        "loganware05/captain-compass-sandbox": 0.5
+      },
+      "category_success": {
+        "design-system": 0.6
+      },
+      "historical_runs": 0,
+      "notes": "Fails active/availability hard filter"
+    }
+  ]
+}

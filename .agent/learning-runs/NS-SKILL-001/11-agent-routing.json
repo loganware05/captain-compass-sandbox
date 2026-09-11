@@ -1,0 +1,89 @@
+{
+  "agents_considered": [
+    {
+      "agent_id": "bc-05d4594d-fac7-4378-b595-c20e3c006044",
+      "components": {
+        "availability": 1.0,
+        "category_match": 1.0,
+        "context_continuity": 1.0,
+        "historical_success": 0.7,
+        "repository_familiarity": 0.85,
+        "skill_match": 1.0
+      },
+      "display_name": "NorthStar sandbox integration generalist",
+      "eligible": true,
+      "filter_failures": [],
+      "score": 0.9325
+    },
+    {
+      "agent_id": "bc-registry-stub-control-only-0001",
+      "display_name": "Control-only stub (ineligible)",
+      "eligible": false,
+      "filter_failures": [
+        "repository_not_allowlisted",
+        "category_unsupported",
+        "skill_scope_not_sandbox"
+      ],
+      "score": null
+    },
+    {
+      "agent_id": "bc-registry-stub-inactive-0002",
+      "display_name": "Inactive stub (ineligible)",
+      "eligible": false,
+      "filter_failures": [
+        "status!=active",
+        "availability<=0"
+      ],
+      "score": null
+    }
+  ],
+  "captain_approval_evidence": ".agent/learning-runs/NS-SKILL-001/08-captain-decision.md",
+  "captain_approval_required": true,
+  "captain_approval_verified": true,
+  "dispatch_authorized": false,
+  "dispatch_status": "scored_awaiting_captain_dispatch_authorization",
+  "eligible_agent_ids": [
+    "bc-05d4594d-fac7-4378-b595-c20e3c006044"
+  ],
+  "ineligible_agent_ids": [
+    "bc-registry-stub-control-only-0001",
+    "bc-registry-stub-inactive-0002"
+  ],
+  "linear_issue": "OVA-16",
+  "notes": "OVA-16 scoring complete. Dispatch intentionally withheld until Captain authorizes launching the selected Cursor agent with the prepared packet.",
+  "objective": {
+    "approved_for_execution_ti": false,
+    "base_branch": "cursor/ova-ns-skill-001-artifacts-05fd",
+    "captain_approval_path": ".agent/learning-runs/NS-SKILL-001/08-captain-decision.md",
+    "captain_approval_verified": true,
+    "category": "design-system",
+    "objective": "Using installed Skill craft-tokens-design-system, propose a bounded improvement to src/components/CraftTokensDemo (documentation comment or token usage example) without adding dependencies, without cloning Stars, and with tests still green.",
+    "required_skills": [
+      "craft-tokens-design-system"
+    ],
+    "skill_installed": true,
+    "skill_path": ".cursor/skills/craft-tokens-design-system/",
+    "target_branch": "cursor/ova-ns-skill-001-exec-craft-tokens-05fd",
+    "target_repository": "loganware05/captain-compass-sandbox",
+    "title": "Exercise craft-tokens-design-system on CraftTokensDemo",
+    "workstream_id": "NS-SKILL-001-OVA-16"
+  },
+  "registry_path": ".agent/agents/registry.json",
+  "router_version": "northstar.agent_router.v1",
+  "run_id": "NS-SKILL-001",
+  "schema_version": "northstar.agent_router.v1",
+  "scored_at": "2026-09-11T05:51:32Z",
+  "selected_agent_id": "bc-05d4594d-fac7-4378-b595-c20e3c006044",
+  "selected_by": "northstar-first-mate",
+  "selection_rationale": "Only eligible agent after hard filters; highest AgentScore=0.9325 (skill_match=1.0, category_match=1.0, repo_familiarity=0.85, historical_success=0.7, context_continuity=1.0, availability=1.0). Not hardcoded: stubs failed repo allowlist / inactive filters.",
+  "target_branch": "cursor/ova-ns-skill-001-exec-craft-tokens-05fd",
+  "target_repository": "loganware05/captain-compass-sandbox",
+  "weights": {
+    "availability": 0.1,
+    "category_match": 0.2,
+    "context_continuity": 0.1,
+    "historical_success": 0.15,
+    "repository_familiarity": 0.15,
+    "skill_match": 0.3
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "approved_for_execution": false,
+  "candidate_id": "github-stars-example-org-craft-design-tokens",
+  "capabilities_provided": [
+    "in-repo-craft-design-tokens",
+    "design-system-token-demo",
+    "stars-design-system-procedure"
+  ],
+  "captain_approval_required": true,
+  "evidence_paths": [
+    "/agent/repos/captain-compass-sandbox/.agent/evidence/ti-scorecards/craft-design-tokens/security-review.md",
+    "/agent/repos/captain-compass-sandbox/.agent/evidence/ti-scorecards/craft-design-tokens/dependency-supply-chain.md",
+    "/agent/repos/captain-compass-sandbox/.agent/evidence/m23-craft-tokens/VALIDATION.md",
+    "/agent/repos/captain-compass-sandbox/.agent/learning-runs/NS-SKILL-001/08-captain-decision.md"
+  ],
+  "install_target": ".cursor/skills/craft-tokens-design-system/",
+  "kind": "available-skill-proposal",
+  "lifecycle_stage": "AVAILABLE_SKILL",
+  "notes": "Proposal only \u2014 copy into .cursor/skills/ via Captain-reviewed PR; never auto-install",
+  "skill_slug": "craft-tokens-design-system"
+}

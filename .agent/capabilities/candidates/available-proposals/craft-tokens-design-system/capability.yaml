@@ -1,0 +1,17 @@
+id: craft-tokens-design-system
+version: "0.1.0"
+kind: skill
+source:
+  type: compass-skill
+  path: .cursor/skills/craft-tokens-design-system/SKILL.md
+lifecycle_stage: AVAILABLE_SKILL
+capabilities_provided:
+  - in-repo-craft-design-tokens
+  - design-system-token-demo
+  - stars-design-system-procedure
+security_sensitivity: medium
+provenance:
+  inferred: false
+  from_candidate: github-stars-example-org-craft-design-tokens
+  captain_approval_required: true
+notes: AVAILABLE_SKILL proposal — Captain PR required before registry use

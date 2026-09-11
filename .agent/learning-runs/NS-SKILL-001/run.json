@@ -1,0 +1,114 @@
+{
+  "approved_for_execution": false,
+  "artifact_links": {
+    "OVA-10": ".agent/evidence/ti-scorecards/craft-design-tokens/dependency-supply-chain.md",
+    "OVA-11": ".agent/capabilities/candidates/skill-drafts/craft-tokens-design-system/",
+    "OVA-12": ".agent/learning-runs/NS-SKILL-001/07-sandbox-reconciliation.md",
+    "OVA-13": ".agent/learning-runs/NS-SKILL-001/08-captain-decision.md",
+    "OVA-14": ".agent/learning-runs/NS-SKILL-001/09-promote-sandbox-available.md",
+    "OVA-15": ".agent/learning-runs/NS-SKILL-001/10-install-sandbox-skill.md",
+    "OVA-16": ".agent/learning-runs/NS-SKILL-001/11-agent-routing.md",
+    "OVA-6": ".agent/learning-runs/NS-SKILL-001/01-provenance.md",
+    "OVA-7": ".agent/learning-runs/NS-SKILL-001/02-trusted-stars.md",
+    "OVA-8": ".agent/learning-runs/NS-SKILL-001/03-ti-categorization.json",
+    "OVA-9": ".agent/evidence/ti-scorecards/craft-design-tokens/security-review.md",
+    "OVA-9_OVA-10_scorecard": ".agent/evidence/ti-scorecards/craft-design-tokens/scorecard.json"
+  },
+  "auto_install": false,
+  "auto_install_allowed": false,
+  "candidate_count": 1,
+  "candidate_install_authority": "captain-only",
+  "captain": "Logan Ware",
+  "captain_approval_required_for_live_skills": true,
+  "captain_approved_for_skill_install": true,
+  "captain_decision_at": "2026-09-11T05:37:00Z",
+  "captain_decision_path": ".agent/learning-runs/NS-SKILL-001/08-captain-decision.md",
+  "captain_gate": "human-only",
+  "category_filter": "design-system",
+  "control_repo": "loganware05/captains-compass-cursor",
+  "control_revision": "7ecd84a8a51323e715b29e71f608e0fdab6780d5",
+  "delegated_agent_candidate_only": "bc-05d4594d-fac7-4378-b595-c20e3c006044",
+  "draft_requires_security_and_supply_chain": true,
+  "execution_repo": "loganware05/captain-compass-sandbox",
+  "execution_revision": "adff1e457402f787126fe17a75d44b02d8d51bcb",
+  "existing_evidence": ".agent/evidence/m23-craft-tokens/VALIDATION.md",
+  "external_repo_clone_allowed": false,
+  "external_repo_execution_allowed": false,
+  "historical_pr": "https://github.com/loganware05/captain-compass-sandbox/pull/44",
+  "installed_skill_path": ".cursor/skills/craft-tokens-design-system/",
+  "installed_skill_slug": "craft-tokens-design-system",
+  "kind": "skill-learning-run",
+  "ledger": {
+    "authoritative_approval": false,
+    "control_revision": "9ac322abcd5090c0ea261343a41465abe2138e6a",
+    "delegated_agent": "bc-05d4594d-fac7-4378-b595-c20e3c006044",
+    "last_synced_at": "2026-09-11T05:51:32Z",
+    "milestone": "M6 \u2014 Execute",
+    "notes": "OVA-16 router scoring complete; dispatch_authorized=false. Linear records only. Captain may authorize dispatch of selected agent.",
+    "parent_issue_id": "OVA-5",
+    "product_revision": "92b5d8d72ab4562d21b8d49425ae94e04442702c",
+    "project_id": "c62f65bf-a376-4716-b958-0d874730a391",
+    "project_name": "NorthStar Skills Learning Loop",
+    "provider": "linear",
+    "repo_captain_approval_path": ".agent/learning-runs/NS-SKILL-001/08-captain-decision.md"
+  },
+  "lifecycle_scope": {
+    "advanced": [
+      "OVA-14",
+      "OVA-15",
+      "OVA-16"
+    ],
+    "captain_approved": [
+      "OVA-13"
+    ],
+    "not_advanced": [
+      "OVA-17",
+      "OVA-18"
+    ],
+    "ova16_status": "scored_awaiting_dispatch_authorization",
+    "reconstructed": [
+      "OVA-6",
+      "OVA-7",
+      "OVA-8",
+      "OVA-9",
+      "OVA-10",
+      "OVA-11",
+      "OVA-12"
+    ],
+    "stop_before": "OVA-17"
+  },
+  "mode": "retrospective-validation",
+  "northstar_run_type": "skill_learning",
+  "northstar_version": "1.28.0",
+  "not_captain_approved_for_skill_install": false,
+  "notes": "NS-SKILL-001: Captain approved OVA-13 on 2026-09-11. Skill craft-tokens-design-system promoted AVAILABLE_SKILL and installed in sandbox via PR. approved_for_execution remains false. Stop before OVA-16 agent dispatch.",
+  "objective": "design system craft tokens ui primitives",
+  "promotion_policy": "sandbox-first",
+  "ran_at": "2026-09-11T05:25:58Z",
+  "results": [
+    {
+      "approved_for_execution": false,
+      "auto_install": false,
+      "clone_or_exec": false,
+      "draft_dir": ".agent/capabilities/candidates/skill-drafts/craft-tokens-design-system/",
+      "full_name": "example-org/craft-design-tokens",
+      "mode": "draft-new",
+      "scorecard_dir": ".agent/evidence/ti-scorecards/craft-design-tokens/",
+      "skill_slug": "craft-tokens-design-system",
+      "star_category": "design-system"
+    }
+  ],
+  "routing": {
+    "decision_path": ".agent/learning-runs/NS-SKILL-001/11-agent-routing.json",
+    "dispatch_authorized": false,
+    "dispatch_packet_path": ".agent/learning-runs/NS-SKILL-001/11-dispatch-packet.json",
+    "router_version": "northstar.agent_router.v1",
+    "scored_at": "2026-09-11T05:51:32Z",
+    "selected_agent_id": "bc-05d4594d-fac7-4378-b595-c20e3c006044"
+  },
+  "run_id": "NS-SKILL-001",
+  "similarity_threshold": 0.28,
+  "source": "ti-cache",
+  "starred_provenance_required": true,
+  "top_n": 1
+}
