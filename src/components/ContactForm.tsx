@@ -39,18 +39,25 @@ function ContactForm() {
   const messageCounterId = `${formId}-message-counter`
   const messageLimitAnnounceId = `${formId}-message-limit-announce`
   const successHeadingId = `${formId}-success`
+  const errorSummaryId = `${formId}-error-summary`
+  const errorSummaryHeadingId = `${formId}-error-summary-heading`
 
   const nameRef = useRef<HTMLInputElement>(null)
   const emailRef = useRef<HTMLInputElement>(null)
   const messageRef = useRef<HTMLTextAreaElement>(null)
   const successHeadingRef = useRef<HTMLHeadingElement>(null)
+  const errorSummaryRef = useRef<HTMLDivElement>(null)
 
   const [values, setValues] = useState<ContactFormValues>(EMPTY_VALUES)
   const [errors, setErrors] = useState<ContactFormErrors>({})
   const [submitted, setSubmitted] = useState(false)
+  const [showErrorSummary, setShowErrorSummary] = useState(false)
 
   const messageLength = values.message.length
   const atMessageLimit = messageLength >= MESSAGE_MAX_LENGTH
+  const errorEntries = (Object.keys(errors) as ContactField[]).filter(
+    (field) => Boolean(errors[field]),
+  )
 
   const fieldRefs: Record<
     ContactField,
@@ -59,6 +66,12 @@ function ContactForm() {
     name: nameRef,
     email: emailRef,
     message: messageRef,
+  }
+
+  const fieldIds: Record<ContactField, string> = {
+    name: nameId,
+    email: emailId,
+    message: messageId,
   }
 
   const errorIds: Record<ContactField, string> = {
@@ -84,14 +97,20 @@ function ContactForm() {
 
     if (hasContactFormErrors(nextErrors)) {
       setErrors(nextErrors)
+      setShowErrorSummary(true)
       const first = firstErrorField(nextErrors)
-      if (first) {
-        fieldRefs[first].current?.focus()
-      }
+      queueMicrotask(() => {
+        // NS-SKILL-002 lessons 8–9: announce blocking failures, then focus first invalid field.
+        errorSummaryRef.current?.focus()
+        if (first) {
+          fieldRefs[first].current?.focus()
+        }
+      })
       return
     }
 
     setErrors({})
+    setShowErrorSummary(false)
     setSubmitted(true)
     queueMicrotask(() => {
       successHeadingRef.current?.focus()
@@ -101,6 +120,7 @@ function ContactForm() {
   function handleSendAnother() {
     setValues(EMPTY_VALUES)
     setErrors({})
+    setShowErrorSummary(false)
     setSubmitted(false)
     queueMicrotask(() => {
       nameRef.current?.focus()
@@ -135,102 +155,135 @@ function ContactForm() {
 
   return (
     <form className="contact-form" onSubmit={handleSubmit} noValidate>
-      <div className="contact-form__field">
-        <label htmlFor={nameId}>Name</label>
-        <input
-          ref={nameRef}
-          id={nameId}
-          name="name"
-          type="text"
-          autoComplete="name"
-          value={values.name}
-          onChange={(event) => updateField('name', event.target.value)}
-          aria-invalid={errors.name ? true : undefined}
-          aria-describedby={errors.name ? errorIds.name : undefined}
-          required
-        />
-        {errors.name ? (
-          <p id={errorIds.name} className="contact-form__error" role="alert">
-            {errors.name}
-          </p>
-        ) : null}
-      </div>
-
-      <div className="contact-form__field">
-        <label htmlFor={emailId}>Email</label>
-        <input
-          ref={emailRef}
-          id={emailId}
-          name="email"
-          type="email"
-          autoComplete="email"
-          value={values.email}
-          onChange={(event) => updateField('email', event.target.value)}
-          aria-invalid={errors.email ? true : undefined}
-          aria-describedby={errors.email ? errorIds.email : undefined}
-          required
-        />
-        {errors.email ? (
-          <p id={errorIds.email} className="contact-form__error" role="alert">
-            {errors.email}
-          </p>
-        ) : null}
-      </div>
-
-      <div className="contact-form__field">
-        <div className="contact-form__label-row">
-          <label htmlFor={messageId}>Message</label>
-          <p
-            id={messageCounterId}
-            className={
-              atMessageLimit
-                ? 'contact-form__counter contact-form__counter--limit'
-                : 'contact-form__counter'
-            }
-            aria-hidden="true"
-          >
-            {messageLength} / {MESSAGE_MAX_LENGTH}
-          </p>
-        </div>
-        <p id={messageHelpId} className="contact-form__help">
-          Maximum {MESSAGE_MAX_LENGTH} characters.
-        </p>
-        <textarea
-          ref={messageRef}
-          id={messageId}
-          name="message"
-          rows={5}
-          maxLength={MESSAGE_MAX_LENGTH}
-          value={values.message}
-          onChange={(event) => updateField('message', event.target.value)}
-          aria-invalid={errors.message ? true : undefined}
-          aria-describedby={describedByIds(
-            messageHelpId,
-            errors.message ? errorIds.message : undefined,
-          )}
-          required
-        />
-        {/* Announce only at the limit — avoids live-region spam on every keystroke. */}
-        <p
-          id={messageLimitAnnounceId}
-          className="contact-form__sr-only"
-          role="status"
-          aria-live="polite"
+      {showErrorSummary && errorEntries.length > 0 ? (
+        <div
+          ref={errorSummaryRef}
+          id={errorSummaryId}
+          className="contact-form__error-summary"
+          role="alert"
+          aria-live="assertive"
+          tabIndex={-1}
+          aria-labelledby={errorSummaryHeadingId}
         >
-          {atMessageLimit
-            ? `Message character limit reached (${MESSAGE_MAX_LENGTH}).`
-            : ''}
-        </p>
-        {errors.message ? (
-          <p
-            id={errorIds.message}
-            className="contact-form__error"
-            role="alert"
+          <h3
+            id={errorSummaryHeadingId}
+            className="contact-form__error-summary-title"
           >
-            {errors.message}
+            {errorEntries.length === 1
+              ? 'There is 1 problem with this form'
+              : `There are ${errorEntries.length} problems with this form`}
+          </h3>
+          <ul className="contact-form__error-summary-list">
+            {errorEntries.map((field) => (
+              <li key={field}>
+                <a href={`#${fieldIds[field]}`}>{errors[field]}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
+
+      {/* NS-SKILL-002 lesson 10: group related controls with fieldset/legend */}
+      <fieldset className="contact-form__fieldset">
+        <legend className="contact-form__legend">Contact details</legend>
+
+        <div className="contact-form__field">
+          <label htmlFor={nameId}>Name</label>
+          <input
+            ref={nameRef}
+            id={nameId}
+            name="name"
+            type="text"
+            autoComplete="name"
+            value={values.name}
+            onChange={(event) => updateField('name', event.target.value)}
+            aria-invalid={errors.name ? true : undefined}
+            aria-describedby={errors.name ? errorIds.name : undefined}
+            required
+          />
+          {errors.name ? (
+            <p id={errorIds.name} className="contact-form__error" role="alert">
+              {errors.name}
+            </p>
+          ) : null}
+        </div>
+
+        <div className="contact-form__field">
+          <label htmlFor={emailId}>Email</label>
+          <input
+            ref={emailRef}
+            id={emailId}
+            name="email"
+            type="email"
+            autoComplete="email"
+            value={values.email}
+            onChange={(event) => updateField('email', event.target.value)}
+            aria-invalid={errors.email ? true : undefined}
+            aria-describedby={errors.email ? errorIds.email : undefined}
+            required
+          />
+          {errors.email ? (
+            <p id={errorIds.email} className="contact-form__error" role="alert">
+              {errors.email}
+            </p>
+          ) : null}
+        </div>
+
+        <div className="contact-form__field">
+          <div className="contact-form__label-row">
+            <label htmlFor={messageId}>Message</label>
+            <p
+              id={messageCounterId}
+              className={
+                atMessageLimit
+                  ? 'contact-form__counter contact-form__counter--limit'
+                  : 'contact-form__counter'
+              }
+              aria-hidden="true"
+            >
+              {messageLength} / {MESSAGE_MAX_LENGTH}
+            </p>
+          </div>
+          <p id={messageHelpId} className="contact-form__help">
+            Maximum {MESSAGE_MAX_LENGTH} characters.
           </p>
-        ) : null}
-      </div>
+          <textarea
+            ref={messageRef}
+            id={messageId}
+            name="message"
+            rows={5}
+            maxLength={MESSAGE_MAX_LENGTH}
+            value={values.message}
+            onChange={(event) => updateField('message', event.target.value)}
+            aria-invalid={errors.message ? true : undefined}
+            aria-describedby={describedByIds(
+              messageHelpId,
+              errors.message ? errorIds.message : undefined,
+            )}
+            required
+          />
+          {/* Announce only at the limit — avoids live-region spam on every keystroke. */}
+          <p
+            id={messageLimitAnnounceId}
+            className="contact-form__sr-only"
+            role="status"
+            aria-live="polite"
+          >
+            {atMessageLimit
+              ? `Message character limit reached (${MESSAGE_MAX_LENGTH}).`
+              : ''}
+          </p>
+          {errors.message ? (
+            <p
+              id={errorIds.message}
+              className="contact-form__error"
+              role="alert"
+            >
+              {errors.message}
+            </p>
+          ) : null}
+        </div>
+      </fieldset>
 
       <button type="submit" className="contact-form__button">
         Send message
