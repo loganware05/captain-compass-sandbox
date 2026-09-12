@@ -43,3 +43,5 @@ content improve, router improve, or upstream PR).
 ## Merge
 
 Captain merged exec PR #53 (`a0b5581617123cd4c0efaa3330ff36dcbc28c991`) on 2026-09-12. See `15-merge-closeout.md`.
+
+Captain merged retain docs PR #54 and control PROGRESS PR #138 on 2026-09-12. See `16-retain-docs-merge.md`.
