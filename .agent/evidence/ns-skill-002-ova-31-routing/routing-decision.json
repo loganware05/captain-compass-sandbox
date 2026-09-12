@@ -1,0 +1,95 @@
+{
+  "router_version": "northstar.agent_router.v1",
+  "objective": {
+    "title": "NS-SKILL-002: apply accessible React forms lessons via react-engineering Skill",
+    "category": "frontend-ui",
+    "target_repository": "loganware05/captain-compass-sandbox",
+    "required_skills": [
+      "react-engineering"
+    ],
+    "skill_scope": "sandbox",
+    "context_agent_id": "bc-0b8ec108-10ec-4204-a4e4-8bedbf0405fd"
+  },
+  "weights": {
+    "skill_match": 0.3,
+    "category_match": 0.2,
+    "repository_familiarity": 0.15,
+    "historical_success": 0.15,
+    "context_continuity": 0.1,
+    "availability": 0.1
+  },
+  "agents": [
+    {
+      "agent_id": "bc-0b8ec108-10ec-4204-a4e4-8bedbf0405fd",
+      "eligible": true,
+      "filter_failures": [],
+      "components": {
+        "skill_match": 1.0,
+        "category_match": 1.0,
+        "repository_familiarity": 0.9,
+        "historical_success": 0.8,
+        "context_continuity": 1.0,
+        "availability": 1.0
+      },
+      "score": 0.955,
+      "declared_availability": 1.0,
+      "effective_availability": 1.0,
+      "wakeability_status": "wakeable",
+      "wakeability_source": "live_probe"
+    },
+    {
+      "agent_id": "bc-05d4594d-fac7-4378-b595-c20e3c006044",
+      "eligible": false,
+      "filter_failures": [
+        "effective_availability<=0"
+      ],
+      "components": null,
+      "score": null,
+      "declared_availability": 1.0,
+      "effective_availability": 0.0,
+      "wakeability_status": "expired",
+      "wakeability_source": "live_probe"
+    },
+    {
+      "agent_id": "bc-registry-stub-control-only-0001",
+      "eligible": false,
+      "filter_failures": [
+        "repository_not_allowlisted",
+        "category_unsupported",
+        "skill_scope_mismatch"
+      ],
+      "components": null,
+      "score": null,
+      "declared_availability": 1.0,
+      "effective_availability": 0.25,
+      "wakeability_status": "unknown",
+      "wakeability_source": "live_probe"
+    },
+    {
+      "agent_id": "bc-registry-stub-inactive-0002",
+      "eligible": false,
+      "filter_failures": [
+        "status!=active",
+        "effective_availability<=0"
+      ],
+      "components": null,
+      "score": null,
+      "declared_availability": 0.0,
+      "effective_availability": 0.0,
+      "wakeability_status": "unknown",
+      "wakeability_source": "live_probe"
+    }
+  ],
+  "eligible_agent_ids": [
+    "bc-0b8ec108-10ec-4204-a4e4-8bedbf0405fd"
+  ],
+  "selected_agent_id": "bc-0b8ec108-10ec-4204-a4e4-8bedbf0405fd",
+  "selection_rationale": "Highest AgentScore=0.955 for bc-0b8ec108-10ec-4204-a4e4-8bedbf0405fd (wakeability=wakeable/live_probe, effective_availability=1.0).",
+  "dispatch_ready": true,
+  "notes": "Dispatch-ready only when wakeability=wakeable. Expired/unreachable pins are filtered even if declared availability=1.0. Captain may authorize First Mate proxy with dual attribution when the selected agent is not wakeable.",
+  "live_probe": {
+    "enabled": true,
+    "cloud_agents_json": ".agent/evidence/ns-skill-002-ova-31-routing/cloud-agents-live.json",
+    "prefer_probe": true
+  }
+}

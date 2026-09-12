@@ -1,0 +1,36 @@
+{
+  "kind": "northstar-dispatch-packet",
+  "run_id": "NS-SKILL-002",
+  "linear_issue": "OVA-31",
+  "linear_parent": "OVA-20",
+  "router_version": "northstar.agent_router.v1",
+  "routing_decision_path": ".agent/learning-runs/NS-SKILL-002/11-agent-routing.json",
+  "selected_agent_id": "bc-0b8ec108-10ec-4204-a4e4-8bedbf0405fd",
+  "executing_agent_id": null,
+  "dispatch_authorized": false,
+  "dispatch_authorized_at": null,
+  "dispatch_authorization_path": null,
+  "repository": "loganware05/captain-compass-sandbox",
+  "required_skill": "react-engineering",
+  "skill_path": ".cursor/skills/react-engineering/",
+  "objective": "Using installed Skill react-engineering (NS-SKILL-002 accessible-forms lessons), propose a bounded accessibility improvement to a sandbox React form surface without adding dependencies, without cloning Stars, and with tests still green.",
+  "base_branch": "main",
+  "execution_branch": null,
+  "constraints": [
+    "Use react-engineering Skill procedure including NS-SKILL-002 learned accessible-forms steps",
+    "Do not clone or execute starred repositories",
+    "Do not set approved_for_execution=true",
+    "Do not install Skills into control repo",
+    "Keep changes bounded; attach a11y notes under .agent/evidence/ when forms change",
+    "Return Experience evidence to NS-SKILL-002 / OVA-32"
+  ],
+  "m26_live_probe": {
+    "enabled": true,
+    "prefer_probe": true,
+    "cloud_agents_snapshot": ".agent/evidence/ns-skill-002-ova-31-routing/cloud-agents-live.json",
+    "historical_pin_id": "bc-05d4594d-fac7-4378-b595-c20e3c006044",
+    "historical_pin_wakeability": "expired",
+    "selected_wakeability": "wakeable"
+  },
+  "status": "AWAITING_CAPTAIN_DISPATCH_AUTHORIZATION"
+}
