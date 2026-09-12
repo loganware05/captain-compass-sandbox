@@ -1,16 +1,17 @@
 {
   "authoritative_approval": false,
-  "control_revision": "9b8f2e8f5fc1080d379395f3160c4a4801cea55e",
+  "control_revision": "6d78312a8cb5344fd25e883041dab9cfbeb54e86",
   "delegated_agent": null,
-  "last_synced_at": "2026-09-12T18:55:07Z",
-  "milestone": "M7 — Learn (closed)",
-  "notes": "OVA-33 retain; exec PR #53 merged to main @ a0b5581. Run 002 closed. Linear records only.",
+  "last_synced_at": "2026-09-12T19:38:06Z",
+  "milestone": "M7 \u2014 Learn (closed)",
+  "notes": "OVA-33 retain docs #54 + control #138 merged. Run 002 closed_retained. Linear records only.",
   "parent_issue_id": "OVA-20",
-  "product_revision": "a0b5581617123cd4c0efaa3330ff36dcbc28c991",
+  "product_revision": "f64d9425b86c7b0d5076d1db04dfe1c4f39e1328",
   "project_id": "c62f65bf-a376-4716-b958-0d874730a391",
   "project_name": "NorthStar Skills Learning Loop",
   "provider": "linear",
   "repo_captain_approval_path": ".agent/learning-runs/NS-SKILL-002/08-captain-decision.md",
   "lifecycle_decision": "retain",
-  "merge_commit": "a0b5581617123cd4c0efaa3330ff36dcbc28c991"
+  "merge_commit": "a0b5581617123cd4c0efaa3330ff36dcbc28c991",
+  "retain_docs_merge_commit": "f64d9425b86c7b0d5076d1db04dfe1c4f39e1328"
 }

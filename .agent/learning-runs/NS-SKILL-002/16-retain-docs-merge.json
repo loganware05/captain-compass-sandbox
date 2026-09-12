@@ -1,0 +1,22 @@
+{
+  "run_id": "NS-SKILL-002",
+  "kind": "northstar-skill-retain-docs-merge-closeout",
+  "linear_parent": "OVA-20",
+  "lifecycle_decision": "retain",
+  "sandbox_pr_number": 54,
+  "sandbox_pr_url": "https://github.com/loganware05/captain-compass-sandbox/pull/54",
+  "sandbox_pr_state": "MERGED",
+  "sandbox_merged_at": "2026-09-12T19:20:11Z",
+  "sandbox_merge_commit": "f64d9425b86c7b0d5076d1db04dfe1c4f39e1328",
+  "control_pr_number": 138,
+  "control_pr_url": "https://github.com/loganware05/captains-compass-cursor/pull/138",
+  "control_pr_state": "MERGED",
+  "control_merged_at": "2026-09-12T19:23:33Z",
+  "control_merge_commit": "6d78312a8cb5344fd25e883041dab9cfbeb54e86",
+  "skill": "react-engineering",
+  "lifecycle_stage": "AVAILABLE_SKILL",
+  "approved_for_execution": false,
+  "markdown_path": ".agent/learning-runs/NS-SKILL-002/16-retain-docs-merge.md",
+  "confirmed_at": "2026-09-12T19:38:06Z",
+  "captain_utterance": "I've merged #54 and #138. Proceed"
+}
