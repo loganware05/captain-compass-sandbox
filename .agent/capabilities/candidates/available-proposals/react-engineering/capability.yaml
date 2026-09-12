@@ -1,0 +1,19 @@
+id: react-engineering
+version: "0.1.0"
+kind: skill
+source:
+  type: compass-skill
+  path: .cursor/skills/react-engineering/SKILL.md
+lifecycle_stage: AVAILABLE_SKILL
+capabilities_provided:
+  - example
+  - org
+  - accessible
+  - react
+  - forms
+security_sensitivity: medium
+provenance:
+  inferred: false
+  from_candidate: github-stars-example-org-accessible-react-forms
+  captain_approval_required: true
+notes: AVAILABLE_SKILL proposal — Captain PR required before registry use

@@ -1,0 +1,14 @@
+{
+  "applied_at": "2026-09-12T17:43:35Z",
+  "apply_live": true,
+  "approved_for_execution": false,
+  "auto_apply": false,
+  "candidate_id": "github-stars-example-org-accessible-react-forms",
+  "captain_approved": true,
+  "draft_skill_md": ".agent/capabilities/candidates/skill-drafts/react-engineering-from-learning/SKILL.md",
+  "kind": "skill-improvement-applied",
+  "live_written": true,
+  "notes": "Captain-gated apply. Live mutation only when --apply-live was set. Still not an auto-install of new Skills.",
+  "proposal_path": ".agent/capabilities/candidates/skill-improvement-proposals/react-engineering/from-github-stars-example-org-accessible-react-forms.json",
+  "target_skill_slug": "react-engineering"
+}

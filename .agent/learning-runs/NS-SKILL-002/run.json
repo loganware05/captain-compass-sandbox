@@ -1,26 +1,89 @@
 {
   "approved_for_execution": false,
+  "artifact_links": {
+    "OVA-21": ".agent/learning-runs/NS-SKILL-002/01-provenance.md",
+    "OVA-22": ".agent/learning-runs/NS-SKILL-002/02-trusted-stars.md",
+    "OVA-23": ".agent/learning-runs/NS-SKILL-002/03-ti-categorization.json",
+    "OVA-24": ".agent/evidence/ti-scorecards/github-stars-example-org-accessible-react-forms/security-review.md",
+    "OVA-25": ".agent/evidence/ti-scorecards/github-stars-example-org-accessible-react-forms/dependency-supply-chain.md",
+    "OVA-26": ".agent/capabilities/candidates/skill-drafts/from-stars-example-org-accessible-react-forms/",
+    "OVA-27": ".agent/evidence/candidate-sandbox-test/github-stars-example-org-accessible-react-forms/",
+    "OVA-28": ".agent/learning-runs/NS-SKILL-002/08-captain-decision.md",
+    "OVA-29": ".agent/learning-runs/NS-SKILL-002/09-promote-sandbox-available.md",
+    "OVA-30": ".agent/learning-runs/NS-SKILL-002/10-install-sandbox-skill.md",
+    "improvement_proposal": ".agent/capabilities/candidates/skill-improvement-proposals/react-engineering/from-github-stars-example-org-accessible-react-forms.json",
+    "loop_report": ".agent/learning-runs/learning-20260911T192152Z.json"
+  },
   "auto_install": false,
+  "auto_install_allowed": false,
   "candidate_count": 1,
+  "candidate_install_authority": "captain-only",
+  "captain": "Logan Ware",
   "captain_approval_required_for_live_skills": true,
+  "captain_approved_for_skill_install": true,
+  "captain_decision_at": "2026-09-12T17:41:00Z",
+  "captain_decision_path": ".agent/learning-runs/NS-SKILL-002/08-captain-decision.md",
+  "captain_gate": "human-only",
   "category_filter": "frontend-ui",
+  "control_repo": "loganware05/captains-compass-cursor",
+  "control_revision": "99f1b5b504d367a32a4b67e0ff8f0197cebf04b4",
   "draft_requires_security_and_supply_chain": true,
+  "execution_repo": "loganware05/captain-compass-sandbox",
+  "execution_revision": "636c9bc516fe6cb7ec0f28ccd1411cbcc8d98f5c",
+  "external_repo_clone_allowed": false,
+  "external_repo_execution_allowed": false,
+  "install_mode": "improve-existing-apply-live",
+  "installed_skill_path": ".cursor/skills/react-engineering/",
+  "installed_skill_slug": "react-engineering",
   "kind": "skill-learning-run",
   "ledger": {
     "authoritative_approval": false,
     "control_revision": "99f1b5b504d367a32a4b67e0ff8f0197cebf04b4",
     "delegated_agent": null,
-    "last_synced_at": "2026-09-11T19:22:28Z",
+    "last_synced_at": "2026-09-12T17:43:56Z",
     "milestone": null,
-    "notes": "Linear records state only. Captain approval must exist in GitHub/repository evidence; Linear must not originate CAPTAIN_APPROVED.",
+    "notes": "OVA-28 Captain approved in chat; repo evidence canonical. Improve-existing applied to react-engineering. Stop before OVA-31 dispatch.",
     "parent_issue_id": "OVA-20",
     "product_revision": "636c9bc516fe6cb7ec0f28ccd1411cbcc8d98f5c",
     "project_id": "c62f65bf-a376-4716-b958-0d874730a391",
     "project_name": "NorthStar Skills Learning Loop",
-    "provider": "linear"
+    "provider": "linear",
+    "repo_captain_approval_path": ".agent/learning-runs/NS-SKILL-002/08-captain-decision.md"
   },
+  "lifecycle_scope": {
+    "advanced": [
+      "OVA-21",
+      "OVA-22",
+      "OVA-23",
+      "OVA-24",
+      "OVA-25",
+      "OVA-26",
+      "OVA-27",
+      "OVA-28",
+      "OVA-29",
+      "OVA-30"
+    ],
+    "captain_approved": [
+      "OVA-28"
+    ],
+    "not_advanced": [
+      "OVA-31",
+      "OVA-32",
+      "OVA-33"
+    ],
+    "ova28_status": "approved",
+    "ova29_status": "promoted_available_skill",
+    "ova30_status": "applied_live_to_react_engineering",
+    "run_status": "installed_awaiting_dispatch_routing",
+    "stop_before": "OVA-31"
+  },
+  "loop_report_path": ".agent/learning-runs/learning-20260911T192152Z.json",
+  "mode": "live",
+  "northstar_run_type": "skill_learning",
+  "northstar_version": "1.29.1",
   "notes": "Staging + evidence only. Promote live Skills with promote-candidate.sh --captain-approved after Captain review. Skill drafts require security-review + dependency-supply-chain evidence.",
   "objective": "accessible react forms",
+  "promotion_policy": "sandbox-first",
   "ran_at": "2026-09-11T19:21:52Z",
   "results": [
     {
@@ -99,52 +162,5 @@
   "similarity_threshold": 0.28,
   "source": "fixtures",
   "starred_provenance_required": true,
-  "top_n": 1,
-  "northstar_run_type": "skill_learning",
-  "mode": "live",
-  "control_repo": "loganware05/captains-compass-cursor",
-  "control_revision": "99f1b5b504d367a32a4b67e0ff8f0197cebf04b4",
-  "execution_repo": "loganware05/captain-compass-sandbox",
-  "execution_revision": "636c9bc516fe6cb7ec0f28ccd1411cbcc8d98f5c",
-  "northstar_version": "1.29.1",
-  "captain": "Logan Ware",
-  "captain_gate": "human-only",
-  "candidate_install_authority": "captain-only",
-  "auto_install_allowed": false,
-  "external_repo_clone_allowed": false,
-  "external_repo_execution_allowed": false,
-  "promotion_policy": "sandbox-first",
-  "lifecycle_scope": {
-    "advanced": [
-      "OVA-21",
-      "OVA-22",
-      "OVA-23",
-      "OVA-24",
-      "OVA-25",
-      "OVA-26",
-      "OVA-27"
-    ],
-    "stop_before": "OVA-28",
-    "not_advanced": [
-      "OVA-29",
-      "OVA-30",
-      "OVA-31",
-      "OVA-32",
-      "OVA-33"
-    ],
-    "run_status": "awaiting_captain_gate"
-  },
-  "artifact_links": {
-    "OVA-21": ".agent/learning-runs/NS-SKILL-002/01-provenance.md",
-    "OVA-22": ".agent/learning-runs/NS-SKILL-002/02-trusted-stars.md",
-    "OVA-23": ".agent/learning-runs/NS-SKILL-002/03-ti-categorization.json",
-    "OVA-24": ".agent/evidence/ti-scorecards/github-stars-example-org-accessible-react-forms/security-review.md",
-    "OVA-25": ".agent/evidence/ti-scorecards/github-stars-example-org-accessible-react-forms/dependency-supply-chain.md",
-    "OVA-26": ".agent/capabilities/candidates/skill-drafts/from-stars-example-org-accessible-react-forms/",
-    "OVA-27": ".agent/evidence/candidate-sandbox-test/github-stars-example-org-accessible-react-forms/",
-    "OVA-28": ".agent/learning-runs/NS-SKILL-002/08-captain-decision.md",
-    "improvement_proposal": ".agent/capabilities/candidates/skill-improvement-proposals/react-engineering/from-github-stars-example-org-accessible-react-forms.json",
-    "loop_report": ".agent/learning-runs/learning-20260911T192152Z.json"
-  },
-  "loop_report_path": ".agent/learning-runs/learning-20260911T192152Z.json"
+  "top_n": 1
 }
