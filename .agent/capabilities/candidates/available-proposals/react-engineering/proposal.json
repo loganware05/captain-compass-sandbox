@@ -1,0 +1,22 @@
+{
+  "approved_for_execution": false,
+  "candidate_id": "github-stars-example-org-accessible-react-forms",
+  "capabilities_provided": [
+    "example",
+    "org",
+    "accessible",
+    "react",
+    "forms"
+  ],
+  "captain_approval_required": true,
+  "evidence_paths": [
+    ".agent/evidence/ti-scorecards/github-stars-example-org-accessible-react-forms/security-review.md",
+    ".agent/evidence/ti-scorecards/github-stars-example-org-accessible-react-forms/dependency-supply-chain.md",
+    ".agent/evidence/candidate-sandbox-test/github-stars-example-org-accessible-react-forms/sandbox-test.json"
+  ],
+  "install_target": ".cursor/skills/react-engineering/",
+  "kind": "available-skill-proposal",
+  "lifecycle_stage": "AVAILABLE_SKILL",
+  "notes": "Proposal only \u2014 copy into .cursor/skills/ via Captain-reviewed PR; never auto-install",
+  "skill_slug": "react-engineering"
+}
