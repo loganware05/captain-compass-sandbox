@@ -1,0 +1,17 @@
+{
+  "run_id": "NS-SKILL-002",
+  "kind": "northstar-skill-merge-closeout",
+  "linear_parent": "OVA-20",
+  "lifecycle_decision": "retain",
+  "pr_number": 53,
+  "pr_url": "https://github.com/loganware05/captain-compass-sandbox/pull/53",
+  "pr_state": "MERGED",
+  "merged_at": "2026-09-12T18:52:00Z",
+  "merge_commit": "a0b5581617123cd4c0efaa3330ff36dcbc28c991",
+  "base_branch": "main",
+  "head_branch": "cursor/ova-31-ns-skill-002-exec-05fd",
+  "skill": "react-engineering",
+  "lifecycle_stage": "AVAILABLE_SKILL",
+  "approved_for_execution": false,
+  "markdown_path": ".agent/learning-runs/NS-SKILL-002/15-merge-closeout.md"
+}

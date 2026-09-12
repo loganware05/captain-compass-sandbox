@@ -1,0 +1,23 @@
+{
+  "run_id": "NS-SKILL-002",
+  "linear_issue": "OVA-33",
+  "linear_parent": "OVA-20",
+  "kind": "northstar-skill-lifecycle-decision",
+  "decided_at": "2026-09-12T18:55:07Z",
+  "captain": "Logan Ware",
+  "captain_utterance": "I've merged #53, retain OVA-33",
+  "skill": "react-engineering",
+  "skill_path": ".cursor/skills/react-engineering/",
+  "decision": "retain",
+  "lifecycle_stage": "AVAILABLE_SKILL",
+  "improve_skill": false,
+  "improve_router_deferred": true,
+  "prove": false,
+  "retire": false,
+  "upstream_control_repo": false,
+  "approved_for_execution": false,
+  "experience_path": ".agent/learning-runs/NS-SKILL-002/13-skill-experience.md",
+  "exec_pr": "https://github.com/loganware05/captain-compass-sandbox/pull/53",
+  "markdown_path": ".agent/learning-runs/NS-SKILL-002/14-lifecycle-decision.md",
+  "run_status": "closed_retained"
+}
