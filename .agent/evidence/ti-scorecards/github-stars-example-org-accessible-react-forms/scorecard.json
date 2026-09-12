@@ -1,0 +1,29 @@
+{
+  "approved_for_execution": false,
+  "auto_install": false,
+  "candidate_id": "github-stars-example-org-accessible-react-forms",
+  "clone_or_exec": false,
+  "evidence_paths": [
+    "/agent/repos/captain-compass-sandbox/.agent/evidence/ti-scorecards/github-stars-example-org-accessible-react-forms/security-review.md",
+    "/agent/repos/captain-compass-sandbox/.agent/evidence/ti-scorecards/github-stars-example-org-accessible-react-forms/dependency-supply-chain.md"
+  ],
+  "full_name": "example-org/accessible-react-forms",
+  "gates": {
+    "dependency-supply-chain": "pass",
+    "security-review": "pass",
+    "starred_provenance": "pass"
+  },
+  "kind": "ti-usefulness-scorecard",
+  "notes": "Metadata-only scorecard. Does not clone or execute the starred repo. Skill drafts may proceed after these evidence artifacts exist; live install remains Captain-gated.",
+  "required_evidence_kinds": [
+    "security-review",
+    "dependency-supply-chain"
+  ],
+  "schema_version": "m23-v1",
+  "scored_at": "2026-09-11T19:21:52Z",
+  "star_category": "frontend-ui",
+  "starred_provenance": true,
+  "usefulness_labels": [
+    "frontend-ui"
+  ]
+}
