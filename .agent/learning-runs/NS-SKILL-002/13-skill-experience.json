@@ -1,0 +1,19 @@
+{
+  "kind": "skill-experience",
+  "run_id": "NS-SKILL-002",
+  "linear_issue": "OVA-32",
+  "skill_slug": "react-engineering",
+  "outcome": "success",
+  "dispatch_authorized_at": "2026-09-12T18:28:35Z",
+  "executing_agent_id": "bc-0b8ec108-10ec-4204-a4e4-8bedbf0405fd",
+  "selected_agent_id": "bc-0b8ec108-10ec-4204-a4e4-8bedbf0405fd",
+  "m26_live_probe": true,
+  "tests_passed": 22,
+  "changed_paths": [
+    "src/components/ContactForm.tsx",
+    "src/components/ContactForm.css",
+    "src/components/ContactForm.test.tsx"
+  ],
+  "evidence_path": ".agent/evidence/ns-skill-002-ova-31-exec/VALIDATION.md",
+  "approved_for_execution": false
+}

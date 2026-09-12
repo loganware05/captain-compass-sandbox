@@ -13,8 +13,12 @@
     "OVA-30": ".agent/learning-runs/NS-SKILL-002/10-install-sandbox-skill.md",
     "OVA-31": ".agent/learning-runs/NS-SKILL-002/11-agent-routing.md",
     "OVA-31_decision": ".agent/learning-runs/NS-SKILL-002/11-agent-routing.json",
+    "OVA-31_dispatch_auth": ".agent/learning-runs/NS-SKILL-002/12-dispatch-authorization.md",
     "OVA-31_dispatch_packet": ".agent/learning-runs/NS-SKILL-002/11-dispatch-packet.json",
     "OVA-31_evidence": ".agent/evidence/ns-skill-002-ova-31-routing/",
+    "OVA-31_exec_evidence": ".agent/evidence/ns-skill-002-ova-31-exec/VALIDATION.md",
+    "OVA-32": ".agent/learning-runs/NS-SKILL-002/13-skill-experience.md",
+    "OVA-32_json": ".agent/learning-runs/NS-SKILL-002/13-skill-experience.json",
     "improvement_proposal": ".agent/capabilities/candidates/skill-improvement-proposals/react-engineering/from-github-stars-example-org-accessible-react-forms.json",
     "loop_report": ".agent/learning-runs/learning-20260911T192152Z.json"
   },
@@ -34,6 +38,11 @@
   "draft_requires_security_and_supply_chain": true,
   "execution_repo": "loganware05/captain-compass-sandbox",
   "execution_revision": "636c9bc516fe6cb7ec0f28ccd1411cbcc8d98f5c",
+  "experience": {
+    "outcome": "success",
+    "path": ".agent/learning-runs/NS-SKILL-002/13-skill-experience.md",
+    "recorded_at": "2026-09-12T18:28:35Z"
+  },
   "external_repo_clone_allowed": false,
   "external_repo_execution_allowed": false,
   "install_mode": "improve-existing-apply-live",
@@ -66,21 +75,22 @@
       "OVA-28",
       "OVA-29",
       "OVA-30",
-      "OVA-31"
+      "OVA-31",
+      "OVA-32"
     ],
     "captain_approved": [
       "OVA-28"
     ],
     "not_advanced": [
-      "OVA-32",
       "OVA-33"
     ],
     "ova28_status": "approved",
     "ova29_status": "promoted_available_skill",
     "ova30_status": "applied_live_to_react_engineering",
-    "ova31_status": "scored_dispatch_ready_unauthorized",
-    "run_status": "routing_scored_awaiting_dispatch_authorization",
-    "stop_before": "dispatch_execution"
+    "ova31_status": "dispatched_executed",
+    "ova32_status": "experience_recorded",
+    "run_status": "experience_recorded_awaiting_lifecycle_decision",
+    "stop_before": "OVA-33"
   },
   "loop_report_path": ".agent/learning-runs/learning-20260911T192152Z.json",
   "mode": "live",
@@ -165,9 +175,12 @@
   ],
   "routing": {
     "decision_path": ".agent/learning-runs/NS-SKILL-002/11-agent-routing.json",
-    "dispatch_authorized": false,
+    "dispatch_authorized": true,
+    "dispatch_authorized_at": "2026-09-12T18:28:35Z",
     "dispatch_packet_path": ".agent/learning-runs/NS-SKILL-002/11-dispatch-packet.json",
     "dispatch_ready": true,
+    "executing_agent_id": "bc-0b8ec108-10ec-4204-a4e4-8bedbf0405fd",
+    "execution_branch": "cursor/ova-31-ns-skill-002-exec-05fd",
     "live_probe": true,
     "router_version": "northstar.agent_router.v1",
     "scored_at": "2026-09-12T18:22:22Z",

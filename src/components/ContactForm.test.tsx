@@ -1,4 +1,4 @@
-import { cleanup, fireEvent, render, screen } from '@testing-library/react'
+import { cleanup, fireEvent, render, screen, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { afterEach, describe, expect, it } from 'vitest'
 import { MESSAGE_MAX_LENGTH } from '../lib/contactValidation'
@@ -8,6 +8,15 @@ afterEach(() => {
   cleanup()
 })
 
+function fieldAlert(text: string): HTMLElement {
+  const matches = screen.getAllByText(text)
+  const alert = matches.find((el) => el.getAttribute('role') === 'alert')
+  if (!alert) {
+    throw new Error(`No role=alert element found for text: ${text}`)
+  }
+  return alert
+}
+
 describe('ContactForm', () => {
   it('shows accessible inline errors when submitted empty', async () => {
     const user = userEvent.setup()
@@ -15,13 +24,13 @@ describe('ContactForm', () => {
 
     await user.click(screen.getByRole('button', { name: 'Send message' }))
 
-    const nameError = screen.getByText('Name is required.')
-    const emailError = screen.getByText('Email is required.')
-    const messageError = screen.getByText('Message is required.')
+    const nameError = fieldAlert('Name is required.')
+    const emailError = fieldAlert('Email is required.')
+    const messageError = fieldAlert('Message is required.')
 
-    expect(nameError).toHaveAttribute('role', 'alert')
-    expect(emailError).toHaveAttribute('role', 'alert')
-    expect(messageError).toHaveAttribute('role', 'alert')
+    expect(nameError).toBeTruthy()
+    expect(emailError).toBeTruthy()
+    expect(messageError).toBeTruthy()
 
     expect(screen.getByLabelText('Name')).toHaveAttribute('aria-invalid', 'true')
     expect(screen.getByLabelText('Name')).toHaveAttribute(
@@ -36,6 +45,26 @@ describe('ContactForm', () => {
       'aria-invalid',
       'true',
     )
+
+    // NS-SKILL-002: assertive form-level summary + fieldset grouping
+    const summary = screen.getByRole('alert', {
+      name: 'There are 3 problems with this form',
+    })
+    expect(summary).toHaveAttribute('aria-live', 'assertive')
+    expect(
+      within(summary).getByRole('link', { name: 'Name is required.' }),
+    ).toBeTruthy()
+    expect(
+      screen.getByRole('group', { name: 'Contact details' }),
+    ).toBeTruthy()
+  })
+
+  it('focuses the first invalid field after a failed submit', async () => {
+    const user = userEvent.setup()
+    render(<ContactForm />)
+
+    await user.click(screen.getByRole('button', { name: 'Send message' }))
+    expect(screen.getByLabelText('Name')).toHaveFocus()
   })
 
   it('shows an email format error for invalid email', async () => {
@@ -47,8 +76,7 @@ describe('ContactForm', () => {
     await user.type(screen.getByLabelText('Message'), 'Hello')
     await user.click(screen.getByRole('button', { name: 'Send message' }))
 
-    const emailError = screen.getByText('Enter a valid email address.')
-    expect(emailError).toHaveAttribute('role', 'alert')
+    expect(fieldAlert('Enter a valid email address.')).toBeTruthy()
     expect(screen.queryByText('Message sent')).toBeNull()
   })
 
@@ -76,13 +104,12 @@ describe('ContactForm', () => {
     render(<ContactForm />)
 
     await user.click(screen.getByRole('button', { name: 'Send message' }))
-    expect(screen.getByText('Name is required.')).toHaveAttribute(
-      'role',
-      'alert',
-    )
+    expect(fieldAlert('Name is required.')).toBeTruthy()
 
     await user.type(screen.getByLabelText('Name'), 'Ada')
-    expect(screen.queryByText('Name is required.')).toBeNull()
+    expect(
+      screen.queryAllByText('Name is required.').length,
+    ).toBe(0)
   })
 
   it('restores the form when Send another message is clicked', async () => {
@@ -144,10 +171,9 @@ describe('ContactForm', () => {
     })
     await user.click(screen.getByRole('button', { name: 'Send message' }))
 
-    const messageError = screen.getByText(
+    const messageError = fieldAlert(
       `Message must be ${MESSAGE_MAX_LENGTH} characters or fewer.`,
     )
-    expect(messageError).toHaveAttribute('role', 'alert')
     expect(message).toHaveAttribute('aria-invalid', 'true')
     expect(message.getAttribute('aria-describedby') ?? '').toContain(
       messageError.id,
