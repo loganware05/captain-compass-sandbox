@@ -11,6 +11,10 @@
     "OVA-28": ".agent/learning-runs/NS-SKILL-002/08-captain-decision.md",
     "OVA-29": ".agent/learning-runs/NS-SKILL-002/09-promote-sandbox-available.md",
     "OVA-30": ".agent/learning-runs/NS-SKILL-002/10-install-sandbox-skill.md",
+    "OVA-31": ".agent/learning-runs/NS-SKILL-002/11-agent-routing.md",
+    "OVA-31_decision": ".agent/learning-runs/NS-SKILL-002/11-agent-routing.json",
+    "OVA-31_dispatch_packet": ".agent/learning-runs/NS-SKILL-002/11-dispatch-packet.json",
+    "OVA-31_evidence": ".agent/evidence/ns-skill-002-ova-31-routing/",
     "improvement_proposal": ".agent/capabilities/candidates/skill-improvement-proposals/react-engineering/from-github-stars-example-org-accessible-react-forms.json",
     "loop_report": ".agent/learning-runs/learning-20260911T192152Z.json"
   },
@@ -61,21 +65,22 @@
       "OVA-27",
       "OVA-28",
       "OVA-29",
-      "OVA-30"
+      "OVA-30",
+      "OVA-31"
     ],
     "captain_approved": [
       "OVA-28"
     ],
     "not_advanced": [
-      "OVA-31",
       "OVA-32",
       "OVA-33"
     ],
     "ova28_status": "approved",
     "ova29_status": "promoted_available_skill",
     "ova30_status": "applied_live_to_react_engineering",
-    "run_status": "installed_awaiting_dispatch_routing",
-    "stop_before": "OVA-31"
+    "ova31_status": "scored_dispatch_ready_unauthorized",
+    "run_status": "routing_scored_awaiting_dispatch_authorization",
+    "stop_before": "dispatch_execution"
   },
   "loop_report_path": ".agent/learning-runs/learning-20260911T192152Z.json",
   "mode": "live",
@@ -158,6 +163,16 @@
       "target_skill_slug": "react-engineering"
     }
   ],
+  "routing": {
+    "decision_path": ".agent/learning-runs/NS-SKILL-002/11-agent-routing.json",
+    "dispatch_authorized": false,
+    "dispatch_packet_path": ".agent/learning-runs/NS-SKILL-002/11-dispatch-packet.json",
+    "dispatch_ready": true,
+    "live_probe": true,
+    "router_version": "northstar.agent_router.v1",
+    "scored_at": "2026-09-12T18:22:22Z",
+    "selected_agent_id": "bc-0b8ec108-10ec-4204-a4e4-8bedbf0405fd"
+  },
   "run_id": "NS-SKILL-002",
   "similarity_threshold": 0.28,
   "source": "fixtures",
