@@ -1,0 +1,29 @@
+[
+  {
+    "id": 501,
+    "full_name": "example-org/python-settings-secrets-hygiene",
+    "html_url": "https://github.com/example-org/python-settings-secrets-hygiene",
+    "description": "Pydantic settings patterns with env-only secrets, key-path guards, and fail-closed auth for API clients",
+    "topics": ["python", "pydantic-settings", "secrets", "dotenv", "security"],
+    "stargazers_count": 214,
+    "starred": true
+  },
+  {
+    "id": 502,
+    "full_name": "example-org/httpx-resilient-clients",
+    "html_url": "https://github.com/example-org/httpx-resilient-clients",
+    "description": "HTTPX client wrappers with retries, timeouts, and explicit failure modes for market data APIs",
+    "topics": ["python", "httpx", "retry", "resilience", "api-client"],
+    "stargazers_count": 173,
+    "starred": true
+  },
+  {
+    "id": 503,
+    "full_name": "example-org/unrelated-quantum",
+    "html_url": "https://github.com/example-org/unrelated-quantum",
+    "description": "Quantum circuit simulation library",
+    "topics": ["quantum", "simulation"],
+    "stargazers_count": 42,
+    "starred": true
+  }
+]

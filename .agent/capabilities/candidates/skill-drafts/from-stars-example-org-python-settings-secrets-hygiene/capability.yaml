@@ -1,0 +1,21 @@
+id: from-stars-example-org-python-settings-secrets-hygiene
+version: "0.1.0"
+kind: skill
+source:
+  type: compass-skill
+  path: .cursor/skills/from-stars-example-org-python-settings-secrets-hygiene/SKILL.md
+lifecycle_stage: SANDBOX_TESTED
+capabilities_provided:
+  - example
+  - org
+  - python
+  - settings
+  - secrets
+security_sensitivity: medium
+provenance:
+  inferred: false
+  from_candidate: "github-stars-example-org-python-settings-secrets-hygiene"
+  discovery_signal: "github-stars:live:example-org/python-settings-secrets-hygiene|category:ml-data"
+  captain_approval_required: true
+  starred_provenance_required: true
+notes: Draft from skill-learning-loop — requires Captain-approved PR

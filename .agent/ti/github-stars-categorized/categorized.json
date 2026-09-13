@@ -1,5 +1,5 @@
 {
-  "categorized_at": "2026-09-11T19:21:52Z",
+  "categorized_at": "2026-09-13T00:54:59Z",
   "model": {
     "categories": [
       "frontend-ui",
@@ -8,57 +8,61 @@
       "ml-data"
     ],
     "kind": "naive-bayes-manual-labels-v1",
-    "trained_at": "2026-09-11T19:21:52Z",
+    "trained_at": "2026-09-13T00:54:59Z",
     "trained_from": 5
   },
-  "record_count": 4,
+  "record_count": 3,
   "records": [
     {
-      "description": "Accessible React form patterns with ARIA live regions",
+      "description": "Pydantic settings patterns with env-only secrets, key-path guards, and fail-closed auth for API clients",
       "from_github_stars": true,
-      "full_name": "example-org/accessible-react-forms",
-      "html_url": "https://github.com/example-org/accessible-react-forms",
-      "id": 101,
+      "full_name": "example-org/python-settings-secrets-hygiene",
+      "html_url": "https://github.com/example-org/python-settings-secrets-hygiene",
+      "id": 501,
       "provenance": {
         "source": "fixtures:github-stars-recorded",
         "starred": true,
         "starred_provenance": true
       },
-      "star_category": "frontend-ui",
-      "star_category_confidence": 0.0308,
+      "star_category": "ml-data",
+      "star_category_confidence": 0.0187,
       "star_category_model": "naive-bayes-manual-labels-v1",
-      "stargazers_count": 128,
+      "stargazers_count": 214,
       "starred": true,
       "starred_provenance": true,
       "ti_source": "fixtures:github-stars-recorded",
       "topics": [
-        "react",
-        "accessibility",
-        "forms"
+        "python",
+        "pydantic-settings",
+        "secrets",
+        "dotenv",
+        "security"
       ]
     },
     {
-      "description": "PDF generation utilities for Node.js services",
+      "description": "HTTPX client wrappers with retries, timeouts, and explicit failure modes for market data APIs",
       "from_github_stars": true,
-      "full_name": "example-org/pdf-kit-node",
-      "html_url": "https://github.com/example-org/pdf-kit-node",
-      "id": 202,
+      "full_name": "example-org/httpx-resilient-clients",
+      "html_url": "https://github.com/example-org/httpx-resilient-clients",
+      "id": 502,
       "provenance": {
         "source": "fixtures:github-stars-recorded",
         "starred": true,
         "starred_provenance": true
       },
-      "star_category": "backend-library",
-      "star_category_confidence": 0.032,
+      "star_category": "ml-data",
+      "star_category_confidence": 0.0187,
       "star_category_model": "naive-bayes-manual-labels-v1",
-      "stargazers_count": 89,
+      "stargazers_count": 173,
       "starred": true,
       "starred_provenance": true,
       "ti_source": "fixtures:github-stars-recorded",
       "topics": [
-        "nodejs",
-        "pdf",
-        "utilities"
+        "python",
+        "httpx",
+        "retry",
+        "resilience",
+        "api-client"
       ]
     },
     {
@@ -66,7 +70,7 @@
       "from_github_stars": true,
       "full_name": "example-org/unrelated-quantum",
       "html_url": "https://github.com/example-org/unrelated-quantum",
-      "id": 303,
+      "id": 503,
       "provenance": {
         "source": "fixtures:github-stars-recorded",
         "starred": true,
@@ -82,31 +86,6 @@
       "topics": [
         "quantum",
         "simulation"
-      ]
-    },
-    {
-      "description": "Craft design tokens and UI primitives for consistent product surfaces",
-      "from_github_stars": true,
-      "full_name": "example-org/craft-design-tokens",
-      "html_url": "https://github.com/example-org/craft-design-tokens",
-      "id": 404,
-      "provenance": {
-        "source": "fixtures:github-stars-recorded",
-        "starred": true,
-        "starred_provenance": true
-      },
-      "star_category": "design-system",
-      "star_category_confidence": 0.0298,
-      "star_category_model": "naive-bayes-manual-labels-v1",
-      "stargazers_count": 256,
-      "starred": true,
-      "starred_provenance": true,
-      "ti_source": "fixtures:github-stars-recorded",
-      "topics": [
-        "design-system",
-        "tokens",
-        "css",
-        "frontend"
       ]
     }
   ],

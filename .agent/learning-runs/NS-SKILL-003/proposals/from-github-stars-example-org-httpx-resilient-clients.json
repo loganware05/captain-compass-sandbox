@@ -1,0 +1,27 @@
+{
+  "approved_for_execution": false,
+  "auto_apply": false,
+  "candidate_id": "github-stars-example-org-httpx-resilient-clients",
+  "captain_approval_required": true,
+  "discovery_signal": "github-stars:live:example-org/httpx-resilient-clients|category:ml-data",
+  "evidence_paths": [
+    "/agent/repos/captain-compass-sandbox/.agent/evidence/candidate-sandbox-test/github-stars-example-org-httpx-resilient-clients/sandbox-test.json",
+    "/agent/repos/captain-compass-sandbox/.agent/evidence/candidate-sandbox-test/github-stars-example-org-httpx-resilient-clients/summary.md",
+    "/agent/repos/captain-compass-sandbox/.agent/evidence/ti-scorecards/github-stars-example-org-httpx-resilient-clients/security-review.md",
+    "/agent/repos/captain-compass-sandbox/.agent/evidence/ti-scorecards/github-stars-example-org-httpx-resilient-clients/dependency-supply-chain.md"
+  ],
+  "kind": "skill-improvement-proposal",
+  "notes": "Proposal only \u2014 Captain-reviewed PR required to edit .cursor/skills/python-ml/; never auto-apply",
+  "proposed_at": "2026-09-13T00:54:59Z",
+  "similarity": 0.3832,
+  "star_category": "ml-data",
+  "suggested_changes": [
+    {
+      "action": "append-lesson",
+      "rationale": "Categorized Stars candidate github-stars-example-org-httpx-resilient-clients is similar (score=0.3832) to existing Skill `python-ml`. Review notes and fold applicable steps; do not clone the starred repo.",
+      "section": "Procedure",
+      "source_notes": "[ml-data] Live GitHub starred repo \u2014 NOT APPROVED FOR EXECUTION"
+    }
+  ],
+  "target_skill_slug": "python-ml"
+}

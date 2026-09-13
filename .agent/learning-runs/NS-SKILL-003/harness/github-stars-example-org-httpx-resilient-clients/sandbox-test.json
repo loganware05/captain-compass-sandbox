@@ -1,0 +1,16 @@
+{
+  "approved_for_execution": false,
+  "candidate_id": "github-stars-example-org-httpx-resilient-clients",
+  "checks": {
+    "draft_capability_yaml": "/agent/repos/captain-compass-sandbox/.agent/capabilities/candidates/skill-drafts/from-stars-example-org-httpx-resilient-clients/capability.yaml",
+    "draft_skill_md": "/agent/repos/captain-compass-sandbox/.agent/capabilities/candidates/skill-drafts/from-stars-example-org-httpx-resilient-clients/SKILL.md",
+    "live_skill_absent_for_new_draft": true
+  },
+  "harness_kind": "fixture-file-checks",
+  "kind": "candidate-sandbox-test",
+  "notes": "Fixture harness only \u2014 no external clone/exec; Captain approval required before live Skill install",
+  "passed": true,
+  "promote_to_sandbox_tested": true,
+  "ran_at": "2026-09-13T00:54:59Z",
+  "skill_slug": "from-stars-example-org-httpx-resilient-clients"
+}

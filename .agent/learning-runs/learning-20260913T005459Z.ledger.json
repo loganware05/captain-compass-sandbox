@@ -1,0 +1,13 @@
+{
+  "authoritative_approval": false,
+  "control_revision": "3e7a7a7c309c121f2bf84db44a4778a29b203906",
+  "delegated_agent": null,
+  "last_synced_at": "2026-09-13T00:57:56Z",
+  "milestone": "M1-M3 started; M4 Captain gate open",
+  "notes": "Linear records state only. Captain approval must exist in GitHub/repository evidence; Linear must not originate CAPTAIN_APPROVED.",
+  "parent_issue_id": "OVA-34",
+  "product_revision": "6492e4497ba0dc1cbea6b7fed61cba1a3fe197a9",
+  "project_id": "c62f65bf-a376-4716-b958-0d874730a391",
+  "project_name": "NorthStar Skills Learning Loop",
+  "provider": "linear"
+}
