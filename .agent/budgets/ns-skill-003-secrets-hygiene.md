@@ -14,3 +14,9 @@
 2. Sandbox is execution repo; bitcoin-data-collector is product context only
 3. Linear is flight recorder only
 4. Captain approval required before promote/install
+
+## Checkpoint — 2026-09-13T03:13Z
+
+- Captain approved OVA-42: improve python-ml
+- OVA-43/44 complete (AVAILABLE_SKILL + live apply in sandbox)
+- Soft stop for promote/install reached; OVA-45+ not started

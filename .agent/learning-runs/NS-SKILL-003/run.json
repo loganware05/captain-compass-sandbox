@@ -10,12 +10,17 @@
     "OVA-40": ".agent/learning-runs/NS-SKILL-003/06-skill-draft.md",
     "OVA-41": ".agent/learning-runs/NS-SKILL-003/07-sandbox-harness.md",
     "OVA-42": ".agent/learning-runs/NS-SKILL-003/08-captain-decision.md",
+    "OVA-43": ".agent/learning-runs/NS-SKILL-003/09-promote-sandbox-available.md",
+    "OVA-44": ".agent/learning-runs/NS-SKILL-003/10-install-sandbox-skill.md",
     "loop_report": ".agent/learning-runs/learning-20260913T005459Z.json"
   },
   "auto_install_allowed": false,
   "candidate_install_authority": "captain-only",
   "captain": "Logan Ware",
-  "captain_gate": "human-only",
+  "captain_decision": "improve python-ml",
+  "captain_decision_at": "2026-09-13T03:10:00Z",
+  "captain_decision_evidence": ".agent/learning-runs/NS-SKILL-003/08-captain-decision.md",
+  "captain_gate": "passed",
   "category_filter": null,
   "control_repo": "loganware05/captains-compass-cursor",
   "control_revision": "3e7a7a7c309c121f2bf84db44a4778a29b203906",
@@ -28,11 +33,11 @@
     "authoritative_approval": false,
     "control_revision": "3e7a7a7c309c121f2bf84db44a4778a29b203906",
     "delegated_agent": null,
-    "last_synced_at": "2026-09-13T00:58:08Z",
-    "milestone": "M4 Captain gate open (OVA-42)",
+    "last_synced_at": "2026-09-13T03:13:27Z",
+    "milestone": "M5 promote/install complete; OVA-45+ pending",
     "notes": "Linear records state only. Captain approval must exist in GitHub/repository evidence; Linear must not originate CAPTAIN_APPROVED.",
     "parent_issue_id": "OVA-34",
-    "product_revision": "6492e4497ba0dc1cbea6b7fed61cba1a3fe197a9",
+    "product_revision": "0a9719b70a7f92eb39cc03241912c2ebbdbc6528",
     "project_id": "c62f65bf-a376-4716-b958-0d874730a391",
     "project_name": "NorthStar Skills Learning Loop",
     "provider": "linear"
@@ -58,9 +63,9 @@
     "project_name": "NorthStar Skills Learning Loop"
   },
   "loop_report": ".agent/learning-runs/learning-20260913T005459Z.json",
-  "milestone": "M4 \u2014 Captain gate (OVA-42)",
+  "milestone": "M5 \u2014 Promote/install done; OVA-45+ routing not started",
   "mode": "fixtures",
-  "next_action": "Captain decision on OVA-42 (improve python-ml vs new secrets-hygiene Skill vs defer); no live install until approved",
+  "next_action": "OVA-45 agent routing / wakeability (optional next); retain/closeout after Captain direction",
   "northstar_version": "1.30.0",
   "objective": "Python settings and secrets hygiene for live API clients: env-only credentials, private key path guards, fail-closed auth (informed by bitcoin-data-collector M27 review)",
   "observed_star_category": "ml-data",
@@ -70,5 +75,6 @@
   "secondary_candidate": "github-stars-example-org-httpx-resilient-clients",
   "source": "fixtures",
   "started_at": "2026-09-13T00:56:14Z",
-  "status": "awaiting_captain_decision"
+  "status": "promote_install_complete_awaiting_routing",
+  "updated_at": "2026-09-13T03:13:27Z"
 }

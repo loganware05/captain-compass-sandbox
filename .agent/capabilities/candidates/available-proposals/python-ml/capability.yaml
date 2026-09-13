@@ -1,0 +1,19 @@
+id: python-ml
+version: "0.1.0"
+kind: skill
+source:
+  type: compass-skill
+  path: .cursor/skills/python-ml/SKILL.md
+lifecycle_stage: AVAILABLE_SKILL
+capabilities_provided:
+  - example
+  - org
+  - python
+  - settings
+  - secrets
+security_sensitivity: medium
+provenance:
+  inferred: false
+  from_candidate: github-stars-example-org-python-settings-secrets-hygiene
+  captain_approval_required: true
+notes: AVAILABLE_SKILL proposal — Captain PR required before registry use

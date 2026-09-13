@@ -1,0 +1,22 @@
+{
+  "approved_for_execution": false,
+  "candidate_id": "github-stars-example-org-python-settings-secrets-hygiene",
+  "capabilities_provided": [
+    "example",
+    "org",
+    "python",
+    "settings",
+    "secrets"
+  ],
+  "captain_approval_required": true,
+  "evidence_paths": [
+    "/agent/repos/captain-compass-sandbox/.agent/evidence/candidate-sandbox-test/github-stars-example-org-python-settings-secrets-hygiene/sandbox-test.json",
+    "/agent/repos/captain-compass-sandbox/.agent/evidence/ti-scorecards/github-stars-example-org-python-settings-secrets-hygiene/security-review.md",
+    "/agent/repos/captain-compass-sandbox/.agent/evidence/ti-scorecards/github-stars-example-org-python-settings-secrets-hygiene/dependency-supply-chain.md"
+  ],
+  "install_target": ".cursor/skills/python-ml/",
+  "kind": "available-skill-proposal",
+  "lifecycle_stage": "AVAILABLE_SKILL",
+  "notes": "Proposal only \u2014 copy into .cursor/skills/ via Captain-reviewed PR; never auto-install",
+  "skill_slug": "python-ml"
+}
