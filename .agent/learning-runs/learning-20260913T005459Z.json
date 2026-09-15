@@ -1,0 +1,152 @@
+{
+  "approved_for_execution": false,
+  "auto_install": false,
+  "candidate_count": 2,
+  "captain_approval_required_for_live_skills": true,
+  "category_filter": null,
+  "draft_requires_security_and_supply_chain": true,
+  "kind": "skill-learning-run",
+  "ledger": {
+    "authoritative_approval": false,
+    "control_revision": "3e7a7a7c309c121f2bf84db44a4778a29b203906",
+    "delegated_agent": null,
+    "last_synced_at": "2026-09-13T00:57:56Z",
+    "milestone": "M1-M3 started; M4 Captain gate open",
+    "notes": "Linear records state only. Captain approval must exist in GitHub/repository evidence; Linear must not originate CAPTAIN_APPROVED.",
+    "parent_issue_id": "OVA-34",
+    "product_revision": "6492e4497ba0dc1cbea6b7fed61cba1a3fe197a9",
+    "project_id": "c62f65bf-a376-4716-b958-0d874730a391",
+    "project_name": "NorthStar Skills Learning Loop",
+    "provider": "linear"
+  },
+  "notes": "Staging + evidence only. Promote live Skills with promote-candidate.sh --captain-approved after Captain review. Skill drafts require security-review + dependency-supply-chain evidence.",
+  "objective": "Python settings and secrets hygiene for live API clients: env-only credentials, private key path guards outside the worktree, fail-closed auth errors, no silent Exception swallowing in collectors",
+  "ran_at": "2026-09-13T00:54:59Z",
+  "results": [
+    {
+      "candidate_id": "github-stars-example-org-python-settings-secrets-hygiene",
+      "draft": {
+        "capability_yaml": "/agent/repos/captain-compass-sandbox/.agent/capabilities/candidates/skill-drafts/from-stars-example-org-python-settings-secrets-hygiene/capability.yaml",
+        "skill_md": "/agent/repos/captain-compass-sandbox/.agent/capabilities/candidates/skill-drafts/from-stars-example-org-python-settings-secrets-hygiene/SKILL.md",
+        "source_candidate": "/agent/repos/captain-compass-sandbox/.agent/capabilities/candidates/skill-drafts/from-stars-example-org-python-settings-secrets-hygiene/source-candidate.json"
+      },
+      "full_name": "example-org/python-settings-secrets-hygiene",
+      "harness": {
+        "evidence_dir": "/agent/repos/captain-compass-sandbox/.agent/evidence/candidate-sandbox-test/github-stars-example-org-python-settings-secrets-hygiene",
+        "harness_kind": "fixture-file-checks",
+        "lifecycle_stage": "SANDBOX_TESTED",
+        "passed": true,
+        "report_path": "/agent/repos/captain-compass-sandbox/.agent/evidence/candidate-sandbox-test/github-stars-example-org-python-settings-secrets-hygiene/sandbox-test.json",
+        "staging_candidate": "/agent/repos/captain-compass-sandbox/.agent/capabilities/candidates/staging/github-stars-example-org-python-settings-secrets-hygiene.json",
+        "summary_path": "/agent/repos/captain-compass-sandbox/.agent/evidence/candidate-sandbox-test/github-stars-example-org-python-settings-secrets-hygiene/summary.md"
+      },
+      "improvement_proposal": "/agent/repos/captain-compass-sandbox/.agent/capabilities/candidates/skill-improvement-proposals/python-ml/from-github-stars-example-org-python-settings-secrets-hygiene.json",
+      "mode": "improve-existing",
+      "scorecard": {
+        "approved_for_execution": false,
+        "candidate_id": "github-stars-example-org-python-settings-secrets-hygiene",
+        "evidence_paths": [
+          "/agent/repos/captain-compass-sandbox/.agent/evidence/ti-scorecards/github-stars-example-org-python-settings-secrets-hygiene/security-review.md",
+          "/agent/repos/captain-compass-sandbox/.agent/evidence/ti-scorecards/github-stars-example-org-python-settings-secrets-hygiene/dependency-supply-chain.md"
+        ],
+        "full_name": "example-org/python-settings-secrets-hygiene",
+        "out_dir": "/agent/repos/captain-compass-sandbox/.agent/evidence/ti-scorecards/github-stars-example-org-python-settings-secrets-hygiene",
+        "scorecard_path": "/agent/repos/captain-compass-sandbox/.agent/evidence/ti-scorecards/github-stars-example-org-python-settings-secrets-hygiene/scorecard.json",
+        "star_category": "ml-data"
+      },
+      "similar_skills": [
+        {
+          "capabilities_provided": [
+            "python-service-development",
+            "data-pipeline",
+            "ml-training",
+            "ml-evaluation",
+            "experiment-reproducibility"
+          ],
+          "similarity": 0.37,
+          "skill_path": "/agent/repos/captains-compass-cursor/.cursor/skills/python-ml",
+          "skill_slug": "python-ml"
+        },
+        {
+          "capabilities_provided": [
+            "node-api-development",
+            "auth-boundary-enforcement",
+            "request-validation",
+            "server-integration-tests"
+          ],
+          "similarity": 0.35,
+          "skill_path": "/agent/repos/captains-compass-cursor/.cursor/skills/node-engineering",
+          "skill_slug": "node-engineering"
+        },
+        {
+          "capabilities_provided": [
+            "swiftui-development",
+            "xcode-project-management",
+            "ios-accessibility-labels",
+            "simulator-testing"
+          ],
+          "similarity": 0.3,
+          "skill_path": "/agent/repos/captains-compass-cursor/.cursor/skills/ios-engineering",
+          "skill_slug": "ios-engineering"
+        }
+      ],
+      "staging_path": "/agent/repos/captain-compass-sandbox/.agent/capabilities/candidates/staging/github-stars-example-org-python-settings-secrets-hygiene.json",
+      "star_category": "ml-data",
+      "target_skill_slug": "python-ml"
+    },
+    {
+      "candidate_id": "github-stars-example-org-httpx-resilient-clients",
+      "draft": {
+        "capability_yaml": "/agent/repos/captain-compass-sandbox/.agent/capabilities/candidates/skill-drafts/from-stars-example-org-httpx-resilient-clients/capability.yaml",
+        "skill_md": "/agent/repos/captain-compass-sandbox/.agent/capabilities/candidates/skill-drafts/from-stars-example-org-httpx-resilient-clients/SKILL.md",
+        "source_candidate": "/agent/repos/captain-compass-sandbox/.agent/capabilities/candidates/skill-drafts/from-stars-example-org-httpx-resilient-clients/source-candidate.json"
+      },
+      "full_name": "example-org/httpx-resilient-clients",
+      "harness": {
+        "evidence_dir": "/agent/repos/captain-compass-sandbox/.agent/evidence/candidate-sandbox-test/github-stars-example-org-httpx-resilient-clients",
+        "harness_kind": "fixture-file-checks",
+        "lifecycle_stage": "SANDBOX_TESTED",
+        "passed": true,
+        "report_path": "/agent/repos/captain-compass-sandbox/.agent/evidence/candidate-sandbox-test/github-stars-example-org-httpx-resilient-clients/sandbox-test.json",
+        "staging_candidate": "/agent/repos/captain-compass-sandbox/.agent/capabilities/candidates/staging/github-stars-example-org-httpx-resilient-clients.json",
+        "summary_path": "/agent/repos/captain-compass-sandbox/.agent/evidence/candidate-sandbox-test/github-stars-example-org-httpx-resilient-clients/summary.md"
+      },
+      "improvement_proposal": "/agent/repos/captain-compass-sandbox/.agent/capabilities/candidates/skill-improvement-proposals/python-ml/from-github-stars-example-org-httpx-resilient-clients.json",
+      "mode": "improve-existing",
+      "scorecard": {
+        "approved_for_execution": false,
+        "candidate_id": "github-stars-example-org-httpx-resilient-clients",
+        "evidence_paths": [
+          "/agent/repos/captain-compass-sandbox/.agent/evidence/ti-scorecards/github-stars-example-org-httpx-resilient-clients/security-review.md",
+          "/agent/repos/captain-compass-sandbox/.agent/evidence/ti-scorecards/github-stars-example-org-httpx-resilient-clients/dependency-supply-chain.md"
+        ],
+        "full_name": "example-org/httpx-resilient-clients",
+        "out_dir": "/agent/repos/captain-compass-sandbox/.agent/evidence/ti-scorecards/github-stars-example-org-httpx-resilient-clients",
+        "scorecard_path": "/agent/repos/captain-compass-sandbox/.agent/evidence/ti-scorecards/github-stars-example-org-httpx-resilient-clients/scorecard.json",
+        "star_category": "ml-data"
+      },
+      "similar_skills": [
+        {
+          "capabilities_provided": [
+            "python-service-development",
+            "data-pipeline",
+            "ml-training",
+            "ml-evaluation",
+            "experiment-reproducibility"
+          ],
+          "similarity": 0.3832,
+          "skill_path": "/agent/repos/captains-compass-cursor/.cursor/skills/python-ml",
+          "skill_slug": "python-ml"
+        }
+      ],
+      "staging_path": "/agent/repos/captain-compass-sandbox/.agent/capabilities/candidates/staging/github-stars-example-org-httpx-resilient-clients.json",
+      "star_category": "ml-data",
+      "target_skill_slug": "python-ml"
+    }
+  ],
+  "run_id": "learning-20260913T005459Z",
+  "similarity_threshold": 0.28,
+  "source": "fixtures",
+  "starred_provenance_required": true,
+  "top_n": 2
+}

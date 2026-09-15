@@ -1,0 +1,21 @@
+id: from-stars-example-org-httpx-resilient-clients
+version: "0.1.0"
+kind: skill
+source:
+  type: compass-skill
+  path: .cursor/skills/from-stars-example-org-httpx-resilient-clients/SKILL.md
+lifecycle_stage: SANDBOX_TESTED
+capabilities_provided:
+  - example
+  - org
+  - httpx
+  - resilient
+  - clients
+security_sensitivity: medium
+provenance:
+  inferred: false
+  from_candidate: "github-stars-example-org-httpx-resilient-clients"
+  discovery_signal: "github-stars:live:example-org/httpx-resilient-clients|category:ml-data"
+  captain_approval_required: true
+  starred_provenance_required: true
+notes: Draft from skill-learning-loop — requires Captain-approved PR

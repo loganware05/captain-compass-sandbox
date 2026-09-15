@@ -1,0 +1,34 @@
+{
+  "approved_for_execution": false,
+  "capabilities_provided": [
+    "example",
+    "org",
+    "httpx",
+    "resilient",
+    "clients"
+  ],
+  "discovery_signal": "github-stars:live:example-org/httpx-resilient-clients|category:ml-data",
+  "evidence_paths": [
+    "/agent/repos/captain-compass-sandbox/.agent/evidence/candidate-sandbox-test/github-stars-example-org-httpx-resilient-clients/sandbox-test.json",
+    "/agent/repos/captain-compass-sandbox/.agent/evidence/candidate-sandbox-test/github-stars-example-org-httpx-resilient-clients/summary.md"
+  ],
+  "id": "github-stars-example-org-httpx-resilient-clients",
+  "kind": "candidate",
+  "lifecycle_stage": "SANDBOX_TESTED",
+  "notes": "[ml-data] Live GitHub starred repo \u2014 NOT APPROVED FOR EXECUTION",
+  "provenance": {
+    "skill_slug": "from-stars-example-org-httpx-resilient-clients",
+    "star_category": "ml-data",
+    "star_category_confidence": 0.0187,
+    "starred": true,
+    "starred_provenance": true
+  },
+  "source": {
+    "path": "example-org/httpx-resilient-clients",
+    "provenance_url": "https://github.com/example-org/httpx-resilient-clients",
+    "type": "external-candidate"
+  },
+  "starred": true,
+  "starred_provenance": true,
+  "version": "0.1.0"
+}

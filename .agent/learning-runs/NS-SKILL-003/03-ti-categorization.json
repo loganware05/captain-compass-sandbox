@@ -1,0 +1,6 @@
+{
+  "run_id": "NS-SKILL-003",
+  "source": "fixtures",
+  "categorized_path": ".agent/ti/github-stars-categorized/categorized.json",
+  "notes": "Heuristic categorizer labeled python secrets/httpx fixtures as ml-data; objective still secrets-hygiene for bitcoin-data-collector."
+}
