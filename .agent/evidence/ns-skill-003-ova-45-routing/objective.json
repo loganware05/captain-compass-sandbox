@@ -1,0 +1,14 @@
+{
+  "title": "Apply python-ml secrets/settings hygiene (NS-SKILL-003) to a fail-closed live API client path \u2014 product context bitcoin-data-collector Kalshi client; execute sandbox-first",
+  "objective": "Bounded secrets/settings hygiene improvement using sandbox Skill python-ml (env-only credentials, key-path guards, fail-closed auth). Product context: loganware05/bitcoin-data-collector. Do not clone Stars; approved_for_execution remains false.",
+  "category": "ml-data",
+  "target_repository": "loganware05/captain-compass-sandbox",
+  "required_skills": [
+    "python-ml"
+  ],
+  "skill_scope": "sandbox",
+  "context_agent_id": "bc-0b8ec108-10ec-4204-a4e4-8bedbf0405fd",
+  "linear_issue": "OVA-45",
+  "learning_run": "NS-SKILL-003",
+  "product_context_repo": "loganware05/bitcoin-data-collector"
+}
