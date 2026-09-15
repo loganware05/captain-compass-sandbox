@@ -1,7 +1,7 @@
 {
   "schema_version": "northstar.agent_registry.v1",
-  "updated_at": "2026-09-12T18:21:33Z",
-  "notes": "Register Cursor agents with categories, repo allowlists, and status before routing. Stubs below are intentionally ineligible to prove hard filters (not dispatch targets). Wakeability fields required for northstar.agent_router.v1 (M25). | M26/OVA-31: First Mate registered; live probe preferred for wakeability.",
+  "updated_at": "2026-09-15T18:20:22Z",
+  "notes": "Register Cursor agents with categories, repo allowlists, and status before routing. Stubs below are intentionally ineligible to prove hard filters (not dispatch targets). Wakeability fields required for northstar.agent_router.v1 (M25). | M26/OVA-31: First Mate registered; live probe preferred for wakeability. | NS-SKILL-003/OVA-45: python-ml + bitcoin allowlist for First Mate.",
   "agents": [
     {
       "id": "bc-0b8ec108-10ec-4204-a4e4-8bedbf0405fd",
@@ -18,7 +18,8 @@
       ],
       "repository_allowlist": [
         "loganware05/captain-compass-sandbox",
-        "loganware05/captains-compass-cursor"
+        "loganware05/captains-compass-cursor",
+        "loganware05/bitcoin-data-collector"
       ],
       "skills_installed_scope": [
         "sandbox",
@@ -27,20 +28,24 @@
       "skills": [
         "react-engineering",
         "craft-tokens-design-system",
-        "accessibility-review"
+        "accessibility-review",
+        "python-ml"
       ],
       "autonomy_budget_ok": true,
       "availability": 1.0,
       "repository_familiarity": {
         "loganware05/captain-compass-sandbox": 0.9,
-        "loganware05/captains-compass-cursor": 0.95
+        "loganware05/captains-compass-cursor": 0.95,
+        "loganware05/bitcoin-data-collector": 0.55
       },
       "category_success": {
         "frontend-ui": 0.8,
-        "design-system": 0.75
+        "design-system": 0.75,
+        "ml-data": 0.7,
+        "backend-library": 0.7
       },
-      "historical_runs": 2,
-      "notes": "Current First Mate Cloud run for NS-SKILL-002; wakeability from M26 live probe",
+      "historical_runs": 3,
+      "notes": "Current First Mate Cloud run; NS-SKILL-003 routing; wakeability from M26 live probe",
       "wakeability_status": "unknown",
       "cloud_status": "unknown"
     },
