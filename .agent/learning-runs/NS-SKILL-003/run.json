@@ -16,7 +16,11 @@
     "OVA-45": ".agent/learning-runs/NS-SKILL-003/11-agent-routing.md",
     "OVA-45_decision": ".agent/learning-runs/NS-SKILL-003/11-agent-routing.json",
     "OVA-45_dispatch_packet": ".agent/learning-runs/NS-SKILL-003/11-dispatch-packet.json",
-    "OVA-45_evidence": ".agent/evidence/ns-skill-003-ova-45-routing/"
+    "OVA-45_evidence": ".agent/evidence/ns-skill-003-ova-45-routing/",
+    "OVA-45_dispatch_auth": ".agent/learning-runs/NS-SKILL-003/12-dispatch-authorization.md",
+    "OVA-45_exec_evidence": ".agent/evidence/ns-skill-003-ova-45-exec/VALIDATION.md",
+    "OVA-46": ".agent/learning-runs/NS-SKILL-003/13-skill-experience.md",
+    "OVA-46_json": ".agent/learning-runs/NS-SKILL-003/13-skill-experience.json"
   },
   "auto_install_allowed": false,
   "candidate_install_authority": "captain-only",
@@ -37,9 +41,9 @@
     "authoritative_approval": false,
     "control_revision": "c672ada",
     "delegated_agent": null,
-    "last_synced_at": "2026-09-15T18:20:27Z",
-    "milestone": "M6 routing scored; awaiting Captain dispatch",
-    "notes": "OVA-45 scored with M26 live probe; dispatch_ready=true; Linear records only.",
+    "last_synced_at": "2026-09-15T18:47:27Z",
+    "milestone": "M7 Experience recorded; awaiting OVA-47",
+    "notes": "OVA-45 dispatched+executed; Experience success. Linear records only.",
     "parent_issue_id": "OVA-34",
     "product_revision": "0a9719b70a7f92eb39cc03241912c2ebbdbc6528",
     "project_id": "c62f65bf-a376-4716-b958-0d874730a391",
@@ -69,7 +73,7 @@
   "loop_report": ".agent/learning-runs/learning-20260913T005459Z.json",
   "milestone": "M5 \u2014 Promote/install done; OVA-45+ routing not started",
   "mode": "fixtures",
-  "next_action": "Captain dispatch approval for OVA-45; then execute bounded secrets-hygiene improvement + Experience (OVA-46) + retain (OVA-47)",
+  "next_action": "Captain lifecycle decision OVA-47 (retain/improve/prove/retire/upstream)",
   "northstar_version": "1.33.0",
   "objective": "Python settings and secrets hygiene for live API clients: env-only credentials, private key path guards, fail-closed auth (informed by bitcoin-data-collector M27 review)",
   "observed_star_category": "ml-data",
@@ -79,17 +83,25 @@
   "secondary_candidate": "github-stars-example-org-httpx-resilient-clients",
   "source": "fixtures",
   "started_at": "2026-09-13T00:56:14Z",
-  "status": "routing_scored_awaiting_dispatch",
-  "updated_at": "2026-09-15T18:20:27Z",
+  "status": "experience_recorded_awaiting_lifecycle_decision",
+  "updated_at": "2026-09-15T18:47:27Z",
   "routing": {
     "decision_path": ".agent/learning-runs/NS-SKILL-003/11-agent-routing.json",
-    "dispatch_authorized": false,
+    "dispatch_authorized": true,
     "dispatch_packet_path": ".agent/learning-runs/NS-SKILL-003/11-dispatch-packet.json",
     "dispatch_ready": true,
     "live_probe": true,
     "router_version": "northstar.agent_router.v1",
     "scored_at": "2026-09-15T18:20:27Z",
     "selected_agent_id": "bc-0b8ec108-10ec-4204-a4e4-8bedbf0405fd",
-    "score": 0.94
+    "score": 0.94,
+    "dispatch_authorized_at": "2026-09-15T18:47:27Z",
+    "executing_agent_id": "bc-0b8ec108-10ec-4204-a4e4-8bedbf0405fd",
+    "execution_branch": "cursor/ova-45-ns-skill-003-exec-05fd"
+  },
+  "experience": {
+    "outcome": "success",
+    "path": ".agent/learning-runs/NS-SKILL-003/13-skill-experience.md",
+    "recorded_at": "2026-09-15T18:47:27Z"
   }
 }

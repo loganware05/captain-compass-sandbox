@@ -3,7 +3,7 @@
   "learning_run": "NS-SKILL-003",
   "linear_issue": "OVA-45",
   "created_at": "2026-09-15T18:20:27Z",
-  "dispatch_authorized": false,
+  "dispatch_authorized": true,
   "dispatch_ready": true,
   "selected_agent_id": "bc-0b8ec108-10ec-4204-a4e4-8bedbf0405fd",
   "router_version": "northstar.agent_router.v1",
@@ -31,5 +31,7 @@
     "sandbox-first execution",
     "no Star clone/exec",
     "no control-repo Skill upstream without separate PR"
-  ]
+  ],
+  "dispatch_authorized_at": "2026-09-15T18:47:27Z",
+  "authorization_path": ".agent/learning-runs/NS-SKILL-003/12-dispatch-authorization.md"
 }

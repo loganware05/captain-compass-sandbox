@@ -1,0 +1,12 @@
+{
+  "run_id": "NS-SKILL-003",
+  "linear_issue": "OVA-46",
+  "kind": "northstar-skill-experience",
+  "skill": "python-ml",
+  "outcome": "success",
+  "recorded_at": "2026-09-15T18:47:27Z",
+  "executing_agent_id": "bc-0b8ec108-10ec-4204-a4e4-8bedbf0405fd",
+  "tests_passed": 5,
+  "product_change": "src/lib/liveClientSettings.ts",
+  "markdown_path": ".agent/learning-runs/NS-SKILL-003/13-skill-experience.md"
+}
