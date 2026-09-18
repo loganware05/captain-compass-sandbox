@@ -1,0 +1,69 @@
+{
+  "byte_size": 696,
+  "content_hash": "638fc73ea80e94607d6db6d1ea9f0817ac3bb49571928c7f94f3b714d3df3f35",
+  "declared_complexity": "",
+  "exports": [
+    "FormIssuesSummary",
+    "FormIssuesSummaryProps"
+  ],
+  "imports": [
+    {
+      "module": "../lib/contactValidation",
+      "names": [
+        "ContactFormErrors"
+      ]
+    },
+    {
+      "module": "../lib/formAnalytics",
+      "names": [
+        "summarizeFormIssues"
+      ]
+    }
+  ],
+  "inode_id": "ino-638fc73ea80e9460",
+  "language": "tsx",
+  "module": "src/components",
+  "source_path": "src/components/FormIssuesSummary.tsx",
+  "store_version": "1.0.0",
+  "symbols": [
+    {
+      "complexity": "",
+      "exported": true,
+      "fields": [
+        {
+          "name": "errors",
+          "optional": false,
+          "type": "ContactFormErrors"
+        },
+        {
+          "name": "heading",
+          "optional": true,
+          "type": "string"
+        }
+      ],
+      "kind": "interface",
+      "name": "FormIssuesSummaryProps",
+      "signature": "interface FormIssuesSummaryProps { errors: ContactFormErrors, heading?: string }"
+    },
+    {
+      "complexity": "",
+      "exported": true,
+      "kind": "function",
+      "name": "FormIssuesSummary",
+      "params": [
+        {
+          "name": "{ errors",
+          "optional": false,
+          "type": ""
+        },
+        {
+          "name": "heading }",
+          "optional": false,
+          "type": "FormIssuesSummaryProps"
+        }
+      ],
+      "return_type": "",
+      "signature": "FormIssuesSummary({ errors, heading }: FormIssuesSummaryProps)"
+    }
+  ]
+}

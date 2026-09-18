@@ -1,0 +1,35 @@
+{
+  "byte_size": 818,
+  "content_hash": "8dfdf35f7d9e3a8a140489b8b4598d721442abccda5f89dc7978d903f9af17d8",
+  "declared_complexity": "",
+  "exports": [],
+  "imports": [
+    {
+      "module": "@testing-library/react",
+      "names": [
+        "render",
+        "screen"
+      ]
+    },
+    {
+      "module": "vitest",
+      "names": [
+        "describe",
+        "expect",
+        "it"
+      ]
+    },
+    {
+      "module": "./FormIssuesSummary",
+      "names": [
+        "FormIssuesSummary"
+      ]
+    }
+  ],
+  "inode_id": "ino-8dfdf35f7d9e3a8a",
+  "language": "tsx",
+  "module": "src/components",
+  "source_path": "src/components/FormIssuesSummary.test.tsx",
+  "store_version": "1.0.0",
+  "symbols": []
+}

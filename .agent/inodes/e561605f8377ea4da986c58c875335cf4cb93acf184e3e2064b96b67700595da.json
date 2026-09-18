@@ -1,0 +1,75 @@
+{
+  "byte_size": 862,
+  "content_hash": "e561605f8377ea4da986c58c875335cf4cb93acf184e3e2064b96b67700595da",
+  "declared_complexity": "",
+  "exports": [
+    "FormIssue",
+    "countFormIssues",
+    "summarizeFormIssues"
+  ],
+  "imports": [
+    {
+      "module": "./contactValidation",
+      "names": [
+        "ContactField",
+        "ContactFormErrors"
+      ]
+    }
+  ],
+  "inode_id": "ino-e561605f8377ea4d",
+  "language": "typescript",
+  "module": "src/lib",
+  "source_path": "src/lib/formAnalytics.ts",
+  "store_version": "1.0.0",
+  "symbols": [
+    {
+      "complexity": "",
+      "exported": true,
+      "fields": [
+        {
+          "name": "field",
+          "optional": false,
+          "type": "ContactField"
+        },
+        {
+          "name": "message",
+          "optional": false,
+          "type": "string"
+        }
+      ],
+      "kind": "interface",
+      "name": "FormIssue",
+      "signature": "interface FormIssue { field: ContactField, message: string }"
+    },
+    {
+      "complexity": "O(N)",
+      "exported": true,
+      "kind": "function",
+      "name": "summarizeFormIssues",
+      "params": [
+        {
+          "name": "errors",
+          "optional": false,
+          "type": "ContactFormErrors"
+        }
+      ],
+      "return_type": "FormIssue[]",
+      "signature": "summarizeFormIssues(errors: ContactFormErrors): FormIssue[]"
+    },
+    {
+      "complexity": "O(1)",
+      "exported": true,
+      "kind": "function",
+      "name": "countFormIssues",
+      "params": [
+        {
+          "name": "errors",
+          "optional": false,
+          "type": "ContactFormErrors"
+        }
+      ],
+      "return_type": "number",
+      "signature": "countFormIssues(errors: ContactFormErrors): number"
+    }
+  ]
+}

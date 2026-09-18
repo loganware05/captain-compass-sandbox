@@ -4,20 +4,24 @@
     "lib",
     "test"
   ],
-  "file_count": 9,
+  "file_count": 13,
   "inode_refs": [
     "ino-2edf3ecba8be3e89",
+    "ino-5c96fa61067ae695",
+    "ino-638fc73ea80e9460",
     "ino-6e9e5807fcbd48b7",
     "ino-76747ad3090cc402",
+    "ino-8dfdf35f7d9e3a8a",
     "ino-9151b8e74fd74563",
     "ino-977afde26bba6a51",
     "ino-98f5f9e38a9268f5",
     "ino-bdd47e418acfaaaf",
     "ino-ce5f2e4358def879",
+    "ino-e561605f8377ea4d",
     "ino-f662cea57e07065a"
   ],
   "kind": "domain",
   "node_id": "ctx-25a6634263c1",
   "route": "src",
-  "summary": "9 file(s); exports: ContactField, ContactFormErrors, ContactFormValues, MESSAGE_MAX_LENGTH, hasContactFormErrors, validateEmailFormat, validateMessageLength"
+  "summary": "13 file(s); exports: ContactField, ContactFormErrors, ContactFormValues, FormIssue, FormIssuesSummary, FormIssuesSummaryProps, MESSAGE_MAX_LENGTH, countFormIssues, \u2026"
 }
