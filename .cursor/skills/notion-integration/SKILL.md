@@ -32,12 +32,12 @@ Reading product requirements or research from Notion, or writing release summari
    - Maintain `.agent/knowledge/notion-allowlist.txt` with approved page IDs.
    - Fetch allowlisted pages via `notion-fetch` MCP.
    - Save markdown under `.agent/knowledge/external/notion-live/<page-id>.md`
-     or export a JSON payload for `./scripts/ingest-notion-live.sh --source live`.
-   - Run `./scripts/ingest-notion-live.sh` explicitly; provenance is `mcp_live`.
+     or export a JSON payload for `$CONTROL/scripts/ingest-notion-live.sh --source live`.
+   - Run `$CONTROL/scripts/ingest-notion-live.sh` explicitly; provenance is `mcp_live`.
    - Never ingest pages outside the allowlist.
 
 7. **NorthStar bridge (non-authoritative):** after `REVIEW_READY`,
-   `./scripts/run-northstar-routine.sh ... --notion-mode fixtures|live` may
+   `$CONTROL/scripts/run-northstar-routine.sh ... --notion-mode fixtures|live` may
    gather research context and write a summary mirror under
    `.agent/evidence/<run_id>/notion-summary-mirror.json`. Live mode requires
    Notion MCP authentication (Cursor desktop). Approvals stay on GitHub.

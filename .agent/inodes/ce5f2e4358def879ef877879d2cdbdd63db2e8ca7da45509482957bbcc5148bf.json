@@ -1,0 +1,43 @@
+{
+  "byte_size": 2315,
+  "content_hash": "ce5f2e4358def879ef877879d2cdbdd63db2e8ca7da45509482957bbcc5148bf",
+  "declared_complexity": "",
+  "exports": [],
+  "imports": [
+    {
+      "module": "@testing-library/react",
+      "names": [
+        "cleanup",
+        "render",
+        "screen"
+      ]
+    },
+    {
+      "module": "@testing-library/user-event",
+      "names": [
+        "userEvent"
+      ]
+    },
+    {
+      "module": "vitest",
+      "names": [
+        "afterEach",
+        "describe",
+        "expect",
+        "it"
+      ]
+    },
+    {
+      "module": "./CraftTokensDemo",
+      "names": [
+        "CraftTokensDemo"
+      ]
+    }
+  ],
+  "inode_id": "ino-ce5f2e4358def879",
+  "language": "tsx",
+  "module": "src/components",
+  "source_path": "src/components/CraftTokensDemo.test.tsx",
+  "store_version": "1.0.0",
+  "symbols": []
+}

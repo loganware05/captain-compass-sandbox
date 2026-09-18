@@ -1,0 +1,23 @@
+{
+  "children": [
+    "components",
+    "lib",
+    "test"
+  ],
+  "file_count": 9,
+  "inode_refs": [
+    "ino-2edf3ecba8be3e89",
+    "ino-6e9e5807fcbd48b7",
+    "ino-76747ad3090cc402",
+    "ino-9151b8e74fd74563",
+    "ino-977afde26bba6a51",
+    "ino-98f5f9e38a9268f5",
+    "ino-bdd47e418acfaaaf",
+    "ino-ce5f2e4358def879",
+    "ino-f662cea57e07065a"
+  ],
+  "kind": "domain",
+  "node_id": "ctx-25a6634263c1",
+  "route": "src",
+  "summary": "9 file(s); exports: ContactField, ContactFormErrors, ContactFormValues, MESSAGE_MAX_LENGTH, hasContactFormErrors, validateEmailFormat, validateMessageLength"
+}

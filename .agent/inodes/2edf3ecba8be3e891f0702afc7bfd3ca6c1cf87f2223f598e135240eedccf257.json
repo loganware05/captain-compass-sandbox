@@ -1,0 +1,104 @@
+{
+  "byte_size": 2184,
+  "content_hash": "2edf3ecba8be3e891f0702afc7bfd3ca6c1cf87f2223f598e135240eedccf257",
+  "declared_complexity": "",
+  "exports": [
+    "ContactField",
+    "ContactFormErrors",
+    "ContactFormValues",
+    "MESSAGE_MAX_LENGTH",
+    "hasContactFormErrors",
+    "validateEmailFormat",
+    "validateMessageLength"
+  ],
+  "imports": [],
+  "inode_id": "ino-2edf3ecba8be3e89",
+  "language": "typescript",
+  "module": "src/lib",
+  "source_path": "src/lib/contactValidation.ts",
+  "store_version": "1.0.0",
+  "symbols": [
+    {
+      "complexity": "",
+      "exported": true,
+      "kind": "type",
+      "name": "ContactField",
+      "signature": "type ContactField = 'name' | 'email' | 'message'"
+    },
+    {
+      "complexity": "",
+      "exported": true,
+      "kind": "type",
+      "name": "ContactFormValues",
+      "signature": "type ContactFormValues = Record<ContactField, string>"
+    },
+    {
+      "complexity": "",
+      "exported": true,
+      "kind": "type",
+      "name": "ContactFormErrors",
+      "signature": "type ContactFormErrors = Partial<Record<ContactField, string>>"
+    },
+    {
+      "complexity": "",
+      "exported": true,
+      "kind": "const",
+      "name": "MESSAGE_MAX_LENGTH",
+      "return_type": "",
+      "signature": "const MESSAGE_MAX_LENGTH"
+    },
+    {
+      "complexity": "",
+      "exported": false,
+      "kind": "const",
+      "name": "EMAIL_PATTERN",
+      "return_type": "",
+      "signature": "const EMAIL_PATTERN"
+    },
+    {
+      "complexity": "",
+      "exported": true,
+      "kind": "function",
+      "name": "validateEmailFormat",
+      "params": [
+        {
+          "name": "value",
+          "optional": false,
+          "type": "string"
+        }
+      ],
+      "return_type": "string | undefined",
+      "signature": "validateEmailFormat(value: string): string | undefined"
+    },
+    {
+      "complexity": "",
+      "exported": true,
+      "kind": "function",
+      "name": "validateMessageLength",
+      "params": [
+        {
+          "name": "value",
+          "optional": false,
+          "type": "string"
+        }
+      ],
+      "return_type": "string | undefined",
+      "signature": "validateMessageLength(value: string): string | undefined"
+    },
+    {
+      "complexity": "",
+      "exported": true,
+      "kind": "function",
+      "name": "hasContactFormErrors",
+      "params": [
+        {
+          "name": "errors",
+          "optional": false,
+          "type": "ContactFormErrors"
+        }
+      ],
+      "return_type": "boolean",
+      "signature": "hasContactFormErrors(errors: ContactFormErrors): boolean"
+    }
+  ]
+}

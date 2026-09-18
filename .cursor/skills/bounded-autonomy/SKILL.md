@@ -24,7 +24,7 @@ matcher weight suggestions under an autonomy budget (Milestone 4 Level 3).
 3. Apply once under budget:
 
    ```bash
-   ./scripts/apply-routing-proposal.sh \
+   $CONTROL/scripts/apply-routing-proposal.sh \
      --proposal .agent/routing/proposals/<id>.json \
      --budget .agent/budgets/<plan-id>.md
    ```
@@ -36,9 +36,9 @@ matcher weight suggestions under an autonomy budget (Milestone 4 Level 3).
 4. **Context selection apply** (M17 — which plan slices appear):
 
    ```bash
-   ./scripts/propose-context-selection.sh --experiences tests/fixtures/experience/contact-counter.json
+   $CONTROL/scripts/propose-context-selection.sh --experiences tests/fixtures/experience/contact-counter.json
    # Captain sets captain_approved: true on the context-selection proposal
-   ./scripts/apply-context-selection-proposal.sh \
+   $CONTROL/scripts/apply-context-selection-proposal.sh \
      --proposal .agent/routing/proposals/<ctxsel-id>.json \
      --budget .agent/budgets/<plan-id>.md
    ```

@@ -23,14 +23,14 @@ capability plans — offline fixtures or opt-in live registry queries.
 
    ```bash
    COMPASS_TI_PROVIDER=package-registry-file \
-     ./scripts/query-technology-intelligence.sh --query "schema validation typescript"
+     $CONTROL/scripts/query-technology-intelligence.sh --query "schema validation typescript"
    ```
 
 2. Live npm + PyPI (Captain local; never CI default):
 
    ```bash
    COMPASS_TI_PROVIDER=package-registry \
-     ./scripts/query-technology-intelligence.sh --query "schema validation"
+     $CONTROL/scripts/query-technology-intelligence.sh --query "schema validation"
    ```
 
 3. Candidates appear only under **Technology Intelligence Candidates**

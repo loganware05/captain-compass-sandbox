@@ -24,7 +24,7 @@ this Skill is the second instance that imports a product Experience into the
 2. Train a draft Skill in control-repo staging (not live Skills):
 
    ```bash
-   ./scripts/train-skill-from-experience.sh \
+   $CONTROL/scripts/train-skill-from-experience.sh \
      --experience /path/to/product/.agent/experience/<id>.json \
      --control-root /path/to/captains-compass-cursor \
      [--skill-slug my-new-skill]
@@ -35,7 +35,7 @@ this Skill is the second instance that imports a product Experience into the
 4. Run control-repo validation:
 
    ```bash
-   ./scripts/doctor.sh
+   $CONTROL/scripts/doctor.sh
    PYTHONPATH=. python3 -m unittest discover -s tests/orchestrator -p 'test_*.py' -q
    ```
 

@@ -24,17 +24,17 @@ keeping **TF-IDF as the always-on fallback**.
 1. Default path stays TF-IDF (`COMPASS_EMBEDDING_PROVIDER` unset or `tfidf`):
 
    ```bash
-   ./scripts/rebuild-knowledge-vector-index.sh
-   ./scripts/query-knowledge.sh --query "matcher tuning" --mode hybrid
+   $CONTROL/scripts/rebuild-knowledge-vector-index.sh
+   $CONTROL/scripts/query-knowledge.sh --query "matcher tuning" --mode hybrid
    ```
 
 2. Opt into fixture dense embeddings (offline; no network):
 
    ```bash
    COMPASS_EMBEDDING_PROVIDER=fixture \
-     ./scripts/rebuild-knowledge-embedding-index.sh
+     $CONTROL/scripts/rebuild-knowledge-embedding-index.sh
    COMPASS_EMBEDDING_PROVIDER=fixture \
-     ./scripts/query-knowledge.sh --query "matcher tuning" --mode vector
+     $CONTROL/scripts/query-knowledge.sh --query "matcher tuning" --mode vector
    ```
 
 3. Opt into **OpenAI-compatible** embeddings (Captain local only; never CI):
@@ -45,8 +45,8 @@ keeping **TF-IDF as the always-on fallback**.
    # optional:
    # export COMPASS_EMBEDDING_BASE_URL=https://api.openai.com/v1
    # export COMPASS_EMBEDDING_MODEL=text-embedding-3-small
-   ./scripts/rebuild-knowledge-embedding-index.sh
-   ./scripts/query-knowledge.sh --query "matcher tuning" --mode vector
+   $CONTROL/scripts/rebuild-knowledge-embedding-index.sh
+   $CONTROL/scripts/query-knowledge.sh --query "matcher tuning" --mode vector
    ```
 
 4. Missing dense index or live HTTP failure → automatic **TF-IDF fallback**.

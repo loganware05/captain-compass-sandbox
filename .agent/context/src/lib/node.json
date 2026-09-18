@@ -1,0 +1,12 @@
+{
+  "children": [],
+  "file_count": 2,
+  "inode_refs": [
+    "ino-2edf3ecba8be3e89",
+    "ino-98f5f9e38a9268f5"
+  ],
+  "kind": "module",
+  "node_id": "ctx-91be6cfb7c91",
+  "route": "src/lib",
+  "summary": "2 file(s); exports: ContactField, ContactFormErrors, ContactFormValues, MESSAGE_MAX_LENGTH, hasContactFormErrors, validateEmailFormat, validateMessageLength"
+}

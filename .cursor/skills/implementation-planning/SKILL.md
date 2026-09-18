@@ -23,7 +23,7 @@ infrastructure change, or other task that modifies product behavior.
 
 1. Read the required project documents.
 2. Inspect relevant implementation files.
-3. Load Skill `capability-planning` and run `./scripts/capability-plan.sh` for the objective; merge rendered sections into `IMPLEMENTATION_PLAN.md`.
+3. Load Skill `capability-planning` and run `$CONTROL/scripts/capability-plan.sh` for the objective; merge rendered sections into `IMPLEMENTATION_PLAN.md`.
 4. Identify current behavior.
 5. Define desired behavior.
 6. Identify assumptions and open questions.

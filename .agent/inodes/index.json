@@ -1,0 +1,79 @@
+{
+  "file_count": 10,
+  "files": {
+    "src/App.tsx": {
+      "byte_size": 4145,
+      "content_hash": "9151b8e74fd74563d35b287d50aaff55034bd51788aeadde38da664538dbb15f",
+      "inode_id": "ino-9151b8e74fd74563",
+      "module": "src"
+    },
+    "src/components/ContactForm.test.tsx": {
+      "byte_size": 6441,
+      "content_hash": "bdd47e418acfaaaf3caaec5d8d4d2e3a7439868009d75582e04914ccd2b9fdc2",
+      "inode_id": "ino-bdd47e418acfaaaf",
+      "module": "src/components"
+    },
+    "src/components/ContactForm.tsx": {
+      "byte_size": 8918,
+      "content_hash": "f662cea57e07065a5a0586b08633afeed9c2b25a5386a6382b5199fd51806e34",
+      "inode_id": "ino-f662cea57e07065a",
+      "module": "src/components"
+    },
+    "src/components/CraftTokensDemo.test.tsx": {
+      "byte_size": 2315,
+      "content_hash": "ce5f2e4358def879ef877879d2cdbdd63db2e8ca7da45509482957bbcc5148bf",
+      "inode_id": "ino-ce5f2e4358def879",
+      "module": "src/components"
+    },
+    "src/components/CraftTokensDemo.tsx": {
+      "byte_size": 4236,
+      "content_hash": "76747ad3090cc402f1ffdca59edb7a53f97e3ce9768bc655ee5f5cabef808e9d",
+      "inode_id": "ino-76747ad3090cc402",
+      "module": "src/components"
+    },
+    "src/lib/contactValidation.test.ts": {
+      "byte_size": 3435,
+      "content_hash": "98f5f9e38a9268f537b0f8d2f676cf182a96befd914157f128d9b68835217f95",
+      "inode_id": "ino-98f5f9e38a9268f5",
+      "module": "src/lib"
+    },
+    "src/lib/contactValidation.ts": {
+      "byte_size": 2184,
+      "content_hash": "2edf3ecba8be3e891f0702afc7bfd3ca6c1cf87f2223f598e135240eedccf257",
+      "inode_id": "ino-2edf3ecba8be3e89",
+      "module": "src/lib"
+    },
+    "src/main.tsx": {
+      "byte_size": 230,
+      "content_hash": "6e9e5807fcbd48b75a96db5cbef36c996262196be42e6d4760dc86babbe61ad2",
+      "inode_id": "ino-6e9e5807fcbd48b7",
+      "module": "src"
+    },
+    "src/test/setup.ts": {
+      "byte_size": 42,
+      "content_hash": "977afde26bba6a51325908cd7713cbfdc87d18f06b78b237c8f364c44864b7de",
+      "inode_id": "ino-977afde26bba6a51",
+      "module": "src/test"
+    },
+    "vite.config.ts": {
+      "byte_size": 250,
+      "content_hash": "0b166cb17561c22e0330ae9c19ae8bfa2f4dd6a9784ed2dab4fed26feb8c4d97",
+      "inode_id": "ino-0b166cb17561c22e",
+      "module": ""
+    }
+  },
+  "inode_count": 10,
+  "inodes": [
+    "ino-0b166cb17561c22e",
+    "ino-2edf3ecba8be3e89",
+    "ino-6e9e5807fcbd48b7",
+    "ino-76747ad3090cc402",
+    "ino-9151b8e74fd74563",
+    "ino-977afde26bba6a51",
+    "ino-98f5f9e38a9268f5",
+    "ino-bdd47e418acfaaaf",
+    "ino-ce5f2e4358def879",
+    "ino-f662cea57e07065a"
+  ],
+  "store_version": "1.0.0"
+}

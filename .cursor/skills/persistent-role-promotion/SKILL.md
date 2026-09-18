@@ -22,7 +22,7 @@ role** draft prepared for a PR into `.cursor/agents/`.
 2. Propose staging drafts only:
 
    ```bash
-   ./scripts/propose-persistent-role.sh --agent-id compass-evaluator
+   $CONTROL/scripts/propose-persistent-role.sh --agent-id compass-evaluator
    ```
 
 3. Review proposal under `.agent/agents/promotions/proposals/` and drafts under
@@ -37,7 +37,7 @@ role** draft prepared for a PR into `.cursor/agents/`.
 From a NorthStar run that has reached `REVIEW_READY`:
 
 ```bash
-./scripts/run-northstar-routine.sh --demo --approve --advance-to-review --propose-roles
+$CONTROL/scripts/run-northstar-routine.sh --demo --approve --advance-to-review --propose-roles
 ```
 
 This only stages drafts via `orchestrator/integrations/m4_bridge.py`. It does

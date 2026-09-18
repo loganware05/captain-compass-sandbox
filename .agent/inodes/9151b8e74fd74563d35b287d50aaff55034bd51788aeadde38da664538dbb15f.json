@@ -1,0 +1,64 @@
+{
+  "byte_size": 4145,
+  "content_hash": "9151b8e74fd74563d35b287d50aaff55034bd51788aeadde38da664538dbb15f",
+  "declared_complexity": "",
+  "exports": [],
+  "imports": [
+    {
+      "module": "react",
+      "names": [
+        "useState"
+      ]
+    },
+    {
+      "module": "./assets/react.svg",
+      "names": [
+        "reactLogo"
+      ]
+    },
+    {
+      "module": "./assets/vite.svg",
+      "names": [
+        "viteLogo"
+      ]
+    },
+    {
+      "module": "./assets/hero.png",
+      "names": [
+        "heroImg"
+      ]
+    },
+    {
+      "module": "./components/ContactForm",
+      "names": [
+        "ContactForm"
+      ]
+    },
+    {
+      "module": "./components/CraftTokensDemo",
+      "names": [
+        "CraftTokensDemo"
+      ]
+    },
+    {
+      "module": "./App.css",
+      "names": []
+    }
+  ],
+  "inode_id": "ino-9151b8e74fd74563",
+  "language": "tsx",
+  "module": "src",
+  "source_path": "src/App.tsx",
+  "store_version": "1.0.0",
+  "symbols": [
+    {
+      "complexity": "",
+      "exported": false,
+      "kind": "function",
+      "name": "App",
+      "params": [],
+      "return_type": "",
+      "signature": "App()"
+    }
+  ]
+}

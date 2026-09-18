@@ -1,0 +1,36 @@
+{
+  "byte_size": 230,
+  "content_hash": "6e9e5807fcbd48b75a96db5cbef36c996262196be42e6d4760dc86babbe61ad2",
+  "declared_complexity": "",
+  "exports": [],
+  "imports": [
+    {
+      "module": "react",
+      "names": [
+        "StrictMode"
+      ]
+    },
+    {
+      "module": "react-dom/client",
+      "names": [
+        "createRoot"
+      ]
+    },
+    {
+      "module": "./index.css",
+      "names": []
+    },
+    {
+      "module": "./App.tsx",
+      "names": [
+        "App"
+      ]
+    }
+  ],
+  "inode_id": "ino-6e9e5807fcbd48b7",
+  "language": "tsx",
+  "module": "src",
+  "source_path": "src/main.tsx",
+  "store_version": "1.0.0",
+  "symbols": []
+}

@@ -6,7 +6,7 @@ Close out a finished workstream after merge (or Captain decision to stop).
 4. Load Skill `execution-telemetry` and record an ExecutionRun + Experience:
 
    ```bash
-   ./scripts/record-execution-run.sh \
+   $CONTROL/scripts/record-execution-run.sh \
      --plan-id <plan-id> \
      --outcome success \
      --objective "<summary>" \

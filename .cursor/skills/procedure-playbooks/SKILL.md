@@ -20,7 +20,7 @@ planning — validated sequences from staging or approved procedure roots.
 1. **Propose** (optional — creates staging draft, does not ingest):
 
    ```bash
-   ./scripts/propose-procedure-from-knowledge.sh \
+   $CONTROL/scripts/propose-procedure-from-knowledge.sh \
      --item-ids know-adr-020 \
      --title "Bounded weight apply playbook"
    ```
@@ -28,7 +28,7 @@ planning — validated sequences from staging or approved procedure roots.
 2. **Ingest** procedure playbooks (explicit CLI only):
 
    ```bash
-   ./scripts/ingest-knowledge.sh --from-store procedures
+   $CONTROL/scripts/ingest-knowledge.sh --from-store procedures
    ```
 
    Ingests `playbook.md` from **staging** and **approved** roots. Re-ingest
@@ -37,7 +37,7 @@ planning — validated sequences from staging or approved procedure roots.
 3. **Query** for readback:
 
    ```bash
-   ./scripts/query-knowledge.sh --query "bounded autonomy apply" --kind procedure
+   $CONTROL/scripts/query-knowledge.sh --query "bounded autonomy apply" --kind procedure
    ```
 
 4. Review **Procedure Context** in capability plans (always rendered; empty when none).

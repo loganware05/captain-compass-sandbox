@@ -29,11 +29,11 @@ or the Captain wants a **draft Skill sidecar** prepared for an approved PR into
 2. Advance lifecycle (examples):
 
    ```bash
-   ./scripts/promote-candidate.sh --candidate <path.json>
-   ./scripts/promote-candidate.sh --candidate <path.json> \
+   $CONTROL/scripts/promote-candidate.sh --candidate <path.json>
+   $CONTROL/scripts/promote-candidate.sh --candidate <path.json> \
      --stage SECURITY_REVIEWED \
      --evidence .agent/evidence/security-review.md
-   ./scripts/promote-candidate.sh --candidate <path.json> \
+   $CONTROL/scripts/promote-candidate.sh --candidate <path.json> \
      --stage SANDBOX_TESTED \
      --evidence .agent/evidence/sandbox-test.md
    ```
@@ -43,14 +43,14 @@ or the Captain wants a **draft Skill sidecar** prepared for an approved PR into
    evidence paths (from the TI scorecard) or the draft fails closed:
 
    ```bash
-   ./scripts/promote-candidate.sh --candidate <path.json> --draft-skill <slug>
+   $CONTROL/scripts/promote-candidate.sh --candidate <path.json> --draft-skill <slug>
    ```
 
 4. For post-sandbox stages, load Skill `skill-lifecycle` (requires
    `--captain-approved`).
 5. Open a Captain-reviewed PR to copy draft files into `.cursor/skills/<slug>/`
    only after explicit approval. Never auto-merge.
-6. Re-run `./scripts/compile-capability-registry.sh` and tests after merge.
+6. Re-run `$CONTROL/scripts/compile-capability-registry.sh` and tests after merge.
 7. For **live** starred-repo discovery (Captain local only), use Skill
    `technology-intelligence-live` with `COMPASS_TI_PROVIDER=github-stars`.
    External repos must be starred; non-starred feeds are rejected.
