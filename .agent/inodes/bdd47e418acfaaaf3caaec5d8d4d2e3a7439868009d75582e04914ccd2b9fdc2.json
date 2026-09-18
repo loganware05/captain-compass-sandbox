@@ -57,7 +57,8 @@
         {
           "name": "text",
           "optional": false,
-          "type": "string"
+          "type": "string",
+          "variadic": false
         }
       ],
       "return_type": "HTMLElement",

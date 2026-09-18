@@ -52,14 +52,10 @@
       "name": "FormIssuesSummary",
       "params": [
         {
-          "name": "{ errors",
+          "name": "{ errors, heading }",
           "optional": false,
-          "type": ""
-        },
-        {
-          "name": "heading }",
-          "optional": false,
-          "type": "FormIssuesSummaryProps"
+          "type": "FormIssuesSummaryProps",
+          "variadic": false
         }
       ],
       "return_type": "",

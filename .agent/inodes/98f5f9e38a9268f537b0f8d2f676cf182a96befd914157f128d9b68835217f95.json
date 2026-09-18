@@ -11,6 +11,18 @@
         "expect",
         "it"
       ]
+    },
+    {
+      "module": "./contactValidation",
+      "names": [
+        "MESSAGE_MAX_LENGTH",
+        "firstErrorField",
+        "hasContactFormErrors",
+        "validateContactForm",
+        "validateEmailFormat",
+        "validateMessageLength",
+        "validateRequired"
+      ]
     }
   ],
   "inode_id": "ino-98f5f9e38a9268f5",

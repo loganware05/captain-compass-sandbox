@@ -10,5 +10,5 @@
   "kind": "module",
   "node_id": "ctx-91be6cfb7c91",
   "route": "src/lib",
-  "summary": "4 file(s); exports: ContactField, ContactFormErrors, ContactFormValues, FormIssue, MESSAGE_MAX_LENGTH, countFormIssues, hasContactFormErrors, summarizeFormIssues, \u2026"
+  "summary": "4 file(s); exports: ContactField, ContactFormErrors, ContactFormValues, FormIssue, MESSAGE_MAX_LENGTH, countFormIssues, firstErrorField, hasContactFormErrors, \u2026"
 }

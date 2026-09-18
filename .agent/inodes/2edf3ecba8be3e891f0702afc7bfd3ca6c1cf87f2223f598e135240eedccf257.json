@@ -7,9 +7,12 @@
     "ContactFormErrors",
     "ContactFormValues",
     "MESSAGE_MAX_LENGTH",
+    "firstErrorField",
     "hasContactFormErrors",
+    "validateContactForm",
     "validateEmailFormat",
-    "validateMessageLength"
+    "validateMessageLength",
+    "validateRequired"
   ],
   "imports": [],
   "inode_id": "ino-2edf3ecba8be3e89",
@@ -23,7 +26,7 @@
       "exported": true,
       "kind": "type",
       "name": "ContactField",
-      "signature": "type ContactField = 'name' | 'email' | 'message'"
+      "signature": "type ContactField = \u2026 | \u2026 | \u2026"
     },
     {
       "complexity": "",
@@ -59,12 +62,22 @@
       "complexity": "",
       "exported": true,
       "kind": "function",
+      "name": "validateRequired",
+      "params": [],
+      "return_type": "",
+      "signature": "validateRequired()"
+    },
+    {
+      "complexity": "",
+      "exported": true,
+      "kind": "function",
       "name": "validateEmailFormat",
       "params": [
         {
           "name": "value",
           "optional": false,
-          "type": "string"
+          "type": "string",
+          "variadic": false
         }
       ],
       "return_type": "string | undefined",
@@ -79,11 +92,21 @@
         {
           "name": "value",
           "optional": false,
-          "type": "string"
+          "type": "string",
+          "variadic": false
         }
       ],
       "return_type": "string | undefined",
       "signature": "validateMessageLength(value: string): string | undefined"
+    },
+    {
+      "complexity": "",
+      "exported": true,
+      "kind": "function",
+      "name": "validateContactForm",
+      "params": [],
+      "return_type": "",
+      "signature": "validateContactForm()"
     },
     {
       "complexity": "",
@@ -94,11 +117,21 @@
         {
           "name": "errors",
           "optional": false,
-          "type": "ContactFormErrors"
+          "type": "ContactFormErrors",
+          "variadic": false
         }
       ],
       "return_type": "boolean",
       "signature": "hasContactFormErrors(errors: ContactFormErrors): boolean"
+    },
+    {
+      "complexity": "",
+      "exported": true,
+      "kind": "function",
+      "name": "firstErrorField",
+      "params": [],
+      "return_type": "",
+      "signature": "firstErrorField()"
     }
   ]
 }

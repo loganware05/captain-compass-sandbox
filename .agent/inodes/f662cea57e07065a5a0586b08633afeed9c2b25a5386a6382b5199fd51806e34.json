@@ -5,6 +5,28 @@
   "exports": [],
   "imports": [
     {
+      "module": "react",
+      "names": [
+        "useId",
+        "useRef",
+        "useState",
+        "type FormEvent",
+        "type RefObject"
+      ]
+    },
+    {
+      "module": "../lib/contactValidation",
+      "names": [
+        "MESSAGE_MAX_LENGTH",
+        "firstErrorField",
+        "hasContactFormErrors",
+        "validateContactForm",
+        "type ContactField",
+        "type ContactFormErrors",
+        "type ContactFormValues"
+      ]
+    },
+    {
       "module": "./ContactForm.css",
       "names": []
     }
@@ -31,12 +53,13 @@
       "params": [
         {
           "name": "ids",
-          "optional": false,
-          "type": "Array<string | undefined>"
+          "optional": true,
+          "type": "Array<string | undefined>",
+          "variadic": true
         }
       ],
       "return_type": "string | undefined",
-      "signature": "describedByIds(ids: Array<string | undefined>): string | undefined"
+      "signature": "describedByIds(...ids: Array<string | undefined>): string | undefined"
     },
     {
       "complexity": "",
