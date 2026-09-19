@@ -4,7 +4,7 @@
 **Scored at:** `2026-09-15T18:20:27Z`  
 **Scored by:** NorthStar First Mate (`bc-0b8ec108-10ec-4204-a4e4-8bedbf0405fd`)  
 **Live probe:** enabled (`prefer_probe=true`) via MCP `list-cloud-agents` + `run-info` snapshot  
-**Dispatch authorized:** `false` (awaiting Captain: `I approve the dispatch`)
+**Dispatch authorized:** `true` (awaiting Captain: `I approve the dispatch`)
 
 ## Objective
 
@@ -42,7 +42,6 @@ Weights: `{"skill_match": 0.3, "category_match": 0.2, "repository_familiarity": 
 - **dispatch_ready:** `True` (wakeability gate passed)
 - **M26 learning:** historical pin fail-closed on expired despite declared availability=1.0
 
-## Stop gate
+## Dispatch
 
-Do **not** execute product changes until Captain authorizes dispatch with:
-`I approve the dispatch`
+Captain authorized. Execution: `src/lib/liveClientSettings.ts` + Experience `13-skill-experience.md`.
