@@ -1,0 +1,34 @@
+{
+  "byte_size": 3435,
+  "content_hash": "98f5f9e38a9268f537b0f8d2f676cf182a96befd914157f128d9b68835217f95",
+  "declared_complexity": "",
+  "exports": [],
+  "imports": [
+    {
+      "module": "vitest",
+      "names": [
+        "describe",
+        "expect",
+        "it"
+      ]
+    },
+    {
+      "module": "./contactValidation",
+      "names": [
+        "MESSAGE_MAX_LENGTH",
+        "firstErrorField",
+        "hasContactFormErrors",
+        "validateContactForm",
+        "validateEmailFormat",
+        "validateMessageLength",
+        "validateRequired"
+      ]
+    }
+  ],
+  "inode_id": "ino-98f5f9e38a9268f5",
+  "language": "typescript",
+  "module": "src/lib",
+  "source_path": "src/lib/contactValidation.test.ts",
+  "store_version": "1.0.0",
+  "symbols": []
+}

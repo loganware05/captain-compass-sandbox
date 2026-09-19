@@ -31,7 +31,7 @@ For earlier stages (`DISCOVERED → SANDBOX_TESTED`) use Skill `candidate-promot
 2. Captain-approved advance to **APPROVED**:
 
    ```bash
-   ./scripts/promote-candidate.sh --candidate <path.json> \
+   $CONTROL/scripts/promote-candidate.sh --candidate <path.json> \
      --stage APPROVED \
      --evidence .agent/evidence/approval.md \
      --captain-approved \
@@ -41,7 +41,7 @@ For earlier stages (`DISCOVERED → SANDBOX_TESTED`) use Skill `candidate-promot
 3. Emit **AVAILABLE_SKILL** install **proposal** (never live install):
 
    ```bash
-   ./scripts/promote-candidate.sh --candidate <staging.json> \
+   $CONTROL/scripts/promote-candidate.sh --candidate <staging.json> \
      --stage AVAILABLE_SKILL \
      --evidence .agent/evidence/approval.md \
      --captain-approved \
@@ -56,7 +56,7 @@ For earlier stages (`DISCOVERED → SANDBOX_TESTED`) use Skill `candidate-promot
    the slug. When **≥2** successful Experiences exist, advance to **PROVEN_SKILL**:
 
    ```bash
-   ./scripts/promote-candidate.sh --candidate <staging.json> \
+   $CONTROL/scripts/promote-candidate.sh --candidate <staging.json> \
      --stage PROVEN_SKILL \
      --evidence .agent/evidence/proven.md \
      --captain-approved \
@@ -66,9 +66,9 @@ For earlier stages (`DISCOVERED → SANDBOX_TESTED`) use Skill `candidate-promot
    Override threshold with `COMPASS_PROVEN_SUCCESS_THRESHOLD` if needed.
 
 5. Optional training draft from Experience: Skill `experience-skill-training`
-   (`./scripts/train-skill-from-experience.sh`). Learning-run Experiences: Skill
+   (`$CONTROL/scripts/train-skill-from-experience.sh`). Learning-run Experiences: Skill
    `skill-learning-loop` (`bridge-learning-experiences.sh`).
-6. Re-run `./scripts/compile-capability-registry.sh` after any live Skill PR merges.
+6. Re-run `$CONTROL/scripts/compile-capability-registry.sh` after any live Skill PR merges.
 
 ## Output
 

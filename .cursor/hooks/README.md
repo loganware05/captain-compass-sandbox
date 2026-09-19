@@ -3,12 +3,34 @@
 Configured in `.cursor/hooks.json` (`beforeShellExecution` + `preToolUse`):
 
 1. **secret-protection** — block staging/committing secrets (**fail-closed**)
-2. **protected-branch** — block mutations on main/master/develop/release/production (**fail-closed**)
-3. **plan-approval-check** — block product source edits without an APPROVED plan (**fail-closed**)
+2. **protected-branch** — block mutations on main/master/develop/release/production (**fail-closed**).
+   Parses `git -C`, push refspecs (`HEAD:main`, `origin main`), and does **not**
+   short-circuit on a `checkout -b feature/` substring in the same command.
+3. **plan-approval-check** — block product source edits without a **committed**
+   APPROVED plan (**fail-closed**). Writing `APPROVED` into `IMPLEMENTATION_PLAN.md`
+   requires `COMPASS_CAPTAIN_APPROVE=1` so agents cannot self-serve the gate.
+   Status is read from the metadata table (`| Status | … |`) or `- Status:` lines;
+   `Approved by` + `Approval date` must be real (not empty / TBD). Working-tree-only
+   approval does not unlock product files.
+   **M38:** also runs on `beforeShellExecution` and denies **any** shell write
+   to `IMPLEMENTATION_PLAN.md` (redirects/`tee`/`cp`/opaque `cat >`) unless
+   `COMPASS_CAPTAIN_APPROVE=1`. Bare reads (`cat`/`grep`) remain allowed.
 4. **branch-name-validation** — require `feature|fix|chore|docs|agent|hotfix/<name>` (fail-open)
 5. **pre-commit-formatting** — run `npm run format` or `lint` before commit when present (`COMPASS_SKIP_FORMAT=1`) (fail-open)
 6. **pre-push-tests** — run `npm test` before push when present (`COMPASS_SKIP_TESTS=1`) (fail-open)
 7. **pr-evidence-validation** — require plan + `.agent/evidence/` files before `gh pr create` (`COMPASS_SKIP_PR_EVIDENCE=1`) (fail-open)
+
+## Captain approval env
+
+When promoting a plan to APPROVED / IN PROGRESS / VALIDATING / COMPLETE via
+Write/StrReplace **or shell redirect**, set in the Cursor / shell environment:
+
+```bash
+export COMPASS_CAPTAIN_APPROVE=1
+```
+
+Agents must not set this for themselves. After the plan is committed with a filled
+Approval Record, product-source edits are allowed on non-protected branches.
 
 ## Fail-closed vs fail-open
 

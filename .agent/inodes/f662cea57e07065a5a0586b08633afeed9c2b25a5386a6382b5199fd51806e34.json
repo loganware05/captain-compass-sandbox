@@ -1,0 +1,74 @@
+{
+  "byte_size": 8918,
+  "content_hash": "f662cea57e07065a5a0586b08633afeed9c2b25a5386a6382b5199fd51806e34",
+  "declared_complexity": "",
+  "exports": [],
+  "imports": [
+    {
+      "module": "react",
+      "names": [
+        "useId",
+        "useRef",
+        "useState",
+        "type FormEvent",
+        "type RefObject"
+      ]
+    },
+    {
+      "module": "../lib/contactValidation",
+      "names": [
+        "MESSAGE_MAX_LENGTH",
+        "firstErrorField",
+        "hasContactFormErrors",
+        "validateContactForm",
+        "type ContactField",
+        "type ContactFormErrors",
+        "type ContactFormValues"
+      ]
+    },
+    {
+      "module": "./ContactForm.css",
+      "names": []
+    }
+  ],
+  "inode_id": "ino-f662cea57e07065a",
+  "language": "tsx",
+  "module": "src/components",
+  "source_path": "src/components/ContactForm.tsx",
+  "store_version": "1.0.0",
+  "symbols": [
+    {
+      "complexity": "",
+      "exported": false,
+      "kind": "const",
+      "name": "EMPTY_VALUES",
+      "return_type": "ContactFormValues",
+      "signature": "const EMPTY_VALUES: ContactFormValues"
+    },
+    {
+      "complexity": "",
+      "exported": false,
+      "kind": "function",
+      "name": "describedByIds",
+      "params": [
+        {
+          "name": "ids",
+          "optional": true,
+          "type": "Array<string | undefined>",
+          "variadic": true
+        }
+      ],
+      "return_type": "string | undefined",
+      "signature": "describedByIds(...ids: Array<string | undefined>): string | undefined"
+    },
+    {
+      "complexity": "",
+      "exported": false,
+      "kind": "function",
+      "name": "ContactForm",
+      "params": [],
+      "return_type": "",
+      "signature": "ContactForm()"
+    }
+  ]
+}

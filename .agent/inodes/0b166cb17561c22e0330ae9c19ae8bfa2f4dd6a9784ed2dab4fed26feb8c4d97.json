@@ -1,0 +1,26 @@
+{
+  "byte_size": 250,
+  "content_hash": "0b166cb17561c22e0330ae9c19ae8bfa2f4dd6a9784ed2dab4fed26feb8c4d97",
+  "declared_complexity": "",
+  "exports": [],
+  "imports": [
+    {
+      "module": "vitest/config",
+      "names": [
+        "defineConfig"
+      ]
+    },
+    {
+      "module": "@vitejs/plugin-react",
+      "names": [
+        "react"
+      ]
+    }
+  ],
+  "inode_id": "ino-0b166cb17561c22e",
+  "language": "typescript",
+  "module": "",
+  "source_path": "vite.config.ts",
+  "store_version": "1.0.0",
+  "symbols": []
+}

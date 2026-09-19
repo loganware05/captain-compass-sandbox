@@ -21,7 +21,7 @@ routing improvements based on historical outcomes.
 2. Generate a **proposal-only** routing artifact:
 
    ```bash
-   ./scripts/propose-experience-routing.sh \
+   $CONTROL/scripts/propose-experience-routing.sh \
      --experiences tests/fixtures/experience/contact-counter.json
    ```
 
@@ -29,20 +29,20 @@ routing improvements based on historical outcomes.
 4. Present skill confidence deltas and weight suggestions to the Captain.
 5. To apply weights (Milestone 4 Level 3), Captain sets `captain_approved: true`
    on the proposal JSON, then use Skill `bounded-autonomy` /
-   `./scripts/apply-routing-proposal.sh` under an autonomy budget.
+   `$CONTROL/scripts/apply-routing-proposal.sh` under an autonomy budget.
    Routing proposals include **decomposition hints** (bounded matcher-factor deltas;
    M17) merged on apply.
 6. For **context selection tuning** (M17 — which knowledge/TI slices appear in plans):
 
    ```bash
-   ./scripts/propose-context-selection.sh --experiences tests/fixtures/experience/contact-counter.json
+   $CONTROL/scripts/propose-context-selection.sh --experiences tests/fixtures/experience/contact-counter.json
    ```
 
-   Captain sets `captain_approved: true`, then `./scripts/apply-context-selection-proposal.sh`.
+   Captain sets `captain_approved: true`, then `$CONTROL/scripts/apply-context-selection-proposal.sh`.
 7. Optionally record subagent proficiency metadata after Skill training:
 
    ```bash
-   ./scripts/record-agent-proficiency.sh \
+   $CONTROL/scripts/record-agent-proficiency.sh \
      --agent-id compass-evaluator \
      --classifications evaluation,arbitration \
      --skills compass-evaluator,execution-telemetry \

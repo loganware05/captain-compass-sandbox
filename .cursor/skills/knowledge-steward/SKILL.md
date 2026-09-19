@@ -22,8 +22,8 @@ ADR headings from `DECISIONS.md`.
 1. **Ingest** (explicit CLI only — never auto-run on workstream close):
 
    ```bash
-   ./scripts/ingest-knowledge.sh --from-store experience,evaluations,decisions
-   ./scripts/ingest-knowledge.sh --paths tests/fixtures/experience/contact-counter.json
+   $CONTROL/scripts/ingest-knowledge.sh --from-store experience,evaluations,decisions
+   $CONTROL/scripts/ingest-knowledge.sh --paths tests/fixtures/experience/contact-counter.json
    ```
 
    `decisions` auto-ingests **ADR headings** from `DECISIONS.md`.
@@ -32,15 +32,15 @@ ADR headings from `DECISIONS.md`.
    `external-knowledge-ingest` or:
 
    ```bash
-   ./scripts/ingest-knowledge.sh --from-store notion,notebooklm
+   $CONTROL/scripts/ingest-knowledge.sh --from-store notion,notebooklm
    ```
 
 2. **Query** for planning context (read-only):
 
    ```bash
-   ./scripts/query-knowledge.sh --query "evaluator routing" --kind decision
-   ./scripts/query-knowledge.sh --query "matcher tuning" --kind performance --mode hybrid
-   ./scripts/ingest-knowledge.sh --from-store runs,experience
+   $CONTROL/scripts/query-knowledge.sh --query "evaluator routing" --kind decision
+   $CONTROL/scripts/query-knowledge.sh --query "matcher tuning" --kind performance --mode hybrid
+   $CONTROL/scripts/ingest-knowledge.sh --from-store runs,experience
    ```
 
    Execution runs ingest as `kind: performance` with `performance_metrics`
@@ -54,8 +54,8 @@ ADR headings from `DECISIONS.md`.
 3. **Rebuild vector index** (explicit CLI only):
 
    ```bash
-   ./scripts/rebuild-knowledge-vector-index.sh
-   ./scripts/ingest-knowledge.sh --from-store decisions --rebuild-vector
+   $CONTROL/scripts/rebuild-knowledge-vector-index.sh
+   $CONTROL/scripts/ingest-knowledge.sh --from-store decisions --rebuild-vector
    ```
 
    For **fixture dense embeddings** (TF-IDF remains fallback), use Skill
@@ -63,14 +63,14 @@ ADR headings from `DECISIONS.md`.
 
    ```bash
    COMPASS_EMBEDDING_PROVIDER=fixture \
-     ./scripts/rebuild-knowledge-embedding-index.sh
+     $CONTROL/scripts/rebuild-knowledge-embedding-index.sh
    ```
 
 4. Review matches under `.agent/knowledge/items/` with provenance.
 5. Optionally propose a reusable procedure (staging + Captain PR only):
 
    ```bash
-   ./scripts/propose-procedure-from-knowledge.sh \
+   $CONTROL/scripts/propose-procedure-from-knowledge.sh \
      --item-ids know-adr-020 \
      --title "Bounded weight apply playbook"
    ```

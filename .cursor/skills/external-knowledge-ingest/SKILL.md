@@ -23,11 +23,11 @@ default file-export path. For MCP coordination during planning, use Skill
 3. Ingest explicitly:
 
    ```bash
-   ./scripts/ingest-notion-live.sh --source cache
+   $CONTROL/scripts/ingest-notion-live.sh --source cache
    # offline/CI:
-   ./scripts/ingest-notion-live.sh --source fixtures
+   $CONTROL/scripts/ingest-notion-live.sh --source fixtures
    # after MCP session payload export:
-   ./scripts/ingest-notion-live.sh --source live --payload mcp-pages.json
+   $CONTROL/scripts/ingest-notion-live.sh --source live --payload mcp-pages.json
    ```
 
 4. Items use provenance `export_mode: mcp_live` (distinct from file exports).
@@ -51,13 +51,13 @@ default file-export path. For MCP coordination during planning, use Skill
 3. Ingest (explicit CLI only):
 
    ```bash
-   ./scripts/ingest-knowledge.sh --from-store notion,notebooklm
+   $CONTROL/scripts/ingest-knowledge.sh --from-store notion,notebooklm
    ```
 
 4. Query as `kind: knowledge`:
 
    ```bash
-   ./scripts/query-knowledge.sh --query "approval gate" --kind knowledge
+   $CONTROL/scripts/query-knowledge.sh --query "approval gate" --kind knowledge
    ```
 
 5. Items appear in plan **Knowledge Context** after ingest (informational only).

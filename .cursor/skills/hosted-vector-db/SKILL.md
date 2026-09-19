@@ -31,8 +31,8 @@ limits are exceeded; Neon Launch is pay-as-you-go with no monthly floor.
 1. Default path stays file-backed (`COMPASS_VECTOR_PROVIDER=file` or unset):
 
    ```bash
-   ./scripts/rebuild-knowledge-vector-index.sh
-   ./scripts/query-knowledge.sh --query "approval gate" --mode hybrid
+   $CONTROL/scripts/rebuild-knowledge-vector-index.sh
+   $CONTROL/scripts/query-knowledge.sh --query "approval gate" --mode hybrid
    ```
 
 2. Bootstrap pgvector schema on Neon (Captain local):
@@ -40,7 +40,7 @@ limits are exceeded; Neon Launch is pay-as-you-go with no monthly floor.
    ```bash
    export COMPASS_VECTOR_DATABASE_URL='postgresql://...'
    export COMPASS_VECTOR_DIMENSIONS=32   # match embedding provider
-   ./scripts/init-pgvector-schema.sh --apply
+   $CONTROL/scripts/init-pgvector-schema.sh --apply
    ```
 
 3. Sync knowledge embeddings to hosted store (explicit CLI):
@@ -49,7 +49,7 @@ limits are exceeded; Neon Launch is pay-as-you-go with no monthly floor.
    export COMPASS_VECTOR_PROVIDER=pgvector
    export COMPASS_VECTOR_NAMESPACE=captains-compass-cursor
    export COMPASS_EMBEDDING_PROVIDER=fixture   # or openai-compatible + API key
-   ./scripts/sync-knowledge-vector-db.sh
+   $CONTROL/scripts/sync-knowledge-vector-db.sh
    ```
 
 4. Query hosted vectors:
@@ -59,7 +59,7 @@ limits are exceeded; Neon Launch is pay-as-you-go with no monthly floor.
    COMPASS_VECTOR_DATABASE_URL='postgresql://...' \
    COMPASS_VECTOR_NAMESPACE=captains-compass-cursor \
    COMPASS_EMBEDDING_PROVIDER=fixture \
-     ./scripts/query-knowledge.sh --query "matcher tuning" --mode vector
+     $CONTROL/scripts/query-knowledge.sh --query "matcher tuning" --mode vector
    ```
 
 5. On missing hosted backend, live embed failure, or empty hosted index → **TF-IDF

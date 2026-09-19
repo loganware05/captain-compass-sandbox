@@ -1,0 +1,68 @@
+{
+  "byte_size": 6441,
+  "content_hash": "bdd47e418acfaaaf3caaec5d8d4d2e3a7439868009d75582e04914ccd2b9fdc2",
+  "declared_complexity": "",
+  "exports": [],
+  "imports": [
+    {
+      "module": "@testing-library/react",
+      "names": [
+        "cleanup",
+        "fireEvent",
+        "render",
+        "screen",
+        "within"
+      ]
+    },
+    {
+      "module": "@testing-library/user-event",
+      "names": [
+        "userEvent"
+      ]
+    },
+    {
+      "module": "vitest",
+      "names": [
+        "afterEach",
+        "describe",
+        "expect",
+        "it"
+      ]
+    },
+    {
+      "module": "../lib/contactValidation",
+      "names": [
+        "MESSAGE_MAX_LENGTH"
+      ]
+    },
+    {
+      "module": "./ContactForm",
+      "names": [
+        "ContactForm"
+      ]
+    }
+  ],
+  "inode_id": "ino-bdd47e418acfaaaf",
+  "language": "tsx",
+  "module": "src/components",
+  "source_path": "src/components/ContactForm.test.tsx",
+  "store_version": "1.0.0",
+  "symbols": [
+    {
+      "complexity": "",
+      "exported": false,
+      "kind": "function",
+      "name": "fieldAlert",
+      "params": [
+        {
+          "name": "text",
+          "optional": false,
+          "type": "string",
+          "variadic": false
+        }
+      ],
+      "return_type": "HTMLElement",
+      "signature": "fieldAlert(text: string): HTMLElement"
+    }
+  ]
+}

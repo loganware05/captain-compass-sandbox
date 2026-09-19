@@ -1,0 +1,43 @@
+{
+  "byte_size": 4236,
+  "content_hash": "76747ad3090cc402f1ffdca59edb7a53f97e3ce9768bc655ee5f5cabef808e9d",
+  "declared_complexity": "",
+  "exports": [],
+  "imports": [
+    {
+      "module": "react",
+      "names": [
+        "useId",
+        "useState"
+      ]
+    },
+    {
+      "module": "./CraftTokensDemo.css",
+      "names": []
+    }
+  ],
+  "inode_id": "ino-76747ad3090cc402",
+  "language": "tsx",
+  "module": "src/components",
+  "source_path": "src/components/CraftTokensDemo.tsx",
+  "store_version": "1.0.0",
+  "symbols": [
+    {
+      "complexity": "",
+      "exported": false,
+      "kind": "const",
+      "name": "TOKEN_SWATCHES",
+      "return_type": "",
+      "signature": "const TOKEN_SWATCHES"
+    },
+    {
+      "complexity": "",
+      "exported": false,
+      "kind": "function",
+      "name": "CraftTokensDemo",
+      "params": [],
+      "return_type": "",
+      "signature": "CraftTokensDemo()"
+    }
+  ]
+}

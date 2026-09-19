@@ -1,0 +1,16 @@
+{
+  "children": [],
+  "file_count": 6,
+  "inode_refs": [
+    "ino-638fc73ea80e9460",
+    "ino-76747ad3090cc402",
+    "ino-8dfdf35f7d9e3a8a",
+    "ino-bdd47e418acfaaaf",
+    "ino-ce5f2e4358def879",
+    "ino-f662cea57e07065a"
+  ],
+  "kind": "module",
+  "node_id": "ctx-44145b4646ba",
+  "route": "src/components",
+  "summary": "6 file(s); exports: FormIssuesSummary, FormIssuesSummaryProps"
+}

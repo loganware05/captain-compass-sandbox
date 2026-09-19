@@ -1,0 +1,18 @@
+{
+  "byte_size": 42,
+  "content_hash": "977afde26bba6a51325908cd7713cbfdc87d18f06b78b237c8f364c44864b7de",
+  "declared_complexity": "",
+  "exports": [],
+  "imports": [
+    {
+      "module": "@testing-library/jest-dom/vitest",
+      "names": []
+    }
+  ],
+  "inode_id": "ino-977afde26bba6a51",
+  "language": "typescript",
+  "module": "src/test",
+  "source_path": "src/test/setup.ts",
+  "store_version": "1.0.0",
+  "symbols": []
+}

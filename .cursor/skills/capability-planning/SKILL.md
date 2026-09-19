@@ -26,11 +26,11 @@ Load this Skill together with `implementation-planning` during `/plan-feature`.
 
 ## Procedure
 
-1. Ensure registry is current: `./scripts/compile-capability-registry.sh`
+1. Ensure registry is current: `$CONTROL/scripts/compile-capability-registry.sh`
 2. Run the planning pipeline:
 
    ```bash
-   ./scripts/capability-plan.sh --plan-id <plan-id> "<objective>"
+   $CONTROL/scripts/capability-plan.sh --plan-id <plan-id> "<objective>"
    ```
 
 3. Copy rendered sections into `IMPLEMENTATION_PLAN.md`:

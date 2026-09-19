@@ -22,7 +22,7 @@ when the Captain asks to record learning from a finished plan.
 2. Record telemetry from the control or product repo root:
 
    ```bash
-   ./scripts/record-execution-run.sh \
+   $CONTROL/scripts/record-execution-run.sh \
      --plan-id <plan-id> \
      --outcome success \
      --objective "<short objective>" \

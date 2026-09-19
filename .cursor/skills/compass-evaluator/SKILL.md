@@ -25,7 +25,7 @@ implementation.
 2. Record the experiment:
 
    ```bash
-   ./scripts/run-evaluation.sh \
+   $CONTROL/scripts/run-evaluation.sh \
      --plan-id <plan-id> \
      --objective "<question>" \
      --alternatives '[{"id":"a","label":"Option A"},{"id":"b","label":"Option B"}]' \

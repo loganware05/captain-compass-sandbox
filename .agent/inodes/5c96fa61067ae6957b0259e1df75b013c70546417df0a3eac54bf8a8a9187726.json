@@ -1,0 +1,29 @@
+{
+  "byte_size": 753,
+  "content_hash": "5c96fa61067ae6957b0259e1df75b013c70546417df0a3eac54bf8a8a9187726",
+  "declared_complexity": "",
+  "exports": [],
+  "imports": [
+    {
+      "module": "vitest",
+      "names": [
+        "describe",
+        "expect",
+        "it"
+      ]
+    },
+    {
+      "module": "./formAnalytics",
+      "names": [
+        "countFormIssues",
+        "summarizeFormIssues"
+      ]
+    }
+  ],
+  "inode_id": "ino-5c96fa61067ae695",
+  "language": "typescript",
+  "module": "src/lib",
+  "source_path": "src/lib/formAnalytics.test.ts",
+  "store_version": "1.0.0",
+  "symbols": []
+}
