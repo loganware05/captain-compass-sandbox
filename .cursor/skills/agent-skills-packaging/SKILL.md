@@ -34,7 +34,7 @@ Loop.
 3. Verify M23 gates: security-review + dependency-supply-chain evidence paths
    exist; `approved_for_execution` stays false on TI candidates.
 4. Register the slug in `orchestrator/registry/compiler.py` `SKILL_SLUGS`.
-5. Run `./scripts/compile-capability-registry.sh` and `./scripts/doctor.sh`.
+5. Run `$CONTROL/scripts/compile-capability-registry.sh` and `$CONTROL/scripts/doctor.sh`.
 6. Ship only via Captain-reviewed PR; never auto-install from Learning Loop.
 
 ## Output

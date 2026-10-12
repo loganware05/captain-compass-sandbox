@@ -2,30 +2,28 @@
 
 ## Current status
 
-Wave 1 Skills sandbox carry-over on
-`feature/local-wave1-skills-sandbox-carryover` —
-PR: https://github.com/loganware05/captain-compass-sandbox/pull/60
-(base: `origin/main` @ `4cf3ca1`, Compass `1.40.1`).
+NorthStar / Captain's Compass refresh **1.40.1 → 1.59.0** on
+`chore/update-captains-compass-v1.59.0` (rollback `f452e17`). Doctor green.
+Control source: captains-compass-cursor @ `9b9d6bd` (`VERSION=1.59.0`; no
+`v1.59.0` git tag yet).
 
 ## Completed
 
 - Accessible contact form sandbox exercise (baseline)
 - Captain's Compass / NorthStar workflow refreshes through v1.40.1
-- Capability-aware `/plan-feature` behavioral checklist item 7
-- Message field character counter (max 500) with a11y associations
+- Wave 1 Stars Skills sandbox carry-over (PR #60 merged)
 - craft-tokens-design-system sandbox Skill install (NS-SKILL-001)
-- Wave 1 Stars Skills carried into sandbox `.cursor/skills/`
+- Compass refresh to **1.59.0** (doctor pass)
 
 ## In progress
 
-- Captain review / merge of PR #60
+- Captain review / commit + PR for `chore/update-captains-compass-v1.59.0`
 
 ## Next
 
-- Merge PR #60 when ready
-- Optional: Learning Loop retain / Experience recording after first real use
+- Commit + PR the 1.59.0 refresh
+- Optional: tag control `v1.59.0` so future sandbox upgrades can use the tagged worktree path
 
 ## Blockers
 
-None for local Skill install. Use issue placeholder
-`local/wave1-skills-sandbox-carryover` if `gh` auth is unavailable.
+None for local refresh. Issue placeholder: `local/refresh-compass-1.59.0`.
