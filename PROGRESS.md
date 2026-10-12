@@ -3,10 +3,9 @@
 ## Current status
 
 Wave 1 Skills sandbox carry-over on
-`feature/local-wave1-skills-sandbox-carryover` (base: `origin/main` @
-`4cf3ca1`, Compass `1.40.1`). Installed
-`agent-skills-packaging`, `goose-agent-orchestration`, and
-`security-audit-procedures` from control OVA-71.
+`feature/local-wave1-skills-sandbox-carryover` —
+PR: https://github.com/loganware05/captain-compass-sandbox/pull/60
+(base: `origin/main` @ `4cf3ca1`, Compass `1.40.1`).
 
 ## Completed
 
@@ -19,12 +18,12 @@ Wave 1 Skills sandbox carry-over on
 
 ## In progress
 
-- Captain review / commit + PR for Wave 1 Skill carry-over
+- Captain review / merge of PR #60
 
 ## Next
 
-- Captain: approve commit + PR for `feature/local-wave1-skills-sandbox-carryover`
-- Optional: dispatch Learning Loop retain / Experience recording for the three Skills
+- Merge PR #60 when ready
+- Optional: Learning Loop retain / Experience recording after first real use
 
 ## Blockers
 
