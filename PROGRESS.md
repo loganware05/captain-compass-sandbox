@@ -3,9 +3,9 @@
 ## Current status
 
 NorthStar / Captain's Compass refresh **1.40.1 → 1.59.0** on
-`chore/update-captains-compass-v1.59.0` (rollback `f452e17`). Doctor green.
-Control source: captains-compass-cursor @ `9b9d6bd` (`VERSION=1.59.0`; no
-`v1.59.0` git tag yet).
+`chore/update-captains-compass-v1.59.0` —
+PR: https://github.com/loganware05/captain-compass-sandbox/pull/61
+(rollback `f452e17`; control @ `9b9d6bd`).
 
 ## Completed
 
@@ -17,11 +17,11 @@ Control source: captains-compass-cursor @ `9b9d6bd` (`VERSION=1.59.0`; no
 
 ## In progress
 
-- Captain review / commit + PR for `chore/update-captains-compass-v1.59.0`
+- Captain review / merge of PR #61
 
 ## Next
 
-- Commit + PR the 1.59.0 refresh
+- Merge PR #61 when ready
 - Optional: tag control `v1.59.0` so future sandbox upgrades can use the tagged worktree path
 
 ## Blockers
