@@ -3,46 +3,58 @@
 ## Metadata
 
 - Status: APPROVED
-- Plan ID: m40-filesystem-gated-context-sandbox-validation
-- Issue: local/m40-sandbox-validation (placeholder — control PR #177)
-- Branch: cursor/m40-filesystem-gated-context-ea39
-- Created: 2026-09-18
-- Last updated: 2026-09-18
-- Approved by: Captain (Logan Ware)
-- Approval date: 2026-09-18
+- Plan ID: wave1-skills-sandbox-carryover-2026-10-11
+- Issue: local/wave1-skills-sandbox-carryover
+- Branch: feature/local-wave1-skills-sandbox-carryover
+- Created: 2026-10-11
+- Last updated: 2026-10-11
+- Approved by: Captain
+- Approval date: 2026-10-11
+- Approved revision: wave1-skills-sandbox-carryover-2026-10-11
+- Rollback checkpoint: origin/main @ 4cf3ca1 (Compass 1.40.1)
 
 ## Request
 
-Validation proving ground for control-repo milestone M40 (Filesystem-Gated
-Context & Dependency Architecture, control plan `m40-filesystem-gated-context`,
-approved 2026-09-18). This sandbox change exists to exercise the M40 inode
-store, context walker, and `northstar review` boundary gate against a real
-React/TS codebase.
+Update the sandbox to carry over the three Wave 1 Stars Skills already promoted
+in the NorthStar control library (OVA-71):
 
-## Scope
+- `agent-skills-packaging`
+- `goose-agent-orchestration`
+- `security-audit-procedures`
 
-1. Workflow refresh to the M40 control state (`update.sh` from control repo).
-2. Inode store + context tree built over `src/` (`.agent/inodes/`,
-   `.agent/context/` — local, gitignored runtime artifacts).
-3. A clean cross-boundary feature: `src/lib/formAnalytics.ts` (declared
-   `@complexity` contracts) consumed by `src/components/FormIssuesSummary.tsx`,
-   with unit tests.
-4. Validation: `npm run lint`, `npm run test`, `npm run build`.
-5. `northstar review` boundary gate evidence: clean change (expect zero
-   boundary findings) + seeded-violation diff (expect detection), logged under
-   `.agent/evidence/m40-filesystem-gated-context/`.
+## Problem Statement
+
+AVAILABLE_SKILL proposals and Learning Loop evidence exist under
+`.agent/capabilities/candidates/`, but the sandbox `.cursor/skills/` tree does
+not yet include the three Captain-promoted Wave 1 sidecars present in the
+control repo.
+
+## Desired Outcome
+
+Sandbox agents can load the three Skills from `.cursor/skills/<slug>/` with the
+same metadata/procedure content as the control library, plus install evidence.
+
+## Acceptance Criteria
+
+- [x] Three Skill directories installed under `.cursor/skills/`
+- [x] Each has `SKILL.md` + `capability.yaml` (`lifecycle_stage: AVAILABLE_SKILL`)
+- [x] Install evidence under `.agent/evidence/wave1-skills-sandbox-carryover/`
+- [x] PROGRESS / CHANGELOG updated
+- [x] No TI candidate sets `approved_for_execution: true`
+- [x] No product `src/` behavior changes
 
 ## Non-Goals
 
-- No visual/App layout changes (no browser evidence required).
-- No production deploy.
-
-## Rollback
-
-- `git checkout main` — branch is disposable; `main` untouched until evidence
-  is green.
+- Control-repo `SKILL_SLUGS` / registry compiler changes (already done in OVA-71)
+- Promoting drawio / taste / other Learning Loop drafts
+- Cloning or executing starred repositories
+- Product UI or contact-form changes
 
 ## Approval Record
 
-Approved by the Captain as part of control plan `m40-filesystem-gated-context`
-(2026-09-18, "I approve the M40 Implementation plan").
+- Approved by Captain on 2026-10-11 (chat: "update the sandbox to carry over the three new skills")
+- Plan revision: wave1-skills-sandbox-carryover-2026-10-11
+
+## Definition of Done
+
+Skills present on branch; docs + evidence updated; ready for Captain-reviewed commit/PR.

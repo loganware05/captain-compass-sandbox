@@ -1,0 +1,21 @@
+id: from-stars-anthropics-skills
+version: "0.1.0"
+kind: skill
+source:
+  type: compass-skill
+  path: .cursor/skills/from-stars-anthropics-skills/SKILL.md
+lifecycle_stage: ANALYZED
+capabilities_provided:
+  - anthropics
+  - skills
+  - public
+  - repository
+  - for
+security_sensitivity: medium
+provenance:
+  inferred: false
+  from_candidate: "github-stars-anthropics-skills"
+  discovery_signal: "github-stars:live:anthropics/skills|category:devtool"
+  captain_approval_required: true
+  starred_provenance_required: true
+notes: Draft from skill-learning-loop — requires Captain-approved PR

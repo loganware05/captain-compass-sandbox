@@ -1,0 +1,27 @@
+{
+  "approved_for_execution": false,
+  "auto_apply": false,
+  "candidate_id": "github-stars-anthropics-skills",
+  "captain_approval_required": true,
+  "discovery_signal": "github-stars:live:anthropics/skills|category:devtool",
+  "evidence_paths": [
+    "/Users/loganware/Documents/Personal/Code/captain-compass-sandbox/.agent/evidence/candidate-sandbox-test/github-stars-anthropics-skills/sandbox-test.json",
+    "/Users/loganware/Documents/Personal/Code/captain-compass-sandbox/.agent/evidence/candidate-sandbox-test/github-stars-anthropics-skills/summary.md",
+    "/Users/loganware/Documents/Personal/Code/captain-compass-sandbox/.agent/evidence/ti-scorecards/github-stars-anthropics-skills/security-review.md",
+    "/Users/loganware/Documents/Personal/Code/captain-compass-sandbox/.agent/evidence/ti-scorecards/github-stars-anthropics-skills/dependency-supply-chain.md"
+  ],
+  "kind": "skill-improvement-proposal",
+  "notes": "Proposal only \u2014 Captain-reviewed PR required to edit .cursor/skills/docker-cloud/; never auto-apply",
+  "proposed_at": "2026-10-12T04:34:20Z",
+  "similarity": 0.52,
+  "star_category": "devtool",
+  "suggested_changes": [
+    {
+      "action": "append-lesson",
+      "rationale": "Categorized Stars candidate github-stars-anthropics-skills is similar (score=0.52) to existing Skill `docker-cloud`. Review notes and fold applicable steps; do not clone the starred repo.",
+      "section": "Procedure",
+      "source_notes": "[devtool] Live GitHub starred repo \u2014 NOT APPROVED FOR EXECUTION"
+    }
+  ],
+  "target_skill_slug": "docker-cloud"
+}
