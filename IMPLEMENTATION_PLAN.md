@@ -3,58 +3,58 @@
 ## Metadata
 
 - Status: APPROVED
-- Plan ID: wave1-skills-sandbox-carryover-2026-10-11
-- Issue: local/wave1-skills-sandbox-carryover
-- Branch: feature/local-wave1-skills-sandbox-carryover
-- Created: 2026-10-11
-- Last updated: 2026-10-11
+- Plan ID: chore-refresh-compass-1.59.0-2026-10-12
+- Issue: local/refresh-compass-1.59.0
+- Branch: chore/update-captains-compass-v1.59.0
+- Created: 2026-10-12
+- Last updated: 2026-10-12
 - Approved by: Captain
-- Approval date: 2026-10-11
-- Approved revision: wave1-skills-sandbox-carryover-2026-10-11
-- Rollback checkpoint: origin/main @ 4cf3ca1 (Compass 1.40.1)
+- Approval date: 2026-10-12
+- Approved revision: chore-refresh-compass-1.59.0-2026-10-12
+- Rollback checkpoint: `f452e17` (origin/main pre-refresh, Compass 1.40.1)
+- Control source: captains-compass-cursor `VERSION=1.59.0` @ HEAD (no `v1.59.0` git tag yet; use `update.sh` / `install.sh --force` equivalent)
 
 ## Request
 
-Update the sandbox to carry over the three Wave 1 Stars Skills already promoted
-in the NorthStar control library (OVA-71):
-
-- `agent-skills-packaging`
-- `goose-agent-orchestration`
-- `security-audit-procedures`
+Refresh the sandbox NorthStar / Captain's Compass install from **1.40.1** to
+control **1.59.0** via forward `update.sh` (control checkout already at intended version).
 
 ## Problem Statement
 
-AVAILABLE_SKILL proposals and Learning Loop evidence exist under
-`.agent/capabilities/candidates/`, but the sandbox `.cursor/skills/` tree does
-not yet include the three Captain-promoted Wave 1 sidecars present in the
-control repo.
+Sandbox `.agent/COMPASS_VERSION` is `1.40.1` while control `VERSION` is
+`1.59.0`, so workflow files (rules, Skills, agents, hooks, commands) are stale
+relative to the control library. GitHub release tags currently stop earlier than
+`1.59.0`; refresh from control main where `VERSION` matches.
 
 ## Desired Outcome
 
-Sandbox agents can load the three Skills from `.cursor/skills/<slug>/` with the
-same metadata/procedure content as the control library, plus install evidence.
+- `.agent/COMPASS_VERSION` reads `1.59.0`
+- `.cursor/` refreshed from control HEAD at VERSION 1.59.0
+- Product memory docs preserved
+- Doctor passes
+- Sandbox-only Skill `craft-tokens-design-system` retained (not in control library)
 
 ## Acceptance Criteria
 
-- [x] Three Skill directories installed under `.cursor/skills/`
-- [x] Each has `SKILL.md` + `capability.yaml` (`lifecycle_stage: AVAILABLE_SKILL`)
-- [x] Install evidence under `.agent/evidence/wave1-skills-sandbox-carryover/`
-- [x] PROGRESS / CHANGELOG updated
-- [x] No TI candidate sets `approved_for_execution: true`
+- [x] `update.sh` run from control checkout with `VERSION=1.59.0`
+- [x] `.agent/COMPASS_VERSION` == `1.59.0`
+- [x] `doctor.sh` passes against the sandbox
+- [x] `craft-tokens-design-system` still present after refresh
 - [x] No product `src/` behavior changes
+- [x] PROGRESS / CHANGELOG / refresh evidence updated
+- [x] Dedicated chore branch + PR-ready diff
 
 ## Non-Goals
 
-- Control-repo `SKILL_SLUGS` / registry compiler changes (already done in OVA-71)
-- Promoting drawio / taste / other Learning Loop drafts
-- Cloning or executing starred repositories
-- Product UI or contact-form changes
+- Creating the missing `v1.59.0` control tag (Captain/control follow-up)
+- Downgrade support
+- Merging unrelated Learning Loop untracked drafts
+- Product feature work
 
 ## Approval Record
 
-- Approved by Captain on 2026-10-11 (chat: "update the sandbox to carry over the three new skills")
-- Plan revision: wave1-skills-sandbox-carryover-2026-10-11
+- Approved by Captain on 2026-10-12 (chat: "The sandbox reads 1.40.1 while control VERSION is 1.59.0, update that")
 
 ## Definition of Done
 
-Skills present on branch; docs + evidence updated; ready for Captain-reviewed commit/PR.
+Version file matches control VERSION; doctor green; docs/evidence updated; ready for commit/PR.

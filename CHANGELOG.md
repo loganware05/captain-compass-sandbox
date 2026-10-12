@@ -9,4 +9,6 @@
 
 ### Changed
 
+- NorthStar / Captain's Compass workflow refresh **1.40.1 → 1.59.0** (`.agent/COMPASS_VERSION`)
+
 ### Fixed
