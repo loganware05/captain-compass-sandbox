@@ -2,28 +2,31 @@
 
 ## Current status
 
-Contact message character counter merged-ready on
-`feature/local-contact-message-counter` —
-PR: https://github.com/loganware05/captain-compass-sandbox/pull/15
-(base: `chore/13-refresh-compass-1.5.0`). Validation green (21/21).
+Wave 1 Skills sandbox carry-over on
+`feature/local-wave1-skills-sandbox-carryover` (base: `origin/main` @
+`4cf3ca1`, Compass `1.40.1`). Installed
+`agent-skills-packaging`, `goose-agent-orchestration`, and
+`security-audit-procedures` from control OVA-71.
 
 ## Completed
 
 - Accessible contact form sandbox exercise (baseline)
-- Captain's Compass v1.0.0–v1.5.0 workflow refreshes
+- Captain's Compass / NorthStar workflow refreshes through v1.40.1
 - Capability-aware `/plan-feature` behavioral checklist item 7
 - Message field character counter (max 500) with a11y associations
+- craft-tokens-design-system sandbox Skill install (NS-SKILL-001)
+- Wave 1 Stars Skills carried into sandbox `.cursor/skills/`
 
 ## In progress
 
-- Review / merge character-counter feature branch
+- Captain review / commit + PR for Wave 1 Skill carry-over
 
 ## Next
 
-- Captain: `/validate-change` or approve commit + PR
-- Re-authenticate `gh` if remote issue/PR is desired
+- Captain: approve commit + PR for `feature/local-wave1-skills-sandbox-carryover`
+- Optional: dispatch Learning Loop retain / Experience recording for the three Skills
 
 ## Blockers
 
-GitHub CLI token invalid — using local issue placeholder
-`local/sandbox-behavioral-plan-feature`.
+None for local Skill install. Use issue placeholder
+`local/wave1-skills-sandbox-carryover` if `gh` auth is unavailable.

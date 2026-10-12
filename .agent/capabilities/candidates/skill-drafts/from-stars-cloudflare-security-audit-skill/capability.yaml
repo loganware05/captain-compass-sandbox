@@ -1,0 +1,21 @@
+id: from-stars-cloudflare-security-audit-skill
+version: "0.1.0"
+kind: skill
+source:
+  type: compass-skill
+  path: .cursor/skills/from-stars-cloudflare-security-audit-skill/SKILL.md
+lifecycle_stage: ANALYZED
+capabilities_provided:
+  - cloudflare
+  - security
+  - audit
+  - skill
+  - coding
+security_sensitivity: medium
+provenance:
+  inferred: false
+  from_candidate: "github-stars-cloudflare-security-audit-skill"
+  discovery_signal: "github-stars:live:cloudflare/security-audit-skill|category:devtool"
+  captain_approval_required: true
+  starred_provenance_required: true
+notes: Draft from skill-learning-loop — requires Captain-approved PR

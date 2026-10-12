@@ -1,0 +1,27 @@
+{
+  "approved_for_execution": false,
+  "auto_apply": false,
+  "candidate_id": "github-stars-aaif-goose-goose",
+  "captain_approval_required": true,
+  "discovery_signal": "github-stars:live:aaif-goose/goose|category:devtool",
+  "evidence_paths": [
+    "/Users/loganware/Documents/Personal/Code/captain-compass-sandbox/.agent/evidence/candidate-sandbox-test/github-stars-aaif-goose-goose/sandbox-test.json",
+    "/Users/loganware/Documents/Personal/Code/captain-compass-sandbox/.agent/evidence/candidate-sandbox-test/github-stars-aaif-goose-goose/summary.md",
+    "/Users/loganware/Documents/Personal/Code/captain-compass-sandbox/.agent/evidence/ti-scorecards/github-stars-aaif-goose-goose/security-review.md",
+    "/Users/loganware/Documents/Personal/Code/captain-compass-sandbox/.agent/evidence/ti-scorecards/github-stars-aaif-goose-goose/dependency-supply-chain.md"
+  ],
+  "kind": "skill-improvement-proposal",
+  "notes": "Proposal only \u2014 Captain-reviewed PR required to edit .cursor/skills/source-code-context/; never auto-apply",
+  "proposed_at": "2026-10-12T04:34:20Z",
+  "similarity": 0.3182,
+  "star_category": "devtool",
+  "suggested_changes": [
+    {
+      "action": "append-lesson",
+      "rationale": "Categorized Stars candidate github-stars-aaif-goose-goose is similar (score=0.3182) to existing Skill `source-code-context`. Review notes and fold applicable steps; do not clone the starred repo.",
+      "section": "Procedure",
+      "source_notes": "[devtool] Live GitHub starred repo \u2014 NOT APPROVED FOR EXECUTION"
+    }
+  ],
+  "target_skill_slug": "source-code-context"
+}

@@ -1,0 +1,16 @@
+{
+  "approved_for_execution": false,
+  "candidate_id": "github-stars-aaif-goose-goose",
+  "checks": {
+    "draft_capability_yaml": "/Users/loganware/Documents/Personal/Code/captain-compass-sandbox/.agent/capabilities/candidates/skill-drafts/from-stars-aaif-goose-goose/capability.yaml",
+    "draft_skill_md": "/Users/loganware/Documents/Personal/Code/captain-compass-sandbox/.agent/capabilities/candidates/skill-drafts/from-stars-aaif-goose-goose/SKILL.md",
+    "live_skill_absent_for_new_draft": true
+  },
+  "harness_kind": "fixture-file-checks",
+  "kind": "candidate-sandbox-test",
+  "notes": "Fixture harness only \u2014 no external clone/exec; Captain approval required before live Skill install",
+  "passed": true,
+  "promote_to_sandbox_tested": false,
+  "ran_at": "2026-10-12T04:34:20Z",
+  "skill_slug": "from-stars-aaif-goose-goose"
+}

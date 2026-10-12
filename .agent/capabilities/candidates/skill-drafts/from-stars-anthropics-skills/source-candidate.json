@@ -1,0 +1,33 @@
+{
+  "approved_for_execution": false,
+  "capabilities_provided": [
+    "anthropics",
+    "skills",
+    "public",
+    "repository",
+    "for"
+  ],
+  "discovery_signal": "github-stars:live:anthropics/skills|category:devtool",
+  "evidence_paths": [
+    "/Users/loganware/Documents/Personal/Code/captain-compass-sandbox/.agent/evidence/ti-scorecards/github-stars-anthropics-skills/security-review.md",
+    "/Users/loganware/Documents/Personal/Code/captain-compass-sandbox/.agent/evidence/ti-scorecards/github-stars-anthropics-skills/dependency-supply-chain.md"
+  ],
+  "id": "github-stars-anthropics-skills",
+  "kind": "candidate",
+  "lifecycle_stage": "DISCOVERED",
+  "notes": "[devtool] Live GitHub starred repo \u2014 NOT APPROVED FOR EXECUTION",
+  "provenance": {
+    "star_category": "devtool",
+    "star_category_confidence": 0.0158,
+    "starred": true,
+    "starred_provenance": true
+  },
+  "source": {
+    "path": "anthropics/skills",
+    "provenance_url": "https://github.com/anthropics/skills",
+    "type": "external-candidate"
+  },
+  "starred": true,
+  "starred_provenance": true,
+  "version": "0.1.0"
+}
