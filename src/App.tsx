@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import ContactForm from './components/ContactForm'
+import CompassStatusBadge from './components/CompassStatusBadge'
 import CraftTokensDemo from './components/CraftTokensDemo'
 import './App.css'
 
@@ -22,6 +23,7 @@ function App() {
           <p>
             Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
           </p>
+          <CompassStatusBadge />
         </div>
         <button
           type="button"
